@@ -38,6 +38,6 @@ El proyecto es una **página estática** contenida en un único archivo, lo que 
 ##  Contacto y Despliegue
 
   * **Desarrollador Principal:** mserranofernando@gmail.com
-  * **Link del Proyecto (GitHub Pages):** `[https://tu-usuario.github.io/tu-repo/]` (Reemplaza con tu URL real)
+  * **Link del Proyecto (GitHub Pages):** `[https://fernandos94.github.io/EcosistemaDigital/]` 
 
 -----
