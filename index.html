@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+  <!---  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecosistema Educativo Digital</title>
+    <title>Ecosistema Digital</title>
+   
     <style>
         /* CSS Variables for easier theme management */
         :root {
@@ -315,11 +316,12 @@
         /* Access Section */
         .access-section {
            /* background: linear-gradient(135deg, var(--dark-color) 0%, #2d3748 100%);*/
-           background: linear-gradient(135deg,#F9B2FA 0%, #4A487A 100%);
+           background: linear-gradient(135deg,#ee8bf0 0%, #4A487A 100%);
             color: white;
             
         }
 
+      /* para 2 card */
         .access-buttons {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -327,14 +329,14 @@
             max-width: 800px;
             margin: 0 auto;
         }
-
-        /* .access-buttons {
+/* para 3 card */
+        .access-buttons {
             display: grid;
             grid-template-columns: repeat(3, 1fr); 
             gap: 30px; 
             max-width: 1200px;  
             margin: 0 auto;
-        } */
+        } 
 
         .access-card {
            background: rgba(255, 255, 255, 0.1);
@@ -351,7 +353,8 @@
         .access-card:hover {
             background: rgba(255, 255, 255, 0.15);
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+           /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); */
+            box-shadow: 0 20px 40px var(--tercer-color);
         }
 
         .access-icon {
@@ -698,6 +701,12 @@
                         <h3>Para Alumnos</h3>
                         <p>Accedé a distintos contenidos y herramientas para el aprendizaje con IA</p>
                         <a href="https://www.google.com.ar/" class="access-btn" >Ingresar como Alumno</a>
+                    </div>
+                    <div class="access-card animate-on-scroll">
+                        <div class="access-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
+                        <h3>Para Familias</h3>
+                        <p>Acompañá el proceso de aprendizaje y accedé a recursos para apoyar a tus hijos</p>
+                        <a href="#" class="access-btn" >Ingresar como Familia</a>
                     </div>
                     <div class="access-card animate-on-scroll">
                         <div class="access-icon" aria-hidden="true">👨‍🏫</div>
