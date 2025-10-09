@@ -122,7 +122,7 @@
             min-height: 100vh;
             /*background-image: url('https://github.com/FernandoS94/proyect/blob/main/hero.png?raw=true');*/
             /*background-image: url('https://github.com/FernandoS94/proyect/blob/main/hero.png?raw=true');*/
-            background-image: url('./img/fondohero2.png');
+            background-image: url('./img/TRANSPARENTE.png');
             display: flex;
             align-items: center;
             position: relative;
@@ -297,21 +297,65 @@
         .about-visual {
             position: relative;
             height: 700px;
-            background: white;
+            background-color: white;
             border-radius: 20px;
+            border: none;  /* Agrega esta línea */
+            box-shadow: none;  /* Agrega esta línea */
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 4rem;
             color: var(--secondary-color);
-                        overflow: hidden;
+            overflow: hidden;
+            
+            
         }
         
         .about-visual img {
+            background-color: transparent;
             width: 100%;
             height: 100%;
             object-fit: contain;
+             display: block;
+            
+            
         }
+
+         .centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.centered-image img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* css del video*/
+
+.video-container {
+    position: relative;
+    width: 100%;  /* Ocupa todo el ancho disponible */
+    margin: 40px 0;  /* Margen arriba y abajo, sin centrado */
+    padding-bottom: 56.25%;  /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
         /* Access Section */
         .access-section {
@@ -629,7 +673,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>ECOSISTEMA DIGITAL</h1>
-                    <p>Integramos todas las herramientas educativas en una plataforma unificada para transformar el aprendizaje</p>
+                    <p>Para la innovación educativa</p>
                     <a href="#about" class="cta-button">Descubre Más</a>
                 </div>
             </div>
@@ -641,20 +685,62 @@
                 <h2 class="section-title animate-on-scroll">¿Qué es nuestro Ecosistema?</h2>
                 <div class="about-content">
                     <div class="about-text animate-on-scroll">
-                        <h3>Una revolución educativa</h3>
-                        <p>Nuestro ecosistema digital integra múltiples plataformas educativas en una experiencia unificada y cohesiva. Eliminamos la fragmentación entre herramientas y creamos un entorno donde la tecnología potencia el aprendizaje.</p>
-                        
-                        <h3>Lo que esperamos lograr</h3>
-                        <p>Transformar la educación mediante la integración inteligente de tecnologías, facilitando la colaboración entre docentes y estudiantes, y proporcionando datos actionables para mejorar continuamente el proceso educativo.</p>
-                        
-                        <p>Creamos puentes entre diferentes plataformas para ofrecer una experiencia educativa seamless, donde cada herramienta se complementa perfectamente con las demás.</p>
+                        <h3>Un entorno para la innovación</h3>
+                        <p>El ecosistema digital integra múltiples herramientas y materiales de manera ordenada para acompañar y enriquecer los procesos de enseñanza y aprendizaje. 
+                    De esta manera, el aula virtual se convierte en un entorno donde la tecnología potencia la experiencia educativa.</p>
+                        <h3>¿Qué ofrece?</h3>
+                        <p>Un espacio conectado entre herramientas digitales y materiales educativos curados por especialistas. El objetivo es crear una vivencia educativa significativa, 
+                            donde cada elemento se complementa en un entorno digital donde la inteligencia artificial acompaña las propuestas pedagógicas.</p> 
+                        <p>La transformación de la educación mediante la integración reflexiva de tecnologías, facilita la colaboración entre docentes, estudiantes y familias estableciendo acuerdos 
+                            donde se privilegia la centralidad del aprendizaje, la coherencia y la innovación para mejorar el proceso educativo en el marco del Plan Estratégico BA aprende.</p>    
+                        <div class="centered-image">
+                            <img src="./img/CRAYON_ECOSISTEMA.png" alt="Descripción de la imagen">
+                        </div>
                     </div>
+                    
                     <div class="about-visual animate-on-scroll">
-                        <img src="https://github.com/FernandoS94/proyect/blob/main/gif_inovacion.png?raw=true" alt="Un GIF animado que muestra la interconexión de varias herramientas y dispositivos digitales, simbolizando la integración del ecosistema.">
+                        <img src="./img/ECOSISTEMA_GENERAL.png" alt="Un GIF animado que muestra la interconexión de varias herramientas y dispositivos digitales, simbolizando la integración del ecosistema.">     
+                    </div>
+                                   
+                </div>
+                <!---- <div class="video-container">
+                         <iframe 
+                             src="https://www.youtube.com/embed/cdzpf_T2qaA?si=rC0HoBt89GIQ0xMn" 
+                             title="Video de YouTube" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                         allowfullscreen>
+                         </iframe>
+                    </div> -->
+            </div>
+        </section>
+        
+        <section class="section access-section" id="access">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">Elegí tu perfil</h2>
+                <div class="access-buttons">
+                    <div class="access-card animate-on-scroll">
+                        <div class="access-icon" aria-hidden="true">🎒</div>
+                        <h3>Para Alumnos</h3>
+                        <p>Accedé a distintos contenidos y herramientas para el aprendizaje con IA</p>
+                        <a href="https://www.google.com.ar/" class="access-btn" >Ingresar como Alumno</a>
+                    </div>
+                    <div class="access-card animate-on-scroll">
+                        <div class="access-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
+                        <h3>Para Familias</h3>
+                        <p>Acompañá el proceso de aprendizaje y accedé a recursos para apoyar a tus hijos</p>
+                        <a href="#" class="access-btn" >Ingresar como Familia</a>
+                    </div>
+                    <div class="access-card animate-on-scroll">
+                        <div class="access-icon" aria-hidden="true">👨‍🏫</div>
+                        <h3>Para Docentes</h3>
+                        <p>Planificá tus clases con materiales y herramientas para el aprendizaje con IA</p>
+                        <a href="#" class="access-btn" >Ingresar como Docente</a>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="section apps-section" id="apps">
             <div class="container">
                 <h2 class="section-title animate-on-scroll">Aplicaciones del Ecosistema</h2>
@@ -688,32 +774,6 @@
                         <div class="app-icon" aria-hidden="true">🔗</div>
                         <h3>Teachin and Learning Upgrade</h3>
                         <p>Sistema de APIs que permite conectar con herramientas externas y personalizar la experiencia educativa.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section access-section" id="access">
-            <div class="container">
-                <h2 class="section-title" style="color: white;">Accede a tu Ecosistema</h2>
-                <div class="access-buttons">
-                    <div class="access-card animate-on-scroll">
-                        <div class="access-icon" aria-hidden="true">🎒</div>
-                        <h3>Para Alumnos</h3>
-                        <p>Accedé a distintos contenidos y herramientas para el aprendizaje con IA</p>
-                        <a href="https://www.google.com.ar/" class="access-btn" >Ingresar como Alumno</a>
-                    </div>
-                    <div class="access-card animate-on-scroll">
-                        <div class="access-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
-                        <h3>Para Familias</h3>
-                        <p>Acompañá el proceso de aprendizaje y accedé a recursos para apoyar a tus hijos</p>
-                        <a href="#" class="access-btn" >Ingresar como Familia</a>
-                    </div>
-                    <div class="access-card animate-on-scroll">
-                        <div class="access-icon" aria-hidden="true">👨‍🏫</div>
-                        <h3>Para Docentes</h3>
-                        <p>Planificá tus clases con materiales y herramientas para el aprendizaje con IA</p>
-                        <a href="#" class="access-btn" >Ingresar como Docente</a>
                     </div>
                 </div>
             </div>
