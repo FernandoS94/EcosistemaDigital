@@ -218,9 +218,11 @@
             text-fill-color: transparent;
         }
 
+       
         /* Apps Section */
-        .apps-section {
+    /*    .apps-section {
             background: var(--light-color);
+            
         }
 
         .apps-grid {
@@ -251,7 +253,7 @@
             height: 80px;
             margin: 0 auto 20px;
            /* background: linear-gradient(135deg, var(--primary-color), var(--accent-color));*/
-           background: linear-gradient(135deg, var(--tercer-color), var(--cuarto-color));
+      /*     background: linear-gradient(135deg, var(--tercer-color), var(--cuarto-color));
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -269,7 +271,7 @@
         .app-card p {
             color: var(--primary-color);
             line-height: 1.6;
-        }
+        } */
 
         /* About Section */
         .about-section {
@@ -367,14 +369,7 @@
             
         }
 
-      /* para 2 card */
-        .access-buttons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+     
 /* para 3 card */
         .access-buttons {
             display: grid;
@@ -646,6 +641,196 @@
     /* Transición si quieres que cambie de color al hacer hover */
     transition: color 0.3s ease;
 }
+/* Carrusel css*/
+.apps-section {
+  background: var(--light-color);
+}
+
+.carousel-container {
+  position: relative;
+  padding: 20px 60px;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(6, calc(33.333% - 23px));
+  gap: 20px;
+  transition: transform 0.5s ease;
+  width: fit-content;
+}
+
+.app-card {
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  padding: 25px 20px 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Nueva clase para imágenes */
+.app-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.app-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.app-description {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.85em;
+  margin-bottom: 12px;
+}
+
+.app-tag {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75em;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--accent-color);
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+.carousel-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(238, 5, 5, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: rgba(30, 5, 248, 0.1);
+  width: 25px;
+  border-radius: 5px;
+}
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .carousel-container {
+                padding: 20px 50px;
+            }
+
+            .carousel {
+                grid-template-columns: repeat(6, calc(33.333% - 14px));
+            }
+
+            .app-card {
+                padding: 20px 15px;
+            }
+
+            .app-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+            }
+
+            .app-name {
+                font-size: 1em;
+            }
+
+            .app-description {
+                font-size: 0.75em;
+            }
+
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-container {
+                padding: 20px 40px;
+            }
+
+            .carousel {
+                grid-template-columns: repeat(6, calc(33.333% - 14px));
+            }
+
+            .app-card {
+                padding: 15px 10px;
+            }
+
+            .app-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 22px;
+            }
+
+            .app-name {
+                font-size: 0.9em;
+            }
+
+            .app-description {
+                font-size: 0.7em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -683,10 +868,10 @@
         
         <section id="about" class="section about-section">
             <div class="container">
-                <h2 class="section-title animate-on-scroll">¿Qué es nuestro Ecosistema?</h2>
+                <h2 class="section-title animate-on-scroll">¿ Qué es el ecosistema?</h2>
                 <div class="about-content">
                     <div class="about-text animate-on-scroll">
-                        <h3>Un entorno para la innovación</h3>
+                      <h3>Un entorno para la innovación</h3> 
                         <p>El ecosistema digital integra múltiples herramientas y materiales de manera ordenada para acompañar y enriquecer los procesos de enseñanza y aprendizaje. 
                     De esta manera, el aula virtual se convierte en un entorno donde la tecnología potencia la experiencia educativa.</p>
                         <h3>¿Qué ofrece?</h3>
@@ -694,9 +879,9 @@
                             donde cada elemento se complementa en un entorno digital donde la inteligencia artificial acompaña las propuestas pedagógicas.</p> 
                         <p>La transformación de la educación mediante la integración reflexiva de tecnologías, facilita la colaboración entre docentes, estudiantes y familias estableciendo acuerdos 
                             donde se privilegia la centralidad del aprendizaje, la coherencia y la innovación para mejorar el proceso educativo en el marco del Plan Estratégico BA aprende.</p>    
-                      <!---  <div class="centered-image">
+                       <div class="centered-image">
                             <img src="./img/CRAYON_ECOSISTEMA.png" alt="Descripción de la imagen">
-                        </div> -->
+                        </div> 
                     </div>
                     
                     <div class="about-visual animate-on-scroll">
@@ -704,7 +889,7 @@
                     </div>
                                    
                 </div>
-           <!----    <div class="video-container">
+               <div class="video-container">
                          <iframe 
                              src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" 
                              title="Video de YouTube" 
@@ -712,7 +897,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                          allowfullscreen>
                          </iframe>
-                    </div> -->
+                    </div> 
             </div>
         </section>
         
@@ -736,12 +921,12 @@
                         <div class="access-icon" aria-hidden="true">👨‍🏫</div>
                         <h3>Para Docentes</h3>
                         <p>Planificá tus clases con materiales y herramientas para el aprendizaje con IA</p>
-                        <a href="#" class="access-btn" >Ingresar como Docente</a>
+                        <a href="docentes.html" class="access-btn" >Ingresar como Docente</a>
                     </div>
                 </div>
             </div>
         </section>
-
+<!--
         <section class="section apps-section" id="apps">
             <div class="container">
                 <h2 class="section-title animate-on-scroll">Aplicaciones del Ecosistema</h2>
@@ -779,6 +964,87 @@
                 </div>
             </div>
         </section>
+    -->
+       <section class="section apps-section" id="apps">
+  <div class="container">
+    <div class="header">
+      <h2 class="section-title animate-on-scroll">Aplicaciones del Ecosistema</h2>
+    </div>
+
+    <div class="carousel-container">
+      <button class="carousel-btn prev" id="prevBtn">←</button>
+
+      <div class="carousel-wrapper">
+        <div class="carousel" id="carousel">
+          
+          <!-- App 1: Google Classroom -->
+          <div class="app-card">
+            <img src="./img/classroom (1).png" alt="Google Classroom" class="app-image" />
+            <div class="app-name">Google Classroom</div>
+            <div class="app-description">
+              Espacio colaborativo donde docentes y estudiantes interactúan en tiempo real con herramientas avanzadas de enseñanza.
+            </div>
+            <span class="app-tag">Colaboración</span>
+          </div>
+
+          <!-- App 2: Ticmas -->
+          <div class="app-card">
+            <img src="./img/gemini.png" alt="Ticmas" class="app-image" />
+            <div class="app-name">Gemini</div>
+            <div class="app-description">
+              Sistema de análisis de datos que permite monitorear el progreso y rendimiento académico de forma integral.
+            </div>
+            <span class="app-tag">IA</span>
+          </div>
+
+          <!-- App 3: Khanmigo -->
+          <div class="app-card">
+            <img src="./img/khanmigo (1).png" alt="Khanmigo" class="app-image" />
+            <div class="app-name">Khanmigo</div>
+            <div class="app-description">
+              Plataforma de evaluación adaptativa que personaliza exámenes y proporciona retroalimentación inmediata.
+            </div>
+            <span class="app-tag">IA</span>
+          </div>
+
+          <!-- App 4: Khan Academy -->
+          <div class="app-card">
+            <img src="./img/khan academy.png" alt="Khan Academy" class="app-image" />
+            <div class="app-name">Khan Academy</div>
+            <div class="app-description">
+              Hub de comunicación que conecta a toda la comunidad educativa mediante mensajería y notificaciones.
+            </div>
+            <span class="app-tag">Recursos</span>
+          </div>
+
+          <!-- App 5: noteboolm-->
+          <div class="app-card">
+            <img src="./img/notebooklm.png" alt="Buenos Aires Aprende" class="app-image" />
+            <div class="app-name">Notebook lm</div>
+            <div class="app-description">
+              Aplicación móvil nativa que permite acceder a todas las funcionalidades desde cualquier dispositivo.
+            </div>
+            <span class="app-tag">IA</span>
+          </div>
+
+          <!-- App 6: Teachin and Learning Upgrade -->
+          <div class="app-card">
+            <img src="./img/google.jpg" alt="Teachin and Learning Upgrade" class="app-image" />
+            <div class="app-name">Teachin and Learning Upgrade</div>
+            <div class="app-description">
+              Sistema de APIs que permite conectar con herramientas externas y personalizar la experiencia educativa.
+            </div>
+            <span class="app-tag">Integración</span>
+          </div>
+
+        </div>
+
+        <button class="carousel-btn next" id="nextBtn">→</button>
+        <div class="carousel-dots" id="dots"></div>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
      <footer>
         <div class="footer-content">
@@ -884,6 +1150,96 @@
 
         // Create particles periodically
         setInterval(createParticle, 3000);
+
+        //script de carrusel
+        const carousel = document.getElementById('carousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dotsContainer = document.getElementById('dots');
+        
+        const totalCards = 6;
+        const cardsPerView = 3;
+        let currentIndex = 0;
+        const totalSlides = 2; // 6 apps / 3 por vista = 2 slides
+
+        // Crear dots
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+
+        // Actualizar vista
+        function updateCarousel() {
+            const wrapper = document.querySelector('.carousel-wrapper');
+            const wrapperWidth = wrapper.offsetWidth;
+            const offset = currentIndex * wrapperWidth;
+            carousel.style.transform = `translateX(-${offset}px)`;
+            
+            // Actualizar dots
+            document.querySelectorAll('.dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+
+            // Actualizar botones
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === totalSlides - 1;
+        }
+
+        // Ir a slide específico
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+
+        // Navegación
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        // Soporte táctil
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) {
+                nextBtn.click();
+            }
+            if (touchEndX - touchStartX > 50) {
+                prevBtn.click();
+            }
+        }, { passive: true });
+
+        // Teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') prevBtn.click();
+            if (e.key === 'ArrowRight') nextBtn.click();
+        });
+
+        // Actualizar en resize
+        window.addEventListener('resize', () => {
+            updateCarousel();
+        });
+
+        // Inicializar
+        updateCarousel();
     </script>
 </body>
 </html>
