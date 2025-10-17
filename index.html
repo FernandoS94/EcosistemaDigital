@@ -360,12 +360,10 @@
     border: none;
 }
 
-        /* Access Section */
-        .access-section {
-           /* background: linear-gradient(135deg, var(--dark-color) 0%, #2d3748 100%);*/
-           /* background: linear-gradient(135deg,#F9B2FA 0%, #4A487A 100%);*/
-           background: #718096;
-            color: white;
+ /* Access Section */
+.access-section {
+    background: var(--secondary-color);
+    color: white;
             
         }
 
@@ -398,7 +396,7 @@
             box-shadow: 0 20px 40px var(--tercer-color);
         }
 
-        .access-icon {
+       /* .access-icon {
             width: 100px;
             height: 100px;
             margin: 0 auto 20px;
@@ -408,7 +406,28 @@
             align-items: center;
             justify-content: center;
             font-size: 2.5rem;
-        }
+        } */
+
+        .access-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.access-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.access-card:hover .access-image {
+  transform: scale(1.05);
+}
 
         .access-card h3 {
             font-size: 1.75rem;
@@ -901,31 +920,41 @@
             </div>
         </section>
         
-        <section class="section access-section" id="access">
-            <div class="container">
-                <h2 class="section-title" style="color: white;">Elegí tu perfil</h2>
-                <div class="access-buttons">
-                    <div class="access-card animate-on-scroll">
-                        <div class="access-icon" aria-hidden="true">🎒</div>
-                        <h3>Para Alumnos</h3>
-                        <p>Accedé a distintos contenidos y herramientas para el aprendizaje con IA</p>
-                        <a href="https://www.google.com.ar/" class="access-btn" >Ingresar como Alumno</a>
-                    </div>
-                    <div class="access-card animate-on-scroll">
-                        <div class="access-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
-                        <h3>Para Familias</h3>
-                        <p>Acompañá el proceso de aprendizaje y accedé a recursos para apoyar a tus hijos</p>
-                        <a href="#" class="access-btn" >Ingresar como Familia</a>
-                    </div>
-                    <div class="access-card animate-on-scroll">
-                        <div class="access-icon" aria-hidden="true">👨‍🏫</div>
-                        <h3>Para Docentes</h3>
-                        <p>Planificá tus clases con materiales y herramientas para el aprendizaje con IA</p>
-                        <a href="docentes.html" class="access-btn" >Ingresar como Docente</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <section class="section access-section" id="access">
+  <div class="container">
+    <h2 class="section-title" style="color: white;">Elegí tu perfil</h2>
+    <div class="access-buttons">
+      
+      <div class="access-card animate-on-scroll">
+        <div class="access-image">
+          <img src="./img/flia1.png" alt="Alumno">
+        </div>
+        <h3>Para Alumnos</h3>
+        <p>Accedé a distintos contenidos y herramientas para el aprendizaje con IA</p>
+        <a href="https://www.google.com.ar/" class="access-btn">Ingresar como Alumno</a>
+      </div>
+
+      <div class="access-card animate-on-scroll">
+        <div class="access-image">
+          <img src="./img/flia2.png" alt="Familia">
+        </div>
+        <h3>Para Familias</h3>
+        <p>Acompañá el proceso de aprendizaje y accedé a recursos para apoyar a tus hijos</p>
+        <a href="#" class="access-btn">Ingresar como Familia</a>
+      </div>
+
+      <div class="access-card animate-on-scroll">
+        <div class="access-image">
+          <img src="./img/docente.png" alt="Docente">
+        </div>
+        <h3>Para Docentes</h3>
+        <p>Planificá tus clases con materiales y herramientas para el aprendizaje con IA</p>
+        <a href="docentes.html" class="access-btn">Ingresar como Docente</a>
+      </div>
+
+    </div>
+  </div>
+</section>
 <!--
         <section class="section apps-section" id="apps">
             <div class="container">
