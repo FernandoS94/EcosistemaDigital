@@ -663,11 +663,12 @@
 /* Carrusel css*/
 .apps-section {
   background: var(--light-color);
+  overflow: hidden;
 }
 
 .carousel-container {
   position: relative;
-  padding: 20px 60px;
+  padding: 20px 40px;
 }
 
 .carousel-wrapper {
@@ -676,18 +677,16 @@
 }
 
 .carousel {
-  display: grid;
-  grid-template-columns: repeat(6, calc(33.333% - 23px));
-  gap: 20px;
+  display: flex;
   transition: transform 0.5s ease;
-  width: fit-content;
+  gap: 20px;
 }
 
 .app-card {
-  width: 100%;
+  flex: 0 0 calc(33.333% - 20px);
   background: white;
   border-radius: 15px;
-  padding: 25px 20px 30px;
+  padding: 25px 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -697,7 +696,7 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Nueva clase para imágenes */
+/* Imagen dentro de la card */
 .app-image {
   width: 80px;
   height: 80px;
@@ -707,20 +706,19 @@
   display: block;
 }
 
+/* Textos */
 .app-name {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.1em;
+  font-weight: 600;
   color: #333;
   margin-bottom: 10px;
 }
-
 .app-description {
   color: #666;
+  font-size: 0.9em;
   line-height: 1.5;
-  font-size: 0.85em;
   margin-bottom: 12px;
 }
-
 .app-tag {
   display: inline-block;
   background: #f0f0f0;
@@ -730,126 +728,131 @@
   font-size: 0.75em;
 }
 
+/* Botones */
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: var(--accent-color);
   border: none;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   font-size: 22px;
+  color: #fff;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
   transition: all 0.3s ease;
   z-index: 10;
 }
-
 .carousel-btn:hover {
+  background: var(--primary-color);
   transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
-
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
-
 .carousel-btn:disabled {
   opacity: 0.3;
   cursor: not-allowed;
 }
 
+/* Dots */
 .carousel-dots {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 30px;
+  gap: 8px;
+  margin-top: 20px;
 }
-
 .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(238, 5, 5, 0.5);
-  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-
 .dot.active {
-  background: rgba(30, 5, 248, 0.1);
+  background: var(--primary-color);
   width: 25px;
   border-radius: 5px;
 }
 
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2em;
-            }
+/* Responsivo */
+@media (max-width: 1024px) {
+  .app-card {
+    flex: 0 0 calc(50% - 15px);
+  }
+}
 
-            .header p {
-                font-size: 1em;
-            }
+@media (max-width: 600px) {
+  .carousel-container {
+    padding: 10px 20px;
+  }
 
-            .carousel-container {
-                padding: 20px 50px;
-            }
+  .app-card {
+    flex: 0 0 100%;
+  }
 
-            .carousel {
-                grid-template-columns: repeat(6, calc(33.333% - 14px));
-            }
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
 
-            .app-card {
-                padding: 20px 15px;
-            }
+/*seccion PDF*/
+ /* PDF Section */
+    .pdf-section 
+        { background: var(--light-color); }
+    .pdf-container 
+        { display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 40px; }
+    .pdf-buttons 
+        { display: flex;
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center; }
 
-            .app-icon {
-                width: 50px;
-                height: 50px;
-                font-size: 25px;
-            }
+    .pdf-button 
+        { padding: 15px 30px;
+             background: linear-gradient(135deg, 
+             var(--primary-color), #a7d5d6); 
+             color: rgb(15, 15, 15); 
+             text-decoration: none; 
+             border-radius: 50px; 
+             font-weight: 600; 
+             transition: all 0.3s ease; 
+             border: none; 
+             cursor: pointer; }
+    
+             
+    .pdf-button:hover 
+        { transform: translateY(-2px);
+             box-shadow: 0 10px 25px rgba(36, 160, 165, 0.4); }
 
-            .app-name {
-                font-size: 1em;
-            }
+    .pdf-viewer 
+        { width: 100%; 
+            max-width: 900px; 
+            background: white;
+             border-radius: 20px; 
+             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15); display: none; }
+    
+    
+    .pdf-viewer.active 
+        { display: block; }
+   
+    .pdf-viewer-header 
+        { background: rgb(92, 91, 91); 
+            color: whitesmoke; 
+            padding: 20px; 
+            display: flex; 
+            justify-content: space-between;
+             align-items: center; }
 
-            .app-description {
-                font-size: 0.75em;
-            }
-
-            .carousel-btn {
-                width: 40px;
-                height: 40px;
-                font-size: 18px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .carousel-container {
-                padding: 20px 40px;
-            }
-
-            .carousel {
-                grid-template-columns: repeat(6, calc(33.333% - 14px));
-            }
-
-            .app-card {
-                padding: 15px 10px;
-            }
-
-            .app-icon {
-                width: 45px;
-                height: 45px;
-                font-size: 22px;
-            }
-
-            .app-name {
-                font-size: 0.9em;
-            }
-
-            .app-description {
-                font-size: 0.7em;
-            }
-        }
+    .pdf-embed 
+        { width: 100%; 
+            height: 600px;
+             border: none; }
     </style>
 </head>
 <body>
@@ -994,6 +997,37 @@
             </div>
         </section>
     -->
+
+    <!--SECCION DE PDF INICIO-->
+  <!---  <section class="section pdf-section" id="pdf">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Documentacion General</h2>
+        <div class="pdf-container">
+            <div class="about-text animate-on-scroll">
+                      <h3>Lorem Ipsum</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in eros viverra mi luctus convallis. Fusce nec diam in nisi auctor cursus. Integer feugiat, lorem et ornare finibus, velit massa porttitor lorem, tempus porttitor ante urna sit amet leo. Sed congue venenatis ex, 
+                            eget semper urna ullamcorper vel. Phasellus eget nulla a libero varius semper vitae quis lectus. Vestibulum eget arcu dolor. Proin ut vestibulum ipsum.</p>
+            </div>
+            <div class="pdf-buttons">
+                <button class="pdf-button" onclick="openPDF('https://docs.google.com/document/d/e/2PACX-1vQtTTmaoMld8udJLZfLstXKYDxS-p-pfCOlq_jFrREM_wEjKTNuPVcpxOG9Welg5RzQzGl6hdE1gMiN/pub', 'Documento PDF 1')">
+                    📄 Ver Documento 1
+                </button>
+                <button class="pdf-button secondary" onclick="openPDF('https://tulink.com/documento2.pdf', 'Documento PDF 2')">
+                    📄 Ver Documento 2
+                </button>
+            </div>
+
+            <div class="pdf-viewer" id="pdfViewer">
+                <div class="pdf-viewer-header">
+                    <h3 id="pdfTitle">Ver PDF</h3>
+                    <button class="close-pdf" onclick="closePDF()">✕</button>
+                </div>
+                <iframe class="pdf-embed" id="pdfEmbed" src="" type="application/pdf"></iframe>
+            </div>
+        </div>
+    </div>
+</section> -->
+    <!--SECCION FIN PDF-->
        <section class="section apps-section" id="apps">
   <div class="container">
     <div class="header">
@@ -1175,94 +1209,102 @@
         setInterval(createParticle, 3000);
 
         //script de carrusel
-        const carousel = document.getElementById('carousel');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const dotsContainer = document.getElementById('dots');
-        
-        const totalCards = 6;
-        const cardsPerView = 3;
-        let currentIndex = 0;
-        const totalSlides = 2; // 6 apps / 3 por vista = 2 slides
+      const carousel = document.getElementById('carousel');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const dotsContainer = document.getElementById('dots');
+let currentIndex = 0;
 
-        // Crear dots
-        for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement('div');
-            dot.className = 'dot';
-            if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(i));
-            dotsContainer.appendChild(dot);
-        }
+// Calcula cuántas cards se ven según el ancho
+function getCardsPerView() {
+  if (window.innerWidth <= 600) return 1;
+  if (window.innerWidth <= 1024) return 2;
+  return 3;
+}
 
-        // Actualizar vista
-        function updateCarousel() {
-            const wrapper = document.querySelector('.carousel-wrapper');
-            const wrapperWidth = wrapper.offsetWidth;
-            const offset = currentIndex * wrapperWidth;
-            carousel.style.transform = `translateX(-${offset}px)`;
-            
-            // Actualizar dots
-            document.querySelectorAll('.dot').forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
-            });
+// Crea los dots dinámicamente
+function createDots() {
+  dotsContainer.innerHTML = "";
+  const totalCards = carousel.children.length;
+  const cardsPerView = getCardsPerView();
+  const totalSlides = Math.ceil(totalCards / cardsPerView);
 
-            // Actualizar botones
-            prevBtn.disabled = currentIndex === 0;
-            nextBtn.disabled = currentIndex === totalSlides - 1;
-        }
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsContainer.appendChild(dot);
+  }
+}
 
-        // Ir a slide específico
-        function goToSlide(index) {
-            currentIndex = index;
-            updateCarousel();
-        }
+// Actualiza la posición del carrusel
+function updateCarousel() {
+  const cardWidth = carousel.querySelector('.app-card').offsetWidth + 20;
+  const offset = currentIndex * cardWidth * getCardsPerView();
+  carousel.style.transform = `translateX(-${offset}px)`;
 
-        // Navegación
-        prevBtn.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateCarousel();
-            }
-        });
+  const dots = dotsContainer.querySelectorAll('.dot');
+  dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
 
-        nextBtn.addEventListener('click', () => {
-            if (currentIndex < totalSlides - 1) {
-                currentIndex++;
-                updateCarousel();
-            }
-        });
+  const totalCards = carousel.children.length;
+  const totalSlides = Math.ceil(totalCards / getCardsPerView());
+  prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = currentIndex >= totalSlides - 1;
+}
 
-        // Soporte táctil
-        let touchStartX = 0;
-        let touchEndX = 0;
+function goToSlide(index) {
+  currentIndex = index;
+  updateCarousel();
+}
 
-        carousel.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, { passive: true });
+// Navegación
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) currentIndex--;
+  updateCarousel();
+});
 
-        carousel.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            if (touchStartX - touchEndX > 50) {
-                nextBtn.click();
-            }
-            if (touchEndX - touchStartX > 50) {
-                prevBtn.click();
-            }
-        }, { passive: true });
+nextBtn.addEventListener('click', () => {
+  const totalCards = carousel.children.length;
+  const totalSlides = Math.ceil(totalCards / getCardsPerView());
+  if (currentIndex < totalSlides - 1) currentIndex++;
+  updateCarousel();
+});
 
-        // Teclado
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') prevBtn.click();
-            if (e.key === 'ArrowRight') nextBtn.click();
-        });
+// Soporte táctil
+let startX = 0;
+carousel.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+carousel.addEventListener('touchend', e => {
+  const endX = e.changedTouches[0].clientX;
+  if (startX - endX > 50) nextBtn.click();
+  if (endX - startX > 50) prevBtn.click();
+});
 
-        // Actualizar en resize
-        window.addEventListener('resize', () => {
-            updateCarousel();
-        });
+// Redimensionamiento
+window.addEventListener('resize', () => {
+  currentIndex = 0;
+  createDots();
+  updateCarousel();
+});
 
-        // Inicializar
-        updateCarousel();
+// Inicialización
+createDots();
+updateCarousel();
+
+// SCRIPT DE PDF
+ function openPDF(url, title) {
+    document.getElementById('pdfEmbed').src = url;
+    document.getElementById('pdfTitle').textContent = title;
+    document.getElementById('pdfViewer').classList.add('active');
+    setTimeout(() => {
+        document.getElementById('pdfViewer').scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+}
+
+function closePDF() {
+    document.getElementById('pdfViewer').classList.remove('active');
+    document.getElementById('pdfEmbed').src = '';
+}
     </script>
 </body>
 </html>
