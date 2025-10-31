@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Fichas de Comprensión Lectora",
+    "level": "Nivel 1",
+    "category": "Troncal",
+    "subject": "Lengua",
+    "description": "Recursos para mejorar la habilidad de comprensión de textos en el ciclo inicial.",
+    "tags": ["Lectura", "Primaria", "Inicial"],
+    "url": "https://www.rae.es/"
+  },
+  {
+    "id": 2,
+    "title": "Ejercicios de Ecuaciones Diferenciales",
+    "level": "Nivel 1",
+    "category": "Laboratorio",
+    "subject": "Matemáticas",
+    "description": "Set de problemas avanzados para practicar métodos de resolución de ecuaciones diferenciales.",
+    "tags": ["Cálculo", "Avanzado", "2° cuatrimestre"],
+    "url": "https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_diferencial"
+  },
+  {
+    "id": 3,
+    "title": "Guía de Gramática y Ortografía",
+    "level": "Nivel 2",
+    "category": "Troncal",
+    "subject": "Lengua",
+    "description": "Reglas fundamentales de acentuación, puntuación y conjugación verbal.",
+    "tags": ["Gramática", "Ortografía", "Secundaria"],
+    "url": "https://www.ejemplolengua.com/gramatica"
+  },
+  {
+    "id": 4,
+    "title": "Introducción al Álgebra Lineal",
+    "level": "Nivel 3",
+    "category": "Taller",
+    "subject": "Matemáticas",
+    "description": "Conceptos básicos de matrices, vectores y sistemas de ecuaciones lineales.",
+    "tags": ["Álgebra", "Matrices", "Universidad"],
+    "url": "https://www.aulamatematica.com/algebra"
+  },
+  {
+    "id": 5,
+    "title": "Análisis de la Novela Moderna",
+    "level": "Nivel 4",
+    "category": "Laboratorio",
+    "subject": "Lengua",
+    "description": "Estudio de las principales obras y corrientes literarias del siglo XX.",
+    "tags": ["Literatura", "Novela", "Análisis"],
+    "url": "https://www.literatura.org/novela-moderna"
+  },
+  {
+    "id": 6,
+    "title": "Análisis de la Novela Moderna",
+    "level": "Nivel 5",
+    "category": "Laboratorio",
+    "subject": "Lengua",
+    "description": "Estudio de las principales obras y corrientes literarias del siglo XX.",
+    "tags": ["Literatura", "Novela", "Análisis"],
+    "url": "https://www.literatura.org/novela-moderna"
+  }
+]
