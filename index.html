@@ -75,6 +75,38 @@
                     </div> 
             </div>
         </section>
+           <!--SECCION DE PDF INICIO-->
+    <section class="section pdf-section" id="pdf">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll">Hacia un Ecosistema Digital para la Innovación Educativa</h2>
+        <div class="pdf-container">
+            <div class="about-text animate-on-scroll">
+                      <h3>Guía para docentes, estudiantes y familias</h3> 
+                        <p>El Ecosistema Digital para la Innovación Educativa propone una nueva forma de pensar la escuela secundaria, integrando la inteligencia artificial (IA) como una herramienta que potencia la enseñanza y el aprendizaje. A través de aulas virtuales, aplicaciones y plataformas interconectadas, 
+                          se busca fortalecer el rol docente, personalizar el acompañamiento a los estudiantes y construir experiencias educativas más inclusivas, creativas y significativas.</p>
+                          <p>Este documento ofrece una guía práctica para docentes, estudiantes y familias, con recursos, estrategias y orientaciones que facilitan la incorporación de la IA en el aula. Su objetivo es claro: 
+                            preparar a toda la comunidad educativa para un futuro donde la tecnología amplifique las capacidades humanas y consolide una educación más innovadora, colaborativa y humanista.</p>
+            </div>
+            <div class="pdf-buttons">
+                <button class="pdf-button" onclick="openPDF('https://docs.google.com/document/d/e/2PACX-1vTMg54jn_xU-imJxFJiKrBWI9KX_ac5ldLyFzQ8xQAweYnaYpb8H81kb0HETqWL7eR9GK60geaoG1lv/pub?embedded=true', 'Cómo potenciar la escuela secundaria con IA')">
+                    📄 Click para ver  
+                </button>
+               <!--<button class="pdf-button secondary" onclick="openPDF('', 'Documento PDF ')">
+                    ⬇️ Descargar  
+                </button> -->
+            </div>
+
+            <div class="pdf-viewer" id="pdfViewer">
+                <div class="pdf-viewer-header">
+                    <h3 id="pdfTitle">Ver PDF</h3>
+                    <button class="close-pdf" onclick="closePDF()">✕</button>
+                </div>
+                <iframe class="pdf-embed" id="pdfEmbed" src="" type="application/pdf"></iframe>
+            </div>
+        </div>
+    </div>
+</section> 
+    <!--SECCION FIN PDF--> 
         <section class="section apps-section" id="apps">
   <div class="container">
     <div class="header">
@@ -183,41 +215,7 @@
 
     </div>
   </div>
-</section>
-
-    
-
-    <!--SECCION DE PDF INICIO-->
-  <!---  <section class="section pdf-section" id="pdf">
-    <div class="container">
-        <h2 class="section-title animate-on-scroll">Documentacion General</h2>
-        <div class="pdf-container">
-            <div class="about-text animate-on-scroll">
-                      <h3>Lorem Ipsum</h3> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in eros viverra mi luctus convallis. Fusce nec diam in nisi auctor cursus. Integer feugiat, lorem et ornare finibus, velit massa porttitor lorem, tempus porttitor ante urna sit amet leo. Sed congue venenatis ex, 
-                            eget semper urna ullamcorper vel. Phasellus eget nulla a libero varius semper vitae quis lectus. Vestibulum eget arcu dolor. Proin ut vestibulum ipsum.</p>
-            </div>
-            <div class="pdf-buttons">
-                <button class="pdf-button" onclick="openPDF('https://docs.google.com/document/d/e/2PACX-1vQtTTmaoMld8udJLZfLstXKYDxS-p-pfCOlq_jFrREM_wEjKTNuPVcpxOG9Welg5RzQzGl6hdE1gMiN/pub', 'Documento PDF 1')">
-                    📄 Ver Documento 1
-                </button>
-                <button class="pdf-button secondary" onclick="openPDF('https://tulink.com/documento2.pdf', 'Documento PDF 2')">
-                    📄 Ver Documento 2
-                </button>
-            </div>
-
-            <div class="pdf-viewer" id="pdfViewer">
-                <div class="pdf-viewer-header">
-                    <h3 id="pdfTitle">Ver PDF</h3>
-                    <button class="close-pdf" onclick="closePDF()">✕</button>
-                </div>
-                <iframe class="pdf-embed" id="pdfEmbed" src="" type="application/pdf"></iframe>
-            </div>
-        </div>
-    </div>
-</section> -->
-    <!--SECCION FIN PDF-->
-       
+</section>    
     </main>
      <footer>
         <div class="footer-content">

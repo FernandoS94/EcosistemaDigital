@@ -110,7 +110,7 @@
         /* Hero Section */
         .hero {
             min-height: 100vh;
-            background-image: url('./HERO.png');
+            background-image: url('../img/HERO.png');
             display: flex;
             align-items: center;
             position: relative;
@@ -210,6 +210,7 @@
         /* About Section */
         .about-section {
             background: white;
+           padding-bottom: 0px;
         }
 
         .about-content {
@@ -735,12 +736,14 @@
 /*seccion PDF*/
  /* PDF Section */
     .pdf-section 
-        { background: var(--light-color); }
+        { background: white; 
+        }
     .pdf-container 
         { display: flex; 
             flex-direction: column; 
             align-items: center; 
-            gap: 40px; }
+            gap: 40px; 
+        }
     .pdf-buttons 
         { display: flex;
             flex-wrap: wrap; 
@@ -748,21 +751,26 @@
             justify-content: center; }
 
     .pdf-button 
-        { padding: 15px 30px;
+        { padding: 20px 40px;
              background: linear-gradient(135deg, 
              var(--primary-color), #a7d5d6); 
+             background: var(--primary-color);
              color: rgb(15, 15, 15); 
+             color: white;
              text-decoration: none; 
              border-radius: 50px; 
              font-weight: 600; 
              transition: all 0.3s ease; 
              border: none; 
-             cursor: pointer; }
+             cursor: pointer; 
+            font-size: 15px;}
     
              
     .pdf-button:hover 
         { transform: translateY(-2px);
-             box-shadow: 0 10px 25px rgba(36, 160, 165, 0.4); }
+             box-shadow: 0 10px 25px rgba(36, 160, 165, 0.4);
+             box-shadow: 0 10px 25px rgba(5, 206, 241, 0.4);
+             }
 
     .pdf-viewer 
         { width: 100%; 
@@ -776,7 +784,7 @@
         { display: block; }
    
     .pdf-viewer-header 
-        { background: rgb(92, 91, 91); 
+        { background: var(--accent-color); 
             color: whitesmoke; 
             padding: 20px; 
             display: flex; 
