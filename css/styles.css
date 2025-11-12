@@ -795,3 +795,91 @@
         { width: 100%; 
             height: 600px;
              border: none; }
+
+
+
+ /* Botón de descarga */
+.download-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.download-icon:hover {
+  transform: translateY(-2px);
+             box-shadow: 0 10px 25px rgba(36, 160, 165, 0.4);
+             box-shadow: 0 10px 25px rgba(5, 206, 241, 0.4);
+}
+
+.floating-profile-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, var(--tercer-color), var(--primary-color));
+  color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(36, 160, 165, 0.5);
+  z-index: 9999;
+  transition: all 0.3s ease;
+  animation: pulseGlow 2s infinite;
+  font-family: var(--font-main);
+}
+
+/* Brillo pulsante */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(241, 245, 90, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(241, 245, 90, 0.8);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(241, 245, 90, 0.4);
+    transform: scale(1);
+  }
+}
+
+.floating-profile-btn i {
+  font-size: 1.3rem;
+  color: var(--dark-color);
+}
+
+/* Hover con contraste */
+.floating-profile-btn:hover {
+  background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(241, 245, 90, 0.8);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .floating-profile-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+  .floating-profile-btn span {
+    display: none;
+  }
+}

@@ -3,6 +3,7 @@
 <head>
      <link rel="icon" type="image/png" href="./img/icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,6 +37,7 @@
                     <h1>ECOSISTEMA DIGITAL</h1>
                     <p>Para la innovación educativa</p>
                     <a href="#about" class="cta-button">Descubrí más</a>
+                    
                 </div>
             </div>
         </section>
@@ -89,11 +91,17 @@
             </div>
             <div class="pdf-buttons">
                 <button class="pdf-button" onclick="openPDF('https://docs.google.com/document/d/e/2PACX-1vTMg54jn_xU-imJxFJiKrBWI9KX_ac5ldLyFzQ8xQAweYnaYpb8H81kb0HETqWL7eR9GK60geaoG1lv/pub?embedded=true', 'Cómo potenciar la escuela secundaria con IA')">
-                    📄 Click para ver  
+                     📄 Click para ver  
                 </button>
-               <!--<button class="pdf-button secondary" onclick="openPDF('', 'Documento PDF ')">
-                    ⬇️ Descargar  
-                </button> -->
+               
+    <a class="download-icon" 
+     href="#" 
+     target="_blank" 
+     download 
+     title="Descargar PDF">
+    <i class="fa-solid fa-file-arrow-down"></i>
+  </a>
+   
             </div>
 
             <div class="pdf-viewer" id="pdfViewer">
@@ -192,7 +200,7 @@
         </div>
         <h3>Para alumnos</h3>
         <p>Accedé a distintos contenidos y herramientas para el aprendizaje con IA</p>
-        <a href="https://www.google.com.ar/" class="access-btn">Ingresar como alumno</a>
+        <a href="#" class="access-btn">Ingresar como alumno</a>
       </div>
 
       <div class="access-card animate-on-scroll">
@@ -201,7 +209,7 @@
         </div>
         <h3>Para familias</h3>
         <p>Acompañá el proceso de aprendizaje y accedé a recursos para apoyar a tus hijos</p>
-        <a href="#" class="access-btn">Ingresar como familia</a>
+        <a href="familias.html" class="access-btn">Ingresar como familia</a>
       </div>
 
       <div class="access-card animate-on-scroll">
@@ -241,7 +249,11 @@
         </div>
     </footer>
     
-    
+   <!--- <a href="#access" class="floating-profile-btn" title="Elegí tu perfil">
+  <i class="fa-solid fa-user"></i>
+  <span>Elegí tu perfil</span>
+</a> -->
+
     <script src="./js/script.js"></script>
 </body>
 </html>
