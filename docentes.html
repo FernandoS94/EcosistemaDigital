@@ -722,6 +722,116 @@
             margin-bottom: 10px;
         }
 
+        /*videos*/
+        .videos-section {
+      background: linear-gradient(180deg, #f4f6f9 0%, #eef1f5 100%);
+      padding: 100px 20px;
+    }
+
+    .videos-section h2 {
+      text-align: center;
+      font-size: clamp(1.9rem, 4vw, 2.3rem);
+      color: var(--secondary-color);
+      margin-bottom: 60px;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 35px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .video-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 1px 3px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+      position: relative;
+    }
+
+    .video-card:nth-child(1) { animation-delay: 0.2s; }
+    .video-card:nth-child(2) { animation-delay: 0.3s; }
+    .video-card:nth-child(3) { animation-delay: 0.4s; }
+
+    .video-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      opacity: 0;
+      transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .video-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 
+        0 20px 50px rgba(36, 160, 165, 0.2),
+        0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-card:hover::after {
+      opacity: 0.02;
+    }
+
+    .video-frame {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .video-card:hover .video-frame iframe {
+      transform: scale(1.05);
+    }
+
+    .video-content {
+      padding: 25px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .video-content h3 {
+      font-size: 1.3rem;
+      color: var(--secondary-color);
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .video-card:hover .video-content h3 {
+      color: var(--primary-color);
+    }
+
+    .video-content p {
+      font-size: 0.95rem;
+      color: #666;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+
         /* FAQ Section */
         .faq-section {
             padding: 60px 0;
@@ -1118,7 +1228,7 @@
         </div>
     </section>
 
-    <section class="features-section">
+    <section id="how" class="features-section">
         <div class="container">
             <h2>¿Qué encontrarás?</h2>
             <p class="features-subtitle">Una colección completa de recursos diseñados para facilitar tu labor docente</p>
@@ -1131,29 +1241,11 @@
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Planificaciones</h3>
-                    <p>Modelos de planificación anual, mensual y semanal adaptables a diferentes contextos educativos.</p>
-                </div>
-
-                <div class="feature-card">
                     <div class="feature-icon">▶️</div>
                     <h3>Recursos Multimedia</h3>
                     <p>Presentaciones, infografías y material visual para enriquecer tus clases y captar la atención de los estudiantes.</p>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Evaluaciones</h3>
-                    <p>Instrumentos de evaluación, rúbricas, grillas de observación y criterios de calificación.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">💡</div>
-                    <h3>Innovación Pedagógica</h3>
-                    <p>Estrategias metodológicas actualizadas, técnicas de enseñanza activa y recursos para la inclusión.</p>
-                </div>
-
+                              
                 <div class="feature-card">
                     <div class="feature-icon">🌐</div>
                     <h3>Acceso 24/7</h3>
@@ -1162,6 +1254,110 @@
             </div>
         </div>
     </section>
+    
+    <section id="documentos" class="features-section">
+        <div class="container">
+                <h2>Documentos</h2>
+        </div>
+
+    </section>
+
+    <section id="videos" class="videos-section">
+    <h2>Videos </h2>
+    <div class="videos-grid">
+
+   <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" allowfullscreen></iframe>
+        </div>
+        <div class="video-content">
+          <h3>Cómo generar imágenes en Gemini para personalizar aula en classroom</h3>
+          <p>Aprende a crear prompts efectivos para diseñar encabezados y banners únicos que tematicen tu aula virtual.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq"  allowfullscreen></iframe>
+        </div>
+        <div class="video-content">
+          <h3>Cómo realizar un blog de lectura seguro para nuestros alumnos incorporando un chatbot de IA</h3>
+          <p>Guía para integrar herramientas de IA en un entorno web protegido, fomentando la lectura interactiva.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq"  allowfullscreen></iframe>
+        </div>
+        <div class="video-content">
+          <h3>Cómo planificar tus clases con Khanmigo</h3>
+          <p>Descubre cómo utilizar el tutor de IA de Khan Academy para optimizar tus secuencias didácticas y ahorrar tiempo.</p>
+        </div>
+      </div>
+
+        <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" allowfullscreen></iframe>
+        </div>
+        <div class="video-content">
+          <h3>Cómo crear un asistente de planificación con Gems</h3>
+          <p>Configura una versión personalizada de Gemini (Gem) para que actúe como tu co-piloto en el diseño curricular.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq"  allowfullscreen></iframe>
+        </div>
+        <div class="video-content">
+          <h3>Cómo generar imágenes con Gemini para personalizar aula en classroom</h3>
+          <p>Tutorial rápido para renovar la estética de tus cursos utilizando la generación de imágenes por inteligencia artificial.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" allowfullscreen></iframe>
+        </div>
+        <div class="video-content">
+          <h3>Cómo planificar tus clases con Khanmigo</h3>
+          <p>Estrategias avanzadas para aprovechar las herramientas docentes de Khanmigo en la preparación de tus lecciones.</p>
+        </div>
+      </div>
+
+        <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" allowfullscreen></iframe>
+        </div>
+        <div class="video-content">
+          <h3>Cómo crear un asistente de planificación con Gems</h3>
+          <p>Paso a paso para entrenar a tu propia IA y agilizar la creación de evaluaciones, rúbricas y actividades.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" allowfullscreen></iframe>
+        </div>
+        <div class="video-content">
+          <h3>Cómo crear presentaciones visuales con Copilot</h3>
+          <p>Aprende a generar diapositivas impactantes en segundos integrando la IA de Microsoft en tu flujo de trabajo.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq"  allowfullscreen></iframe>
+        </div>
+        <div class="video-content">
+          <h3>Cómo crear un asistente para tus estudiantes en Classroom</h3>
+          <p>Implementa un bot de apoyo que resuelva dudas frecuentes y guíe a tus alumnos en sus tareas escolares.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
    
 
