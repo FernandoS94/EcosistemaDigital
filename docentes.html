@@ -830,7 +830,15 @@
       margin: 0;
       line-height: 1.6;
     }
-
+.videos-section > p {
+    text-align: center;       /* Centra el texto */
+    max-width: 800px;         /* Evita que el texto se estire demasiado a los lados */
+    margin: 10px auto 40px;   /* Margen: Arriba | Auto (centrado) | Abajo (separación de los videos) */
+    font-size: 1.1rem;        /* Un poco más grande que el texto normal para destacar */
+    line-height: 1.6;         /* Espaciado entre líneas para mejor lectura */
+    color: #555;              /* Un gris suave (ajusta este color según tu paleta) */
+    padding: 0 20px;          /* Un poco de aire a los costados para vista móvil */
+}
 
         /* FAQ Section */
         .faq-section {
@@ -1264,8 +1272,10 @@
 
     <section id="videos" class="videos-section">
     <h2>Videos </h2>
+     <p>Explora nuestra colección de tutoriales en video diseñados para mostrarte cómo integrar las últimas herramientas de inteligencia artificial en tu práctica educativa. Desde la personalización de entornos de aprendizaje con Gemini hasta la optimización de la planificación de clases con Khanmigo y Copilot, 
+        estos videos te proporcionarán guías prácticas y paso a paso para transformar tu aula y ahorrar tiempo.</p>
+   
     <div class="videos-grid">
-
    <div class="video-card">
         <div class="video-frame">
           <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" allowfullscreen></iframe>
