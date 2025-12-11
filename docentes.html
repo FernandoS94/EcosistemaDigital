@@ -318,7 +318,7 @@
        
         .how-to-section {
             padding: 80px 20px;
-            background: #f8f9fa;
+            background: var(--tercer-color);
         }
 
         .how-to-section .container {
@@ -340,7 +340,7 @@
         }
 
         .step-card {
-            background: white;
+            background: var(--light-color);
             padding: 35px 25px;
             border-radius: 16px;
             text-align: center;
@@ -1329,7 +1329,7 @@
     
 
     </section>
-    <!---
+    
     <section id="pdf-section"  >
   <div class="container">
     <h2>Documentos Importantes</h2>
@@ -1343,56 +1343,47 @@
    <p>El rol de la conducción en la integración estratégica de la IA y los entornos virtuales para potenciar el liderazgo pedagógico y la innovación institucional.</p>
    
    <div class="button-group">
-       <button class="btn-action" onclick="openPdfModal('https://docs.google.com/document/d/e/2PACX-1vTiOXiw4Nesp0P3mre_cWKLVZpFfer01Ob5cI1XZ2ZhH2JcKcT_SvOkv5Oag4tLpJVBBFoW_MKCc0Mk/pub?embedded=true', 'Reglamento Interno')">
-         Ver
-       </button>
+      <button class="btn-action" disabled
+    onclick="openPdfModal('https://drive.google.com/file/d/1abcDEFghiJKL12345/view?usp=sharing', 'Gestión del Ecosistema Digital')">
+    Ver
+</button>
 
-       <a href="TU_LINK_DE_DESCARGA_AQUI" class="btn-action btn-download" target="_blank">
-         Descargar
-       </a>
+<a "https://drive.google.com/uc?export=download&id=1abcDEFghiJKL12345" 
+   class="btn-action btn-download" disabled
+   target="_blank">
+   Descargar
+</a>
    </div>
 </div>
 
 <div class="pdf-card">
-   <span class="category-tag tag-directivos">Directivos</span>
+   <span class="category-tag tag-directivos">Docentes</span>
    
-   <h3>Gestión del Ecosistema Digital</h3>
-   <p>El rol de la conducción en la integración estratégica de la IA y los entornos virtuales para potenciar el liderazgo pedagógico y la innovación institucional.</p>
+   <h3>Potenciá tu aula con IA en Google Classroom en simples pasos</h3>
+   <p>Esta guía te acompaña para que en pocos pasos armes y potencies tu aula de Classroom con IA. Con inteligencia artificial ahorrás tiempo en la planificación, 
+    generás materiales en minutos y acompañás a cada estudiante de manera más personalizada. ¡Exploremos juntos esta gran oportunidad!</p>
    
    <div class="button-group">
-       <button class="btn-action" onclick="openPdfModal('https://docs.google.com/document/d/e/2PACX-1vTiOXiw4Nesp0P3mre_cWKLVZpFfer01Ob5cI1XZ2ZhH2JcKcT_SvOkv5Oag4tLpJVBBFoW_MKCc0Mk/pub?embedded=true', 'Reglamento Interno')">
-         Ver
-       </button>
+       <button class="btn-action" disabled
+    onclick="openPdfModal('https://drive.google.com/file/d/1abcDEFghiJKL12345/view?usp=sharing', 'Gestión del Ecosistema Digital')">
+    Ver
+</button>
 
-       <a href="DESCARGA" class="btn-action btn-download" target="_blank">
-         Descargar
-       </a>
+<a "https://drive.google.com/uc?export=download&id=1abcDEFghiJKL12345" 
+   class="btn-action btn-download" 
+   target="_blank">
+   Descargar
+</a>
    </div>
 </div>
 
-<div class="pdf-card">
-   <span class="category-tag tag-directivos">Directivos</span>
-   
-   <h3>Gestión del Ecosistema Digital</h3>
-   <p>El rol de la conducción en la integración estratégica de la IA y los entornos virtuales para potenciar el liderazgo pedagógico y la innovación institucional.</p>
-   
-   <div class="button-group">
-       <button class="btn-action" onclick="openPdfModal('https://docs.google.com/document/d/e/2PACX-1vTiOXiw4Nesp0P3mre_cWKLVZpFfer01Ob5cI1XZ2ZhH2JcKcT_SvOkv5Oag4tLpJVBBFoW_MKCc0Mk/pub?embedded=true', 'Reglamento Interno')">
-         Ver
-       </button>
-
-       <a href="TU_LINK_DE_DESCARGA_AQUI" class="btn-action btn-download" target="_blank">
-         Descargar
-       </a>
-   </div>
-</div>
     </div>
   </div>
 
   <div id="myPdfModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 id="modalTitle">Título del Documento</h3>
+        <h3 id="modalTitle">PDF</h3>
         <button class="close-button" onclick="closePdfModal()">×</button>
       </div>
       <div style="position: relative; height: 100%;">
@@ -1402,9 +1393,9 @@
           </div>
           <iframe id="pdfFrame" src="" title="Visor de PDF"></iframe>
       </div>
-    </div>
+    </div> 
   </div>
-</section> -->
+</section> 
 
     <section id="videos" class="videos-section">
     <h2>Videos </h2>
@@ -1504,8 +1495,8 @@
 
     </div>
   </section>
- <!-- How to Use Section -->
-  <!--
+ 
+  
      <section class="how-to-section">
         <div class="container">
             <h2>¿Cómo usar el recursero?</h2>
@@ -1535,7 +1526,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
    
 
     <section id="recursos" class="filters-section">
@@ -1611,26 +1602,13 @@
         </div>
     </footer>
 
-    <div id="pdfModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="modalTitle">Documento</h3>
-                <button class="close-button" onclick="closePdfModal()" aria-label="Cerrar">×</button>
-            </div>
-            <div class="loading" id="loadingIndicator">
-                <div class="spinner"></div>
-                <p>Cargando documento...</p>
-            </div>
-            <iframe id="pdfFrame" src=""></iframe>
-        </div>
-    </div>
 
     <script>
 
-        // Array que se llenará desde el archivo JSON
+        
 let resources = [];
 
-// Función para cargar recursos desde JSON
+
 async function loadResources() {
     try {
         const response = await fetch('resources.json');
@@ -1858,51 +1836,59 @@ function initializeChips() {
         }
 
         // Modal PDF functions
-        function openPdfModal(pdfUrl, title) {
-            const modal = document.getElementById('pdfModal');
-            const iframe = document.getElementById('pdfFrame');
-            const modalTitle = document.getElementById('modalTitle');
-            const loading = document.getElementById('loadingIndicator');
-            
-            modalTitle.textContent = title || 'Documento';
-            loading.style.display = 'block';
-            iframe.style.display = 'none';
-            
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-            
+    function openPdfModal(pdfUrl, title = "Documento") {
+    const modal = document.getElementById("myPdfModal");
+    const iframe = document.getElementById("pdfFrame");
+    const modalTitle = document.getElementById("modalTitle");
+    const loading = document.querySelector(".loading");
+
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden";
+
+    modalTitle.textContent = title;
+    loading.style.display = "block";
+    iframe.style.display = "none";
+
+    // Formato especial para Google Drive
+    if (pdfUrl.includes("drive.google.com")) {
+        // Extraer ID del archivo
+        let fileId = pdfUrl.match(/[-\w]{25,}/);
+        if (fileId) {
+            iframe.src = `https://drive.google.com/file/d/${fileId}/preview`;
+        } else {
             iframe.src = pdfUrl;
-            
-            iframe.onload = function() {
-                loading.style.display = 'none';
-                iframe.style.display = 'block';
-            };
         }
+    } else {
+        iframe.src = pdfUrl;
+    }
 
-        function closePdfModal() {
-            const modal = document.getElementById('pdfModal');
-            const iframe = document.getElementById('pdfFrame');
-            
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            
-            setTimeout(() => {
-                iframe.src = '';
-            }, 300);
-        }
+    iframe.onload = function () {
+        loading.style.display = "none";
+        iframe.style.display = "block";
+    };
+}
 
-        window.onclick = function(event) {
-            const modal = document.getElementById('pdfModal');
-            if (event.target === modal) {
-                closePdfModal();
-            }
-        };
+function closePdfModal() {
+    const modal = document.getElementById("myPdfModal");
+    const iframe = document.getElementById("pdfFrame");
 
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closePdfModal();
-            }
-        });
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+
+    // Limpiar el iframe
+    iframe.src = "";
+}
+
+// Cerrar modal clickeando afuera
+window.onclick = function(event) {
+    const modal = document.getElementById("myPdfModal");
+    if (event.target === modal) closePdfModal();
+};
+
+// Cerrar con ESC
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") closePdfModal();
+});
 
       // Inicializar aplicación cargando recursos
         window.onload = loadResources;
