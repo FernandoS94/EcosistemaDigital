@@ -504,6 +504,17 @@
             box-shadow: 0 2px 4px rgba(243, 156, 18, 0.25);
         }
 
+        .chip.mode-chip.active {
+    background: #9b59b6;
+    border-color: #9b59b6;
+    box-shadow: 0 2px 4px rgba(155, 89, 182, 0.25);
+}
+
+.tag.mode {
+    background: #f4ecf7;
+    color: #7d3c98;
+}
+
         .filters-footer {
             display: flex;
             justify-content: space-between;
@@ -1377,6 +1388,23 @@
    </div>
 </div>
 
+<div class="pdf-card">
+   <span class="category-tag tag-directivos">Docentes</span>
+   
+   <h3>Infografia</h3>
+   <p>¿Como potenciar tu aula con IA?</p>
+   
+   <div class="button-group">
+     
+
+<a href="https://drive.google.com/file/d/17mH7AHuJDg29xserjGmLZrBFcA0Ibs23/view?usp=sharing" 
+   class="btn-action" 
+   target="_blank">
+   Ver
+</a>
+   </div>
+</div>
+
     </div>
   </div>
 
@@ -1575,6 +1603,14 @@
                         <div class="filter-category-title">Materia:</div>
                         <div class="chips-container" id="subjectChips"></div>
                     </div>
+
+                     <div class="filter-category">
+    <div class="filter-category-title">Modalidad:</div>
+    <div class="chips-container" id="modeChips"></div>
+</div>
+
+                    
+                    
                 </div>
             </div>
 
@@ -1627,7 +1663,6 @@
         
 let resources = [];
 
-
 async function loadResources() {
     try {
         const response = await fetch('resources.json');
@@ -1647,32 +1682,55 @@ function initializeApp() {
     renderResources(resources);
     updateResultsCount(resources.length, resources.length);
 }
-   
 
-        // Estado de filtros
-        let activeFilters = {
-            level: new Set(),
-            category: new Set(),
-            subject: new Set()
-        };
+// Estado de filtros
+let activeFilters = {
+    level: new Set(),
+    category: new Set(),
+    subject: new Set(),
+    mode: new Set()
+};
 
-        
+// Función helper para dividir valores múltiples (separados por coma)
+function splitMultipleValues(value) {
+    if (!value) return [];
+    return value.split(',').map(v => v.trim()).filter(v => v);
+}
 
-        // Inicializar chips
+// Función helper para verificar si un recurso coincide con el filtro
+function resourceMatchesFilter(resourceValue, activeFilterSet) {
+    if (activeFilterSet.size === 0) return true;
+    
+    // Dividir el valor del recurso por comas
+    const resourceValues = splitMultipleValues(resourceValue);
+    
+    // El recurso coincide si ALGUNO de sus valores está en el filtro activo
+    return resourceValues.some(val => activeFilterSet.has(val));
+}
+
+// Inicializar chips
 function initializeChips() {
     const levelContainer = document.getElementById('levelChips');
     const categoryContainer = document.getElementById('categoryChips');
     const subjectContainer = document.getElementById('subjectChips');
+    const modeContainer = document.getElementById('modeChips');
 
-    // Limpiar contenedores por si acaso
+    // Limpiar contenedores
     levelContainer.innerHTML = '';
     categoryContainer.innerHTML = '';
     subjectContainer.innerHTML = '';
+    modeContainer.innerHTML = '';
 
-    // Obtener valores únicos DESPUÉS de cargar resources
-    const uniqueLevels = [...new Set(resources.map(r => r.level))].sort();
-    const uniqueCategories = [...new Set(resources.map(r => r.category))].sort();
-    const uniqueSubjects = [...new Set(resources.map(r => r.subject))].sort();
+    // Obtener valores únicos (dividiendo los valores múltiples)
+    const allLevels = resources.flatMap(r => splitMultipleValues(r.level));
+    const allCategories = resources.flatMap(r => splitMultipleValues(r.category));
+    const allSubjects = resources.flatMap(r => splitMultipleValues(r.subject));
+    const allModes = resources.flatMap(r => splitMultipleValues(r.mode));
+
+    const uniqueLevels = [...new Set(allLevels)].sort();
+    const uniqueCategories = [...new Set(allCategories)].sort();
+    const uniqueSubjects = [...new Set(allSubjects)].sort();
+    const uniqueModes = [...new Set(allModes)].filter(Boolean).sort();
 
     uniqueLevels.forEach(level => {
         const chip = createChip(level, 'level');
@@ -1688,166 +1746,176 @@ function initializeChips() {
         const chip = createChip(subject, 'subject', 'subject-chip');
         subjectContainer.appendChild(chip);
     });
+
+    uniqueModes.forEach(mode => {
+        const chip = createChip(mode, 'mode', 'mode-chip');
+        modeContainer.appendChild(chip);
+    });
 }
 
-        // Crear chip individual
-        function createChip(value, filterType, extraClass = '') {
-            const chip = document.createElement('div');
-            chip.className = `chip ${extraClass}`;
-            chip.textContent = value;
-            chip.onclick = () => toggleFilter(filterType, value, chip);
-            return chip;
+// Crear chip individual
+function createChip(value, filterType, extraClass = '') {
+    const chip = document.createElement('div');
+    chip.className = `chip ${extraClass}`;
+    chip.textContent = value;
+    chip.onclick = () => toggleFilter(filterType, value, chip);
+    return chip;
+}
+
+// Toggle filtro
+function toggleFilter(filterType, value, chipElement) {
+    if (activeFilters[filterType].has(value)) {
+        activeFilters[filterType].delete(value);
+        chipElement.classList.remove('active');
+    } else {
+        activeFilters[filterType].add(value);
+        chipElement.classList.add('active');
+    }
+    updateActiveFilters();
+    filterResources();
+}
+
+// Actualizar visualización de filtros activos
+function updateActiveFilters() {
+    const footer = document.getElementById('filtersFooter');
+    const tagsContainer = document.getElementById('activeFilterTags');
+    tagsContainer.innerHTML = '';
+
+    const allFilters = [
+        ...Array.from(activeFilters.level).map(v => ({ type: 'level', value: v, label: v })),
+        ...Array.from(activeFilters.category).map(v => ({ type: 'category', value: v, label: v })),
+        ...Array.from(activeFilters.subject).map(v => ({ type: 'subject', value: v, label: v })),
+        ...Array.from(activeFilters.mode).map(v => ({ type: 'mode', value: v, label: v }))
+    ];
+
+    if (allFilters.length > 0) {
+        footer.style.display = 'flex';
+        allFilters.forEach(filter => {
+            const tag = document.createElement('div');
+            tag.className = 'active-filter-tag';
+            tag.innerHTML = `
+                ${filter.label}
+                <span class="remove-filter" onclick="removeFilter('${filter.type}', '${filter.value}')">×</span>
+            `;
+            tagsContainer.appendChild(tag);
+        });
+    } else {
+        footer.style.display = 'none';
+    }
+}
+
+// Remover filtro individual
+function removeFilter(filterType, value) {
+    activeFilters[filterType].delete(value);
+    
+    // Actualizar chip visual
+    const chips = document.querySelectorAll('.chip');
+    chips.forEach(chip => {
+        if (chip.textContent === value) {
+            chip.classList.remove('active');
         }
+    });
 
-        // Toggle filtro
-        function toggleFilter(filterType, value, chipElement) {
-            if (activeFilters[filterType].has(value)) {
-                activeFilters[filterType].delete(value);
-                chipElement.classList.remove('active');
-            } else {
-                activeFilters[filterType].add(value);
-                chipElement.classList.add('active');
-            }
-            updateActiveFilters();
-            filterResources();
-        }
+    updateActiveFilters();
+    filterResources();
+}
 
-        // Actualizar visualización de filtros activos
-        function updateActiveFilters() {
-            const footer = document.getElementById('filtersFooter');
-            const tagsContainer = document.getElementById('activeFilterTags');
-            tagsContainer.innerHTML = '';
+// Filtrar recursos
+function filterResources() {
+    const hasActiveFilters = 
+        activeFilters.level.size > 0 || 
+        activeFilters.category.size > 0 || 
+        activeFilters.subject.size > 0 ||
+        activeFilters.mode.size > 0;
 
-            const allFilters = [
-                ...Array.from(activeFilters.level).map(v => ({ type: 'level', value: v, label: v })),
-                ...Array.from(activeFilters.category).map(v => ({ type: 'category', value: v, label: v })),
-                ...Array.from(activeFilters.subject).map(v => ({ type: 'subject', value: v, label: v }))
-            ];
+    let filtered = resources;
 
-            if (allFilters.length > 0) {
-                footer.style.display = 'flex';
-                allFilters.forEach(filter => {
-                    const tag = document.createElement('div');
-                    tag.className = 'active-filter-tag';
-                    tag.innerHTML = `
-                        ${filter.label}
-                        <span class="remove-filter" onclick="removeFilter('${filter.type}', '${filter.value}')">×</span>
-                    `;
-                    tagsContainer.appendChild(tag);
-                });
-            } else {
-                footer.style.display = 'none';
-            }
-        }
+    if (hasActiveFilters) {
+        filtered = resources.filter(resource => {
+            const levelMatch = resourceMatchesFilter(resource.level, activeFilters.level);
+            const categoryMatch = resourceMatchesFilter(resource.category, activeFilters.category);
+            const subjectMatch = resourceMatchesFilter(resource.subject, activeFilters.subject);
+            const modeMatch = resourceMatchesFilter(resource.mode, activeFilters.mode);
+            return levelMatch && categoryMatch && subjectMatch && modeMatch;
+        });
+    }
 
-        // Remover filtro individual
-        function removeFilter(filterType, value) {
-            activeFilters[filterType].delete(value);
-            
-            // Actualizar chip visual
-            const chips = document.querySelectorAll('.chip');
-            chips.forEach(chip => {
-                if (chip.textContent === value) {
-                    chip.classList.remove('active');
-                }
-            });
+    renderResources(filtered);
+    updateResultsCount(filtered.length, resources.length);
+}
 
-            updateActiveFilters();
-            filterResources();
-        }
+// Actualizar contador de resultados
+function updateResultsCount(filtered, total) {
+    const countElement = document.getElementById('resultsCount');
+    if (activeFilters.level.size > 0 || activeFilters.category.size > 0 || activeFilters.subject.size > 0 || activeFilters.mode.size > 0) {
+        countElement.textContent = `${filtered} de ${total}`;
+    } else {
+        countElement.textContent = `${total} recursos`;
+    }
+}
 
-        // Filtrar recursos
-        function filterResources() {
-            const hasActiveFilters = 
-                activeFilters.level.size > 0 || 
-                activeFilters.category.size > 0 || 
-                activeFilters.subject.size > 0;
+// Renderizar recursos
+function renderResources(data) {
+    const grid = document.getElementById('resourcesGrid');
+    const noResults = document.getElementById('noResults');
 
-            let filtered = resources;
+    grid.innerHTML = '';
 
-            if (hasActiveFilters) {
-                filtered = resources.filter(resource => {
-                    const levelMatch = activeFilters.level.size === 0 || activeFilters.level.has(resource.level);
-                    const categoryMatch = activeFilters.category.size === 0 || activeFilters.category.has(resource.category);
-                    const subjectMatch = activeFilters.subject.size === 0 || activeFilters.subject.has(resource.subject);
-                    return levelMatch && categoryMatch && subjectMatch;
-                });
-            }
+    if (data.length === 0) {
+        noResults.style.display = 'block';
+        grid.style.display = 'none';
+        return;
+    } else {
+        noResults.style.display = 'none';
+        grid.style.display = 'grid';
+    }
 
-            renderResources(filtered);
-            updateResultsCount(filtered.length, resources.length);
-        }
+    data.forEach(resource => {
+        const tagsHtml = resource.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
 
-        // Actualizar contador de resultados
-        function updateResultsCount(filtered, total) {
-            const countElement = document.getElementById('resultsCount');
-            if (activeFilters.level.size > 0 || activeFilters.category.size > 0 || activeFilters.subject.size > 0) {
-                countElement.textContent = `${filtered} de ${total}`;
-            } else {
-                countElement.textContent = `${total} recursos`;
-            }
-        }
-
-        // Renderizar recursos
-        function renderResources(data) {
-            const grid = document.getElementById('resourcesGrid');
-            const noResults = document.getElementById('noResults');
-
-            grid.innerHTML = '';
-
-            if (data.length === 0) {
-                noResults.style.display = 'block';
-                grid.style.display = 'none';
-                return;
-            } else {
-                noResults.style.display = 'none';
-                grid.style.display = 'grid';
-            }
-
-            data.forEach(resource => {
-                const tagsHtml = resource.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
-
-                const cardHtml = `
-                    <div class="resource-card">
-                        <div class="resource-header">
-                            <span class="resource-level">${resource.level}</span>
-                            <h3 class="resource-title">${resource.title}</h3>
-                        </div>
-                        <div class="resource-meta">
-                            <p class="resource-description">${resource.description}</p>
-                            <div class="resource-tags">
-                                <span class="tag category">${resource.category}</span>
-                                <span class="tag subject">${resource.subject}</span>
-                                ${tagsHtml}
-                            </div>
-                        </div>
-                        <div class="resource-actions">
-                            <button class="btn-view-pdf" onclick="redirectToMaterial('${resource.url}')">Ver Material</button>
-                        </div>
+        const cardHtml = `
+            <div class="resource-card">
+                <div class="resource-header">
+                    <span class="resource-level">${resource.level}</span>
+                    <h3 class="resource-title">${resource.title}</h3>
+                </div>
+                <div class="resource-meta">
+                    <p class="resource-description">${resource.description}</p>
+                    <div class="resource-tags">
+                        <span class="tag category">${resource.category}</span>
+                        <span class="tag subject">${resource.subject}</span>
+                        ${resource.mode ? `<span class="tag mode">${resource.mode}</span>` : ''}
+                        ${tagsHtml}
                     </div>
-                `;
-                grid.innerHTML += cardHtml;
-            });
-        }
+                </div>
+                <div class="resource-actions">
+                    <button class="btn-view-pdf" onclick="redirectToMaterial('${resource.url}')">Ver Material</button>
+                </div>
+            </div>
+        `;
+        grid.innerHTML += cardHtml;
+    });
+}
 
-        // Reiniciar filtros
-        function resetFilters() {
-            activeFilters.level.clear();
-            activeFilters.category.clear();
-            activeFilters.subject.clear();
+// Reiniciar filtros
+function resetFilters() {
+    activeFilters.level.clear();
+    activeFilters.category.clear();
+    activeFilters.subject.clear();
+    activeFilters.mode.clear();
 
-            document.querySelectorAll('.chip').forEach(chip => {
-                chip.classList.remove('active');
-            });
+    document.querySelectorAll('.chip').forEach(chip => {
+        chip.classList.remove('active');
+    });
 
-            updateActiveFilters();
-            filterResources();
-        }
+    updateActiveFilters();
+    filterResources();
+}
 
-        // Redirigir a material
-        function redirectToMaterial(url) {
-            window.open(url, '_blank');
-        }
+// Redirigir a material
+function redirectToMaterial(url) {
+    window.open(url, '_blank');
+}
 
         // Toggle FAQ
         function toggleFaq(element) {

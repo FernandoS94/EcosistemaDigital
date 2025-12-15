@@ -1,62 +1,286 @@
 [
-  {
-    "id": 1,
-    "title": "Fichas de Comprensión Lectora",
-    "level": "Nivel 1",
-    "category": "Troncal",
-    "subject": "Lengua",
-    "description": "Recursos para mejorar la habilidad de comprensión de textos en el ciclo inicial.",
-    "tags": ["Lectura", "Primaria", "Inicial"],
-    "url": "https://www.rae.es/"
-  },
-  {
-    "id": 2,
-    "title": "Ejercicios de Ecuaciones Diferenciales",
-    "level": "Nivel 1",
-    "category": "Laboratorio",
-    "subject": "Matemáticas",
-    "description": "Set de problemas avanzados para practicar métodos de resolución de ecuaciones diferenciales.",
-    "tags": ["Cálculo", "Avanzado", "2° cuatrimestre"],
-    "url": "https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_diferencial"
-  },
-  {
-    "id": 3,
-    "title": "Guía de Gramática y Ortografía",
-    "level": "Nivel 2",
-    "category": "Troncal",
-    "subject": "Lengua",
-    "description": "Reglas fundamentales de acentuación, puntuación y conjugación verbal.",
-    "tags": ["Gramática", "Ortografía", "Secundaria"],
-    "url": "https://www.ejemplolengua.com/gramatica"
-  },
-  {
-    "id": 4,
-    "title": "Introducción al Álgebra Lineal",
-    "level": "Nivel 3",
-    "category": "Taller",
-    "subject": "Matemáticas",
-    "description": "Conceptos básicos de matrices, vectores y sistemas de ecuaciones lineales.",
-    "tags": ["Álgebra", "Matrices", "Universidad"],
-    "url": "https://www.aulamatematica.com/algebra"
-  },
-  {
-    "id": 5,
-    "title": "Análisis de la Novela Moderna",
-    "level": "Nivel 4",
-    "category": "Laboratorio",
-    "subject": "Lengua",
-    "description": "Estudio de las principales obras y corrientes literarias del siglo XX.",
-    "tags": ["Literatura", "Novela", "Análisis"],
-    "url": "https://www.literatura.org/novela-moderna"
-  },
-  {
-    "id": 6,
-    "title": "Análisis de la Novela Moderna",
-    "level": "Nivel 5",
-    "category": "Laboratorio",
-    "subject": "Lengua",
-    "description": "Estudio de las principales obras y corrientes literarias del siglo XX.",
-    "tags": ["Literatura", "Novela", "Análisis"],
-    "url": "https://www.literatura.org/novela-moderna"
-  }
+    {
+        "id": 1,
+        "title": "Números naturales y números enteros",
+        "level": "Nivel 1",
+        "category": "Troncal",
+        "subject": "Matemática I",
+        "mode": "Bachiller",
+        "description": "El plan propone un recorrido desde los números naturales hacia los enteros, explorando patrones y secuencias para producir fórmulas, representar y comparar números en la recta numérica y resolver situaciones con sumas, restas y multiplicaciones. Busca fortalecer el pensamiento algebraico inicial y el uso de los enteros en contextos cotidianos.",
+        "tags": [
+            "patrones y fórmulas",
+            "números enteros",
+            "recta numérica"
+        ],
+        "url": "https://rise.articulate.com/share/agPj3vmKBvLlcQys3ZdJxRGrNN9ZagD4"
+    },
+    {
+        "id": 15,
+        "title": "Funciones exponenciales y logarítmicas",
+        "level": "Nivel 4",
+        "category": "Troncal",
+        "subject": "Matemática IV",
+        "mode": "Bachiller",
+        "description": "El plan propone estudiar funciones exponenciales y logarítmicas para modelizar fenómenos de crecimiento y decrecimiento rápido. A partir de potencias y funciones conocidas, se analizan gráficas, parámetros y ecuaciones, usando software dinámico. Se resuelven problemas y proyectos que vinculan estos modelos con contextos científicos, ambientales y digitales.",
+        "tags": [
+            "función exponencial",
+            "funcion logarítmica",
+            "modelización matemática"
+        ],
+        "url": "https://rise.articulate.com/share/4sz75xkf6tOHhhm2sjwe5zSNSmsRK6Ng"
+    },
+    {
+        "id": 21,
+        "title": "El cuento policial: ¿quién es el culpable?",
+        "level": "Nivel 1",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura I",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan introduce a los estudiantes en el género policial argentino mediante cuentos de Pablo De Santis, Roberto Arlt y Rodolfo Walsh. El material se enfoca en el análisis de los relatos, la identificación de las características principales del subgénero, y la producción de escrituras breves, como perfiles de detectives. Para finalizar, se propone la elaboración de una infografía sobre lo trabajado.",
+        "tags": [
+            "Cuento policial",
+            "Análisis literario",
+            "Literatura argentina"
+        ],
+        "url": "https://rise.articulate.com/share/PZ14PQ2ZGTMT8ivKFBJhNRvbr0ziRZ-9"
+    },
+    {
+        "id": 37,
+        "title": "Entre el periodismo y la literatura: la no ficción",
+        "level": "Nivel 5",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura I",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan se enfoca en el subgénero literario de la No-Ficción, que combina técnicas narrativas propias de la literatura con datos y hechos reales para la representación crítica de la realidad. El material explora el cruce entre el periodismo y la literatura, analizando la obra Operación Masacre, de Rodolfo Walsh, y comparándola con los discursos mediáticos. Se propone también la producción de entrevistas literarias, para explorar a fondo los personajes y contextos de las historias. Palabras clave: No Ficción, Discursos Mediáticos, Entrevistas literarias",
+        "tags": [
+            "No Ficción",
+            "Discursos Mediáticos",
+            "Entrevistas literarias"
+        ],
+        "url": "https://rise.articulate.com/share/9LQqnuEmMNnk11V49RK5KSIEWHNMVk72"
+    },
+    {
+        "id": 143,
+        "title": "Base de la gestión de proyectos BO",
+        "level": "5° año",
+        "category": "Otro",
+        "subject": "Proyecto de Vinculación con el Futuro",
+        "mode": "Bachiller",
+        "description": "El plan guía a los estudiantes para crear un proyecto que transforme su entorno, partiendo de la observación crítica del contexto y la detección de problemas o necesidades reales. Se incluye la definición de proyecto y los distintos tipos (sociocomunitario, de investigación y de emprendedurismo). Se enfatiza el diagnóstico a través de la formulación de preguntas clave y el análisis de datos reales. Se introduce la bitácora como herramienta esencial para el registro, organización y reflexión continua del proceso.",
+        "tags": [
+            "Proyecto Escolar",
+            "diagnóstico",
+            "bitácora"
+        ],
+        "url": "https://rise.articulate.com/share/g0hPv0NhdLK9PJvl1ihdWFeMeKWZBRFl"
+    },
+    {
+        "id": 186,
+        "title": "Fútbol 1",
+        "level": "1° año",
+        "category": "Taller",
+        "subject": "Taller de Educación Física",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan se centra en el fútbol como una herramienta de formación integral para desarrollar habilidades motrices específicas y el pensamiento táctico (ofensivo y defensivo). Aborda la toma de decisiones colectivas, la comprensión del juego como una construcción grupal, y la aplicación de valores como la inclusión, la resolución de conflictos y el respeto por las diferencias, utilizando formatos de juego reducido para garantizar la participación equitativa.",
+        "tags": [
+            "Habilidades",
+            "Tácticas",
+            "Valores"
+        ],
+        "url": "https://rise.articulate.com/author/bq3SQV7yerOH0foDJ_Kf9rtOJdcMgB-o#/author/course"
+    },
+    {
+        "id": 218,
+        "title": "¿Es posible la comunicación humana? Cuerpos, pantallas, redes…",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio de la Orientación",
+        "mode": "Bachiller",
+        "description": "El plan se centra en la comunicación humana como un fenómeno omnipresente. Se analizan modelos clave de este fenómeno, como el de emisor-receptor, feedback; y cuatro dimensiones de la comunicación: interpersonal, intercultural, institucional y mediada por los medios masivos. El recorrido incluye actividades prácticas para reflexionar sobre el vínculo entre comunicación y tecnología, la industria mediática y el papel activo de las audiencias, vinculando los conceptos teóricos con la práctica reflexiva.",
+        "tags": [
+            "Comunicación humana",
+            "Medios masivos",
+            "Audiencias"
+        ],
+        "url": "https://rise.articulate.com/share/ZaZ6WolCJTFnjgMHq2meKCfgIUXYO7TA"
+    },
+    {
+        "id": 219,
+        "title": "¿Es posible la comunicación humana? ",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio de la Orientación",
+        "mode": "Bachiller",
+        "description": "El plan aborda diversos modelos comunicacionales, así como teorías y corrientes fundacionales del campo de la Comunicación, como la Agenda Setting, la Aguja Hipodérmica, la Escuela de Frankfurt, los Estudios Culturales Británicos, entre otros. Analiza también la influencia de los medios masivos (propaganda, publicidad), profundizando en conceptos como proxémica, kinésica, cultura algorítmica y gubernamentalidad, promoviendo la reflexión crítica sobre el proceso comunicativo y sus efectos sociales.",
+        "tags": [
+            "Medios masivos",
+            "Modelos comunicacionales",
+            "Teorías socioculturales"
+        ],
+        "url": "https://rise.articulate.com/share/H9kUoJzQcelXh3nwMhOC_0y-GAc2VeXB"
+    },
+    {
+        "id": 269,
+        "title": "Literatura, medios y consumos culturales en el siglo XXI - A",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio de la Orientación",
+        "mode": "Bachiller",
+        "description": "El plan se centra en el impacto de los consumos culturales del siglo XXI en la producción y difusión de literatura, explorando la industria editorial (bestsellers, editoriales independientes) y la influencia de las nuevas tecnologías y redes sociales en las prácticas lectoras. También se estudian algunos géneros emergentes (chicklit, sagas, literatura juvenil) y sus circuitos de circulación.",
+        "tags": [
+            "Consumos culturales",
+            "Industria editorial",
+            "Medios digitales"
+        ],
+        "url": "https://rise.articulate.com/share/u9ik9XWMJkwCEZJTXP9AHWqFZVyp7p-y"
+    },
+    {
+        "id": 280,
+        "title": "Un acercamiento al movimiento",
+        "level": "3° año, 4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio de la Orientación",
+        "mode": "Bachiller",
+        "description": "El plan desarrolla los contenidos de Movimiento Rectilíneo Uniforme (MRU) y Uniformemente Variado (MRUV), incluyendo problemas de encuentro, velocidad relativa, caída libre y tiro vertical. Las actividades propuestas incluyen la recuperación y aplicación de funciones lineales y cuadráticas, la resolución de problemas que reproducen situaciones reales, la interpretación de gráficos y la creación de una producción final de síntesis. Se espera que los alumnos apliquen la matemática a fenómenos reales y fortalezcan su capacidad para observar e interpretar el movimiento mediante modelos matemáticos.",
+        "tags": [
+            "cinemática",
+            "gráficos",
+            "ecuaciones horarias"
+        ],
+        "url": "https://rise.articulate.com/share/nS_F6zahiecUwr3ctlaZDLkIVuxXh1dO"
+    },
+    {
+        "id": 285,
+        "title": "Instrumentos, medición y aplicaciones",
+        "level": "3° año, 4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio de la Orientación",
+        "mode": "Bachiller",
+        "description": "El plan aborda la medición de magnitudes físicas, la precisión, el error (instrumental, humano y ambiental), el valor representativo y la indeterminación experimental. Las actividades guían desde la exploración de saberes previos y cuestionarios interactivos hasta experimentos prácticos de medición repetida y el diseño de un proyecto final aplicado. Se espera que los alumnos identifiquen la precisión y la exactitud, minimicen errores calculando promedios y comprendan las aplicaciones de la luz (refracción, reflexión, absorción) en instrumentos ópticos como microscopios y telescopios. Palabras Clave: Magnitudes, Precisión en la medida, Luz.",
+        "tags": [
+            "microscopios",
+            "valor representativo"
+        ],
+        "url": "https://rise.articulate.com/share/EmmCCHpDyQGQmNdjiis6FGIK1wf2PEIZ"
+    },
+    {
+        "id": 367,
+        "title": "Proyecto de egreso 2",
+        "level": "5° año",
+        "category": "Otro",
+        "subject": "Proyecto de Vinculación con el Futuro",
+        "mode": "Bachiller",
+        "description": "El plan orienta a los estudiantes a diseñar y planificar una propuesta de intervención sociocomunitaria desde la Educación Física. El proceso se enfoca en la identificación de una necesidad real, la elaboración de un diagnóstico motriz-comunitario, la recolección de información mediante entrevistas y encuestas, la formulación de un objetivo claro y la programación detallada de acciones, roles y recursos para generar un impacto real en el entorno.",
+        "tags": [
+            "Proyecto sociocomunitario",
+            "Educación Física",
+            "Disgnostico"
+        ],
+        "url": "https://rise.articulate.com/share/80btzPdDKlAi0eoxUMT5YzNzafUS47YF#/"
+    },
+    {
+        "id": 402,
+        "title": "La representación a escala A",
+        "level": "1° año, 2° año",
+        "category": "Formativo",
+        "subject": "Tecnologia de la Representacion",
+        "mode": "Técnica",
+        "description": "El plan guía en los fundamentos de la representación a escala y las vistas ortogonales (frontal, lateral y superior). El material aborda la proyección de sólidos simples (rectos, curvos y mixtos) y enfatiza la precisión en la acotación de piezas técnicas. Además, se instruye sobre la escritura normalizada y el uso de lápiz y estilógrafo, culminando en la elaboración de un plano técnico completo.",
+        "tags": [
+            "Vistas",
+            "Acotación",
+            "Caligrafía"
+        ],
+        "url": "https://rise.articulate.com/share/ymw-OczhQruZDznIE8L-WgCHKZ2hBYU9"
+    },
+    {
+        "id": 403,
+        "title": "Perspectiva y acotaciones",
+        "level": "1° año, 2° año",
+        "category": "Formativo",
+        "subject": "Tecnologia de la Representacion",
+        "mode": "Técnica",
+        "description": "Este plan de aprendizaje se centra en la Tecnología de la Representación, abordando la perspectiva como un lenguaje universal esencial para dibujar objetos tridimensionales en una superficie plana con precisión y claridad. El material explora métodos de vistas en perspectiva paralela, como la isométrica, caballera y caballera reducida, y desarrolla habilidades de observación, trazado y aplicación de acotaciones. Se diferencia entre la perspectiva cónica (realista) y la paralela (técnica, manteniendo proporciones exactas), destacando su uso imprescindible en la ingeniería, la arquitectura y el diseño industrial.",
+        "tags": [
+            "Perspectiva",
+            "Dibujo Técnico",
+            "Isométrica"
+        ],
+        "url": "https://rise.articulate.com/share/kReMtaDMlDOntVRFM_iyE723c0v-WFOO"
+    },
+    {
+        "id": 404,
+        "title": "Modos y medios de representación con apoyo informático A",
+        "level": "2° año, 3° año",
+        "category": "Formativo",
+        "subject": "Tecnologia de la Representacion",
+        "mode": "Técnica",
+        "description": "El plan aborda la Tecnología de la Representación, centrándose en el Diseño Asistido por Computadora (CAD) y la Representación digital de sólidos. Se guía a los docentes para que los estudiantes comprendan el CAD, utilicen software profesional para dibujos en 2D y modelos 3D, apliquen la parametrización de modelos y realicen operaciones booleanas. El objetivo final es transformar ideas en modelos técnicos listos para la fabricación digital.",
+        "tags": [
+            "CAD",
+            "Modelado 3D",
+            "Operaciones booleanas"
+        ],
+        "url": "https://rise.articulate.com/share/bbXlZysUeJb8dgpZTDwpLHYZQsB56D8V"
+    },
+    {
+        "id": 406,
+        "title": "La representación a escala B",
+        "level": "2° año, 3° año",
+        "category": "Formativo",
+        "subject": "Tecnologia de la Representacion",
+        "mode": "Técnica",
+        "description": "El plan se centra en la Tecnología de la representación. Se guía a los estudiantes en la aplicación precisa de escalas (reducción, ampliación y real), el correcto manejo del instrumental técnico (como regla, escuadra, compás y transportador), y la interpretación de las Normas IRAM para líneas, símbolos y acotación. El objetivo es que logren planos técnicos profesionales, claros y consistentes.",
+        "tags": [
+            "Escalas",
+            "Normas IRAM",
+            "Instrumental técnico"
+        ],
+        "url": "https://rise.articulate.com/share/G6K0QaTAiG-lu0i9BYwKIl8iYzSEm3se"
+    },
+    {
+        "id": 410,
+        "title": "La representación del interior de los objetos B",
+        "level": "3° año",
+        "category": "Formativo",
+        "subject": "Tecnologia de la Representacion",
+        "mode": "Técnica",
+        "description": "El plan profundiza en la Tecnología de la representación de objetos, enfocándose en la aplicación de cortes, secciones y simbología técnica normalizada. El material orienta a los docentes para desarrollar en los estudiantes la capacidad de interpretar y crear planos técnicos profesionales, combinando estos elementos con acabados superficiales y garantizando la coherencia gráfica. Este proceso utiliza tanto técnicas manuales como el Diseño Asistido por Computadora (CAD). Los objetivos incluyen comprender la simbología (ISO, IRAM) y los tipos de corte (recto, quebrado, parcial).",
+        "tags": [
+            "Cortes",
+            "Simbología",
+            "Planos"
+        ],
+        "url": "https://rise.articulate.com/share/H6lgn5anyzw7un8UB0D_iTXUnTLWgs5B"
+    },
+    {
+        "id": 412,
+        "title": "Lógica combinacional: Sistemas de representación y sistemas digitales A",
+        "level": "4° año",
+        "category": "Integracion",
+        "subject": "Espacios de Integración",
+        "mode": "Técnica",
+        "description": "El plan introduce la electrónica digital, contrastándola con la analógica, y desarrolla los sistemas de numeración posicionales (binario y hexadecimal) y códigos de representación. Se estudian las funciones y operaciones lógicas básicas (AND, OR, NOT) y el rol crucial de las compuertas para la manipulación de señales. El eje central es el Álgebra de Boole, sus leyes y postulados, aplicados al análisis y simplificación eficiente de circuitos mediante Tablas de Verdad, Formas Normales (Suma de Productos/Producto de Sumas) y el método gráfico de minimización de Karnaug.",
+        "tags": [
+            "Conversión",
+            "Compuertas",
+            "Simplificación"
+        ],
+        "url": "https://rise.articulate.com/share/EHr5noMtoVHJq1Mm-gIyqFiAE1Z2Gcwk"
+    },
+    {
+        "id": 436,
+        "title": "PROYECTO INTEGRADOR 2: Sistema funcional de inyección electrónica de combustible (EFI)",
+        "level": "6° año",
+        "category": "Otro",
+        "subject": "Proyecto de Egreso",
+        "mode": "Técnica",
+        "description": "Este plan , se centra en completar el diagnóstico, la investigación y el diseño técnico de una maqueta funcional de un sistema de inyección electrónica de combustible (EFI). Relevamiento de fallas en motores reales y el análisis de componentes clave como la ECU, sensores (MAP, IAT, TPS) y actuadores. Uso de herramientas como el Árbol de Problemas. Investigación comparativa de sistemas EFI, la evaluación de la viabilidad técnica y económica (costos y FODA), y el análisis de normativas ambientales (Euro 6, Ley 24.449). Formulación de la propuesta funcional y la creación del esquema técnico para el montaje.",
+        "tags": [
+            "Diseño Técnico",
+            "Viabilidad",
+            "Esquema Técnico"
+        ],
+        "url": "https://rise.articulate.com/share/lziRlhr_86NvX0N0tO473yFACkGRmBYw"
+    }
 ]
