@@ -41,9 +41,9 @@
         
         <div class="nav-links-centered">
             <a href="#" class="nav-link">Inicio</a>
-            <a href="#about" class="nav-link">Conocé más</a>
+            <a href="#about" class="nav-link">Avatares</a>
             <a href="#apps" class="nav-link">Aplicaciones</a>   
-            <a href="#access" class="nav-link">Acceso</a>
+            <a href="#access" class="nav-link">Materiales</a>
         </div>
         
         <div class="logo-spacer"></div> 
@@ -72,13 +72,44 @@
                         <p>El ecosistema digital integra múltiples herramientas y materiales de manera ordenada para acompañar y enriquecer los procesos de enseñanza y aprendizaje. 
                     De esta manera, el aula virtual se convierte en un entorno donde la tecnología potencia la experiencia educativa.</p>
                         <h3>¿Qué ofrece?</h3>
-                        <p>Un espacio conectado entre herramientas digitales y materiales educativos curados por especialistas. El objetivo es crear una vivencia educativa significativa, 
-                            donde cada elemento se complementa en un entorno digital donde la inteligencia artificial acompaña las propuestas pedagógicas.</p> 
-                        <p>La transformación de la educación mediante la integración reflexiva de tecnologías, facilita la colaboración entre docentes, estudiantes y familias estableciendo acuerdos 
-                            donde se privilegia la centralidad del aprendizaje, la coherencia y la innovación para mejorar el proceso educativo en el marco del Plan Estratégico BA aprende.</p>    
+                        <p>Un ecosistema conectado de herramientas y plataformas digitales y materiales curados, donde la inteligencia 
+                          artificial potencia cada propuesta pedagógica y personaliza la experiencia para lograr aprendizajes más significativos</p> 
+                          <h3>Guía para docentes, estudiantes y familias</h3> 
+                        <p>Esta guía reúne recursos y orientaciones prácticas para incorporar IA en el aula y preparar a 
+                          la comunidad educativa para un futuro donde la tecnología amplifica lo humano y potencia una educación innovadora y colaborativa.</p>    
                        <div class="centered-image">
                             <img src="./img/CRAYON_ECOSISTEMA.png" alt="Descripción de la imagen">
                         </div> 
+                         <!---<div class="pdf-buttons">
+                <button class="pdf-button" onclick="openPDF('https://docs.google.com/document/d/e/2PACX-1vTMg54jn_xU-imJxFJiKrBWI9KX_ac5ldLyFzQ8xQAweYnaYpb8H81kb0HETqWL7eR9GK60geaoG1lv/pub', 'Cómo potenciar la escuela secundaria con IA')">
+                     📄 Click para ver  
+                </button>
+               
+    <a class="download-icon" 
+     href="https://drive.google.com/file/d/1PNxwVMK5MZ57nblxd2SUjBwegDEPDoBU/view?usp=sharing" 
+     target="_blank" 
+     download 
+     title="Descargar PDF">
+    <i class="fa-solid fa-file-arrow-down"></i>
+  </a>
+ </div> --->
+             <div class="pdf-buttons">
+    <a class="pdf-button" 
+       href="https://drive.google.com/file/d/1PNxwVMK5MZ57nblxd2SUjBwegDEPDoBU/view?usp=sharing" 
+       target="_blank" 
+       style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;"
+       title="Descargar PDF">
+        <i class="fa-solid fa-file-arrow-down"></i> Descargar PDF
+    </a>
+</div>
+             <div class="pdf-viewer" id="pdfViewer">
+                <div class="pdf-viewer-header">
+                    <h3 id="pdfTitle">Ver PDF</h3>
+                    <button class="close-pdf" onclick="closePDF()">✕</button>
+                </div>
+                <iframe class="pdf-embed" id="pdfEmbed" src="" type="application/pdf"></iframe>
+            </div>
+            
                     </div>
                     
                     <div class="about-visual animate-on-scroll">
@@ -100,8 +131,8 @@
            <!--SECCION DE PDF INICIO-->
     <section class="section pdf-section" id="pdf">
     <div class="container">
-        <h2 class="section-title animate-on-scroll">Hacia un Ecosistema Digital para la Innovación Educativa</h2>
-        <div class="pdf-container">
+        <h2 class="section-title animate-on-scroll">Avatares de Secundaria Aprende</h2>
+     <!---   <div class="pdf-container">
             <div class="about-text animate-on-scroll">
                       <h3>Guía para docentes, estudiantes y familias</h3> 
                         <p>El Ecosistema Digital para la Innovación Educativa propone una nueva forma de pensar la escuela secundaria, integrando la inteligencia artificial (IA) como una herramienta que potencia la enseñanza y el aprendizaje. A través de aulas virtuales, aplicaciones y plataformas interconectadas, 
@@ -114,13 +145,13 @@
                      📄 Click para ver  
                 </button>
                
-    <a class="download-icon" 
-     "https://drive.google.com/file/d/1PNxwVMK5MZ57nblxd2SUjBwegDEPDoBU/view?usp=sharing" 
-     target="_blank" 
-     download 
-     title="Descargar PDF">
-    <i class="fa-solid fa-file-arrow-down"></i>
-  </a>
+          <a class="download-icon" 
+             "https://drive.google.com/file/d/1PNxwVMK5MZ57nblxd2SUjBwegDEPDoBU/view?usp=sharing" 
+             target="_blank" 
+             download 
+             title="Descargar PDF">
+            <i class="fa-solid fa-eye"></i>
+               </a>
    
             </div>
 
@@ -130,7 +161,7 @@
                     <button class="close-pdf" onclick="closePDF()">✕</button>
                 </div>
                 <iframe class="pdf-embed" id="pdfEmbed" src="" type="application/pdf"></iframe>
-            </div>
+            </div> -->
         </div>
     </div>
 </section> 
