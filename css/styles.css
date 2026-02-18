@@ -883,3 +883,235 @@
     display: none;
   }
 }
+ /* ----Avatares----- */
+
+ /* Sección principal */
+.avatares-section {
+    background: white;
+}
+
+/* Cada categoría */
+.categoria-section {
+    margin-bottom: 50px;
+    padding: 40px 0;
+    position: relative;
+}
+
+/* Fondos alternados */
+.categoria-section:nth-child(odd) {
+    background: white;
+}
+
+.categoria-section:nth-child(even) {
+    background: linear-gradient(135deg, rgba(36, 160, 165, 0.03), rgba(241, 132, 137, 0.03));
+}
+
+/* Header de categoría */
+.categoria-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.categoria-titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.categoria-descripcion {
+    color: #718096;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Grid de avatares circulares */
+.avatares-grid-circular {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Avatar circular */
+.avatar-circular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.avatar-circular:hover {
+    transform: translateY(-10px);
+}
+
+/* Círculo del avatar */
+.avatar-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, var(--primary-color), var(--primary-color)) border-box;
+    box-shadow: 0 8px 25px rgba(36, 160, 165, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.avatar-circular:hover .avatar-circle {
+    box-shadow: 0 15px 40px rgba(36, 160, 165, 0.35);
+    border-width: 5px;
+    transform: scale(1.05);
+}
+
+.avatar-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.avatar-circular:hover .avatar-circle img {
+    transform: scale(1.1);
+}
+
+/* Efecto de brillo */
+.avatar-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.avatar-circular:hover .avatar-circle::before {
+    left: 100%;
+}
+
+/* Label del avatar */
+.avatar-label {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    max-width: 140px;
+    line-height: 1.3;
+}
+
+.avatar-circular:hover .avatar-label {
+    color: var(--primary-color);
+}
+
+/* Container de acción (CTA) */
+.avatar-action-container {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, rgba(241, 245, 90, 0.1), rgba(249, 178, 250, 0.1));
+    border-radius: 20px;
+}
+
+.action-note {
+    margin-top: 15px;
+    color: #718096;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .categoria-titulo {
+        font-size: 1.5rem;
+    }
+
+    .avatares-grid-circular {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 25px;
+    }
+
+    .avatar-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .avatar-label {
+        font-size: 0.85rem;
+        max-width: 120px;
+    }
+
+    .categoria-section {
+        padding: 30px 0;
+        margin-bottom: 40px;
+    }
+
+    .categoria-descripcion {
+        font-size: 0.95rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .avatares-grid-circular {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+    }
+
+    .avatar-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .avatar-label {
+        font-size: 0.8rem;
+        max-width: 100px;
+    }
+
+    .categoria-titulo {
+        font-size: 1.3rem;
+    }
+
+    .categoria-descripcion {
+        font-size: 0.9rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 360px) {
+    .avatares-grid-circular {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 15px;
+    }
+
+    .avatar-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .avatar-label {
+        font-size: 0.75rem;
+        max-width: 90px;
+    }
+}
+
+
