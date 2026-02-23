@@ -158,20 +158,16 @@ window.addEventListener('resize', () => {
 createDots();
 updateCarousel();
 
-// SCRIPT DE PDF
- function openPDF(url, title) {
-    document.getElementById('pdfEmbed').src = url;
-    document.getElementById('pdfTitle').textContent = title;
-    document.getElementById('pdfViewer').classList.add('active');
-    setTimeout(() => {
-        document.getElementById('pdfViewer').scrollIntoView({ behavior: 'smooth' });
-    }, 100);
-}
 
-function closePDF() {
-    document.getElementById('pdfViewer').classList.remove('active');
-    document.getElementById('pdfEmbed').src = '';
-}
+ 
+
+// Cerrar con tecla ESC
+document.addEventListener('keydown', function(e) {
+    const pdfViewer = document.getElementById('pdfViewer');
+    if (e.key === 'Escape' && pdfViewer.classList.contains('active')) {
+        closePDF();
+    }
+});
 
 // Bloquear menú contextual (click derecho)
 document.addEventListener('contextmenu', function(e) {
@@ -190,3 +186,77 @@ document.onkeydown = function(e) {
     return false;
   }
 };
+
+
+const VIDEOS = {
+    gem: 'https://www.youtube.com/embed/U2yoSlaRXp8',
+};
+
+function openVideo(url, title) {
+    const modal = document.getElementById('videoModal');
+    const iframe = document.getElementById('videoIframe');
+    const modalTitle = document.getElementById('videoTitle');
+    
+    iframe.src = url + '?autoplay=1';
+    modalTitle.textContent = title;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeVideo() {
+    const modal = document.getElementById('videoModal');
+    const iframe = document.getElementById('videoIframe');
+    
+    modal.classList.remove('active');
+    iframe.src = '';
+    document.body.style.overflow = '';
+}
+
+function openVideoGEM(event) {
+    if (event) event.preventDefault();
+    openVideo(VIDEOS.gem, 'Tutorial: Creá tu asistente de planificacion');
+}
+
+document.addEventListener('keydown', function(e) {
+    const modal = document.getElementById('videoModal');
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeVideo();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modalContent = document.querySelector('.video-modal-content');
+    if (modalContent) {
+        modalContent.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
+});
+
+
+const VIDEO_TITLES = {
+    classroom: 'Tutorial: Google Classroom',
+    gemini: 'Tutorial: Gemini AI',
+    khanmigo: 'Tutorial: Khanmigo',
+    notebooklm: 'Tutorial: NotebookLM',
+    chatgpt: 'Tutorial: ChatGPT',
+    canva: 'Tutorial: Canva',
+    copilot: 'Tutorial: Microsoft Copilot',
+    perplexity: 'Tutorial: Perplexity AI',
+    gem: 'Tutorial: Creá tu Docente GEM',
+};
+
+// Función para abrir videos de aplicaciones
+function openAppVideo(event, appName) {
+    if (event) event.preventDefault();
+    
+    const videoUrl = VIDEOS[appName];
+    const videoTitle = VIDEO_TITLES[appName] || 'Tutorial';
+    
+    if (videoUrl) {
+        openVideo(videoUrl, videoTitle);
+    } else {
+        console.warn(`No hay video configurado para: ${appName}`);
+        alert('Este tutorial aún no está disponible. Próximamente...');
+    }
+}
