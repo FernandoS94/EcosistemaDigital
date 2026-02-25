@@ -866,94 +866,114 @@
 
 
 
+/* ============================================
+   AVATARES - 2 COLUMNAS OPTIMIZADO
+   Reemplazar TODO el CSS de avatares con este
+   ============================================ */
+
 /* Sección principal */
 .avatares-section {
     background: white;
-    padding: 60px 0; /* Reducido de 80px */
+    padding: 60px 0;
 }
 
 /* Reducir espaciado del título */
 .avatares-section .section-title {
-    margin-bottom: 2rem; /* Reducido de 3rem */
+    margin-bottom: 2rem;
 }
 
 .avatares-section .about-text {
-    margin-bottom: 30px; /* Reducido de 40px */
+    margin-bottom: 30px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Cada categoría - MÁS COMPACTA */
+/* ============================================
+   WRAPPER DE 2 COLUMNAS - CLAVE
+   ============================================ */
+.categorias-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 40px auto 0;
+    padding: 0 40px;
+}
+
+/* Cada categoría es ahora una card */
 .categoria-section {
-    margin-bottom: 30px; /* Reducido de 50px */
-    padding: 30px 0; /* Reducido de 40px */
-    position: relative;
-}
-
-/* Fondos alternados */
-.categoria-section:nth-child(odd) {
+    margin-bottom: 0;
+    padding: 25px;
     background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(36, 160, 165, 0.1);
 }
 
-.categoria-section:nth-child(even) {
-    background: linear-gradient(135deg, rgba(36, 160, 165, 0.03), rgba(241, 132, 137, 0.03));
+.categoria-section:hover {
+    box-shadow: 0 6px 25px rgba(36, 160, 165, 0.15);
+    transform: translateY(-3px);
 }
 
-/* Header de categoría - MÁS COMPACTO */
+/* Categoría que ocupa todo el ancho (última) */
+.categoria-full-width {
+    grid-column: 1 / -1;
+}
+
+/* Header de categoría - más compacto */
 .categoria-header {
     text-align: center;
-    margin-bottom: 25px; /* Reducido de 35px */
+    margin-bottom: 20px;
 }
 
 .categoria-titulo {
-    font-size: 1.6rem; /* Reducido de 2rem */
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--secondary-color);
-    margin-bottom: 8px; /* Reducido de 10px */
+    margin-bottom: 5px;
 }
 
 .categoria-descripcion {
     color: #718096;
-    font-size: 0.95rem; /* Reducido de 1rem */
-    max-width: 600px;
-    margin: 0 auto;
+    font-size: 0.9rem;
+    display: none; /* Ocultar descripciones para ahorrar espacio */
 }
 
-/* Grid de avatares - USA MÁS ANCHO */
+/* Grid de avatares - más compacto */
 .avatares-grid-circular {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Reducido de 140px */
-    gap: 25px; /* Reducido de 30px */
-    max-width: 1200px; /* Aumentado de 900px - USA MÁS PANTALLA */
-    margin: 0 auto;
-    padding: 0 40px; /* Aumentado de 20px */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+    padding: 0;
 }
 
-/* Avatar circular - MÁS PEQUEÑO */
+/* Avatar circular - tamaño reducido */
 .avatar-circular {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .avatar-circular:hover {
-    transform: translateY(-8px); /* Reducido de -10px */
+    transform: translateY(-8px);
 }
 
-/* Círculo del avatar - MÁS PEQUEÑO */
+/* Círculo del avatar - 100px */
 .avatar-circle {
-    width: 120px; /* Reducido de 140px */
-    height: 120px; /* Reducido de 140px */
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid transparent; /* Reducido de 4px */
+    border: 3px solid transparent;
     background: linear-gradient(white, white) padding-box,
                 linear-gradient(135deg, var(--primary-color), var(--primary-color)) border-box;
-    box-shadow: 0 6px 20px rgba(36, 160, 165, 0.15); /* Reducido */
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(36, 160, 165, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -961,8 +981,8 @@
 }
 
 .avatar-circular:hover .avatar-circle {
-    box-shadow: 0 12px 30px rgba(36, 160, 165, 0.35); /* Reducido */
-    border-width: 4px; /* Reducido de 5px */
+    box-shadow: 0 8px 25px rgba(36, 160, 165, 0.35);
+    border-width: 4px;
     transform: scale(1.05);
 }
 
@@ -970,7 +990,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .avatar-circular:hover .avatar-circle img {
@@ -993,15 +1013,15 @@
     left: 100%;
 }
 
-/* Label del avatar - MÁS PEQUEÑO */
+/* Label del avatar */
 .avatar-label {
-    margin-top: 12px; /* Reducido de 15px */
-    font-size: 0.85rem; /* Reducido de 0.95rem */
+    margin-top: 10px;
+    font-size: 0.8rem;
     color: var(--secondary-color);
     text-align: center;
     font-weight: 600;
     transition: color 0.3s ease;
-    max-width: 120px; /* Reducido de 140px */
+    max-width: 100px;
     line-height: 1.2;
 }
 
@@ -1009,17 +1029,17 @@
     color: var(--primary-color);
 }
 
-/* Container de acción (CTA) - MÁS COMPACTO */
+/* Container de acción (CTA) */
 .avatar-action-container {
     text-align: center;
-    margin-top: 40px; /* Reducido de 60px */
-    padding: 30px 20px; /* Reducido de 40px */
+    margin-top: 40px;
+    padding: 30px 20px;
     background: linear-gradient(135deg, rgba(241, 245, 90, 0.1), rgba(249, 178, 250, 0.1));
     border-radius: 20px;
 }
 
 .action-note {
-    margin-top: 12px; /* Reducido de 15px */
+    margin-top: 12px;
     color: #718096;
     font-size: 0.9rem;
     font-style: italic;
@@ -1029,45 +1049,36 @@
    RESPONSIVE
    ============================================ */
 
-/* Tablets */
-@media (max-width: 768px) {
-    .categoria-titulo {
-        font-size: 1.4rem;
-    }
-
-    .avatares-grid-circular {
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-        gap: 20px;
-        max-width: 100%;
+/* Tablets - pasar a 1 columna */
+@media (max-width: 1024px) {
+    .categorias-wrapper {
+        grid-template-columns: 1fr;
+        gap: 25px;
         padding: 0 30px;
     }
 
-    .avatar-circle {
-        width: 110px;
-        height: 110px;
-    }
-
-    .avatar-label {
-        font-size: 0.8rem;
-        max-width: 110px;
-    }
-
-    .categoria-section {
-        padding: 25px 0;
-        margin-bottom: 25px;
+    .categoria-full-width {
+        grid-column: 1;
     }
 }
 
-/* Móviles */
-@media (max-width: 480px) {
-    .avatares-section {
-        padding: 40px 0;
+/* Tablets pequeñas */
+@media (max-width: 768px) {
+    .categorias-wrapper {
+        padding: 0 20px;
+    }
+
+    .categoria-section {
+        padding: 20px;
+    }
+
+    .categoria-titulo {
+        font-size: 1.2rem;
     }
 
     .avatares-grid-circular {
         grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
         gap: 18px;
-        padding: 0 20px;
     }
 
     .avatar-circle {
@@ -1078,16 +1089,43 @@
     .avatar-label {
         font-size: 0.75rem;
         max-width: 95px;
-        margin-top: 10px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .avatares-section {
+        padding: 40px 0;
     }
 
-    .categoria-titulo {
-        font-size: 1.2rem;
+    .categorias-wrapper {
+        padding: 0 15px;
+        gap: 20px;
     }
 
     .categoria-section {
-        padding: 20px 0;
-        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .avatares-grid-circular {
+        grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+        gap: 15px;
+    }
+
+    .avatar-circle {
+        width: 85px;
+        height: 85px;
+        border-width: 2px;
+    }
+
+    .avatar-label {
+        font-size: 0.7rem;
+        max-width: 85px;
+        margin-top: 8px;
+    }
+
+    .categoria-titulo {
+        font-size: 1.1rem;
     }
 
     .about-text {
@@ -1098,21 +1136,20 @@
 /* Móviles muy pequeños */
 @media (max-width: 360px) {
     .avatares-grid-circular {
-        grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+        gap: 12px;
     }
 
     .avatar-circle {
-        width: 85px;
-        height: 85px;
+        width: 75px;
+        height: 75px;
     }
 
     .avatar-label {
-        font-size: 0.7rem;
-        max-width: 85px;
+        font-size: 0.65rem;
+        max-width: 75px;
     }
 }
-
 
 .video-modal {
     display: none;
