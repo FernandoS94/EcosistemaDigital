@@ -257,7 +257,7 @@
         "id": 412,
         "title": "Lógica combinacional: Sistemas de representación y sistemas digitales A",
         "level": "4° año",
-        "category": "Integracion",
+        "category": "Integración",
         "subject": "Espacios de Integración",
         "mode": "Técnica",
         "description": "El plan introduce la electrónica digital, contrastándola con la analógica, y desarrolla los sistemas de numeración posicionales (binario y hexadecimal) y códigos de representación. Se estudian las funciones y operaciones lógicas básicas (AND, OR, NOT) y el rol crucial de las compuertas para la manipulación de señales. El eje central es el Álgebra de Boole, sus leyes y postulados, aplicados al análisis y simplificación eficiente de circuitos mediante Tablas de Verdad, Formas Normales (Suma de Productos/Producto de Sumas) y el método gráfico de minimización de Karnaug.",

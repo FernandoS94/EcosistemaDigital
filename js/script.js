@@ -190,6 +190,7 @@ document.onkeydown = function(e) {
 
 const VIDEOS = {
     gem: 'https://www.youtube.com/embed/U2yoSlaRXp8',
+    gemini: 'https://www.youtube.com/embed/EcfmsklVV-8?si=c26UaPIPxRA4BB-C',
 };
 
 function openVideo(url, title) {
@@ -236,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const VIDEO_TITLES = {
     classroom: 'Tutorial: Google Classroom',
-    gemini: 'Tutorial: Gemini AI',
+    gemini: 'Tutorial:  Introducción a Gemini',
     khanmigo: 'Tutorial: Khanmigo',
     notebooklm: 'Tutorial: NotebookLM',
     chatgpt: 'Tutorial: ChatGPT',
@@ -260,3 +261,20 @@ function openAppVideo(event, appName) {
         alert('Este tutorial aún no está disponible. Próximamente...');
     }
 }
+
+
+ 
+
+function mostrarNoDisponible(event) {
+    event.preventDefault(); // Evita que el # navegue
+    alert("Este contenido aún no está disponible. Próximamente...");
+  }
+
+  // Seleccionamos los botones
+  const btn1 = document.getElementById("noDisponible");
+  const btn2 = document.getElementById("btnFamilias");
+
+  // Asignamos la misma función a ambos
+  btn1.addEventListener("click", mostrarNoDisponible);
+  btn2.addEventListener("click", mostrarNoDisponible);
+  
