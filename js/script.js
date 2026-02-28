@@ -21,6 +21,7 @@
         // Show/hide navbar on scroll
         const navbar = document.querySelector('.navbar');
         let lastScrollTop = 0;
+        navbar.classList.add('visible');
         window.addEventListener('scroll', () => {
             const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
 
@@ -191,6 +192,8 @@ document.onkeydown = function(e) {
 const VIDEOS = {
     gem: 'https://www.youtube.com/embed/U2yoSlaRXp8',
     gemini: 'https://www.youtube.com/embed/EcfmsklVV-8?si=c26UaPIPxRA4BB-C',
+    classroom: 'https://www.youtube.com/embed/L6RJ-gpAROE?si=y6hxgicQqxYotQu3',
+    notebook: 'https://www.youtube.com/embed/-jtBN6_VsK4?si=SKGj7iLgHa9wYOem',
 };
 
 function openVideo(url, title) {
@@ -236,10 +239,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const VIDEO_TITLES = {
-    classroom: 'Tutorial: Google Classroom',
+    classroom: 'Tutorial: ¿ Qué es Google Classroom ?',
     gemini: 'Tutorial:  Introducción a Gemini',
     khanmigo: 'Tutorial: Khanmigo',
-    notebooklm: 'Tutorial: NotebookLM',
+    notebook: 'Tutorial: ¿Qué es Notebook LM?',
     chatgpt: 'Tutorial: ChatGPT',
     canva: 'Tutorial: Canva',
     copilot: 'Tutorial: Microsoft Copilot',
