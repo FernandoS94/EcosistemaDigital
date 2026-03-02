@@ -194,6 +194,9 @@ const VIDEOS = {
     gemini: 'https://www.youtube.com/embed/EcfmsklVV-8?si=c26UaPIPxRA4BB-C',
     classroom: 'https://www.youtube.com/embed/L6RJ-gpAROE?si=y6hxgicQqxYotQu3',
     notebook: 'https://www.youtube.com/embed/-jtBN6_VsK4?si=SKGj7iLgHa9wYOem',
+    khanmigo: 'https://www.youtube.com/embed/yJ8fpSxSzP8?si=if1A3-_cgFxKdBQ9',
+    khanacademy: 'https://www.youtube.com/embed/M81Aez7PJX0?si=zimMNRx7VMXr-et5',
+    teachingandlearning: 'https://www.youtube.com/embed/kLXKp_Z0xnE?si=5wOexZp46qnxZIvQ',
 };
 
 function openVideo(url, title) {
@@ -241,8 +244,10 @@ document.addEventListener('DOMContentLoaded', function() {
 const VIDEO_TITLES = {
     classroom: 'Tutorial: ¿ Qué es Google Classroom ?',
     gemini: 'Tutorial:  Introducción a Gemini',
-    khanmigo: 'Tutorial: Khanmigo',
+    khanmigo: 'Tutorial: ¿ Qué es Khanmigo?',
     notebook: 'Tutorial: ¿Qué es Notebook LM?',
+    khanacademy: 'Tutorial: ¿Qué es Khan Academy?',
+    teachingandlearning: 'Tutorial: ¿Qué es Teaching and Learning?',
     chatgpt: 'Tutorial: ChatGPT',
     canva: 'Tutorial: Canva',
     copilot: 'Tutorial: Microsoft Copilot',
