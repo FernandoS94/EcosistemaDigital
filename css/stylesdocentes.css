@@ -178,9 +178,10 @@
     .features-section p {
       font-size: clamp(1rem, 2vw, 1.1rem);
       color: #666;
-      max-width: 800px;
+      max-width: 1100px;
       margin: 0 auto 60px;
       animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s backwards;
+      text-align: left;
     }
 
     .features-grid {
@@ -734,7 +735,10 @@
       color: var(--secondary-color);
       margin-bottom: 60px;
       animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      
     }
+
+   
 
     .videos-grid {
       display: grid;
@@ -831,13 +835,14 @@
       line-height: 1.6;
     }
 .videos-section > p {
-    text-align: center;       /* Centra el texto */
-    max-width: 800px;         /* Evita que el texto se estire demasiado a los lados */
+    text-align: left;       /* Centra el texto */
+    max-width: 1100px;         /* Evita que el texto se estire demasiado a los lados */
     margin: 10px auto 40px;   /* Margen: Arriba | Auto (centrado) | Abajo (separación de los videos) */
     font-size: 1.1rem;        /* Un poco más grande que el texto normal para destacar */
     line-height: 1.6;         /* Espaciado entre líneas para mejor lectura */
     color: #555;              /* Un gris suave (ajusta este color según tu paleta) */
     padding: 0 20px;          /* Un poco de aire a los costados para vista móvil */
+   
 }
 
         /* FAQ Section */
