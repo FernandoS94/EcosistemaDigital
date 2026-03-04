@@ -82,6 +82,15 @@
             color: white;
         }
 
+        .navbar-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    padding: 0 0 0 10px;
+    opacity: 0.6;
+    white-space: nowrap;
+}
+
         
         .recursero-hero {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
