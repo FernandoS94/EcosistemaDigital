@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <link rel="icon" type="image/png" href="./img/icon.png">
   <meta charset="UTF-8">
@@ -108,7 +109,7 @@
     /* Hero mejorado con animaciones */
     .hero {
       background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-       background: url('./img/heroflia.png') center/cover no-repeat;
+      background: url('./img/heroflia.png') center/cover no-repeat;
       color: white;
       padding: 140px 20px 100px;
       text-align: center;
@@ -123,17 +124,24 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: 
+      background:
         radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
       animation: float 15s ease-in-out infinite;
       background-color: rgba(0, 0, 0, 0.5);
-            z-index: 0;
+      z-index: 0;
     }
 
     @keyframes float {
-      0%, 100% { transform: translate(0, 0); }
-      50% { transform: translate(20px, 20px); }
+
+      0%,
+      100% {
+        transform: translate(0, 0);
+      }
+
+      50% {
+        transform: translate(20px, 20px);
+      }
     }
 
     .hero h1 {
@@ -160,6 +168,7 @@
         opacity: 0;
         transform: translateY(30px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -200,7 +209,7 @@
       background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
       border-radius: 20px;
       padding: 45px 30px;
-      box-shadow: 
+      box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.08),
         0 1px 3px rgba(0, 0, 0, 0.05);
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -209,9 +218,17 @@
       animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
     }
 
-    .feature-card:nth-child(1) { animation-delay: 0.2s; }
-    .feature-card:nth-child(2) { animation-delay: 0.3s; }
-    .feature-card:nth-child(3) { animation-delay: 0.4s; }
+    .feature-card:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .feature-card:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    .feature-card:nth-child(3) {
+      animation-delay: 0.4s;
+    }
 
     .feature-card::before {
       content: '';
@@ -228,7 +245,7 @@
 
     .feature-card:hover {
       transform: translateY(-10px) scale(1.02);
-      box-shadow: 
+      box-shadow:
         0 20px 50px rgba(36, 160, 165, 0.15),
         0 5px 15px rgba(0, 0, 0, 0.08);
     }
@@ -247,8 +264,15 @@
     }
 
     @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
     }
 
     .feature-card:hover .feature-icon {
@@ -297,7 +321,7 @@
       background: white;
       border-radius: 20px;
       overflow: hidden;
-      box-shadow: 
+      box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.08),
         0 1px 3px rgba(0, 0, 0, 0.05);
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -305,9 +329,17 @@
       position: relative;
     }
 
-    .video-card:nth-child(1) { animation-delay: 0.2s; }
-    .video-card:nth-child(2) { animation-delay: 0.3s; }
-    .video-card:nth-child(3) { animation-delay: 0.4s; }
+    .video-card:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .video-card:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    .video-card:nth-child(3) {
+      animation-delay: 0.4s;
+    }
 
     .video-card::after {
       content: '';
@@ -325,7 +357,7 @@
 
     .video-card:hover {
       transform: translateY(-10px);
-      box-shadow: 
+      box-shadow:
         0 20px 50px rgba(36, 160, 165, 0.2),
         0 5px 15px rgba(0, 0, 0, 0.1);
     }
@@ -379,103 +411,118 @@
       margin: 0;
       line-height: 1.6;
     }
-    .videos-section > p {
-    text-align: center;       /* Centra el texto */
-    max-width: 800px;         /* Evita que el texto se estire demasiado a los lados */
-    margin: 10px auto 40px;   /* Margen: Arriba | Auto (centrado) | Abajo (separación de los videos) */
-    font-size: 1.1rem;        /* Un poco más grande que el texto normal para destacar */
-    line-height: 1.6;         /* Espaciado entre líneas para mejor lectura */
-    color: #555;              /* Un gris suave (ajusta este color según tu paleta) */
-    padding: 0 20px;          /* Un poco de aire a los costados para vista móvil */
-}
+
+    .videos-section>p {
+      text-align: center;
+      /* Centra el texto */
+      max-width: 800px;
+      /* Evita que el texto se estire demasiado a los lados */
+      margin: 10px auto 40px;
+      /* Margen: Arriba | Auto (centrado) | Abajo (separación de los videos) */
+      font-size: 1.1rem;
+      /* Un poco más grande que el texto normal para destacar */
+      line-height: 1.6;
+      /* Espaciado entre líneas para mejor lectura */
+      color: #555;
+      /* Un gris suave (ajusta este color según tu paleta) */
+      padding: 0 20px;
+      /* Un poco de aire a los costados para vista móvil */
+    }
 
     /* Footer mejorado */
     /* Footer */
-       footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 40px 20px 20px;
-            font-family: Arial, sans-serif;
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .footer-section h3 {
-            color: #3498db;
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .footer-links li {
-            margin-bottom: 8px;
-        }
-        
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: #3498db;
-        }
-        
-        .social-media {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .social-media .social-icon {
-            color: white;
-            font-size: 20px;
-            text-decoration: none;
-            transition: color 0.3s, transform 0.3s;
-            display: inline-block;
-            margin-right: 15px;
-            margin-top: 10px;
-        }
-        
-        .social-media .social-icon:hover {
-            color: #3498db;
-            transform: translateY(-2px);
-        }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+    }
 
-        .copyright p {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #34495e;
-            color: #95a5a6;
-            font-size: 14px;
-        }
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    .footer-section h3 {
+      color: #3498db;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
 
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        .animate-on-scroll.animated {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #3498db;
+    }
+
+    .social-media {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social-media .social-icon {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      transition: color 0.3s, transform 0.3s;
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+
+    .social-media .social-icon:hover {
+      color: #3498db;
+      transform: translateY(-2px);
+    }
+
+    .copyright p {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #34495e;
+      color: #95a5a6;
+      font-size: 14px;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .animate-on-scroll.animated {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     /* Responsive mejorado */
     @media (max-width: 768px) {
@@ -508,6 +555,7 @@
     }
 
     @media (max-width: 480px) {
+
       .feature-card,
       .video-card {
         border-radius: 16px;
@@ -533,7 +581,6 @@
       opacity: 1;
       transform: translateY(0);
     }
-  
   </style>
 </head>
 
@@ -548,20 +595,22 @@
   </nav>
 
   <section class="hero">
-    
+
     <h1> Recursos y Videos Educativos</h1>
     <p>Un espacio pensado para acompañar a las familias en el proceso educativo de sus hijos.</p>
   </section>
 
   <section class="features-section">
     <h2>¿Qué encontrarás aquí?</h2>
-    <p>Materiales y contenidos audiovisuales que ayudan a fortalecer el vínculo entre la escuela y la familia, promoviendo el acompañamiento en el aprendizaje desde casa.</p>
+    <p>Materiales y contenidos audiovisuales que ayudan a fortalecer el vínculo entre la escuela y la familia,
+      promoviendo el acompañamiento en el aprendizaje desde casa.</p>
 
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">👨‍👩‍👧‍👦</div>
         <h3>Recursos para el hogar</h3>
-        <p>Ideas, guías y herramientas para acompañar las tareas escolares y el desarrollo personal de los estudiantes.</p>
+        <p>Ideas, guías y herramientas para acompañar las tareas escolares y el desarrollo personal de los estudiantes.
+        </p>
       </div>
 
       <div class="feature-card">
@@ -580,10 +629,12 @@
 
   <section id="videos" class="videos-section">
     <h2>Videos </h2>
-     <p>Explora el potencial de las nuevas herramientas digitales en el entorno educativo. A través de estos videos, te guiaremos en el 
-      uso avanzado de Gemini y NotebookLM para optimizar la gestión de tareas, desglosar proyectos complejos y fortalecer tu seguridad digital, 
+    <p>Explora el potencial de las nuevas herramientas digitales en el entorno educativo. A través de estos videos, te
+      guiaremos en el
+      uso avanzado de Gemini y NotebookLM para optimizar la gestión de tareas, desglosar proyectos complejos y
+      fortalecer tu seguridad digital,
       mejorando así tu flujo de trabajo académico.</p>
-   
+
     <div class="videos-grid">
       <div class="video-card">
         <div class="video-frame">
@@ -615,13 +666,14 @@
         </div>
       </div>
 
-    <div class="video-card">
+      <div class="video-card">
         <div class="video-frame">
           <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" allowfullscreen></iframe>
         </div>
         <div class="video-content">
           <h3>Resumen semanal de entregas con IA</h3>
-          <p>Aprende a combinar Gemini y NotebookLM para centralizar tus tareas y generar reportes automáticos de pendientes.</p>
+          <p>Aprende a combinar Gemini y NotebookLM para centralizar tus tareas y generar reportes automáticos de
+            pendientes.</p>
         </div>
       </div>
 
@@ -631,7 +683,8 @@
         </div>
         <div class="video-content">
           <h3>Sincronización de tareas y calendario</h3>
-          <p>Descubre el flujo de trabajo ideal para llevar tus actividades escolares directo a tu agenda y no perder ninguna fecha límite.</p>
+          <p>Descubre el flujo de trabajo ideal para llevar tus actividades escolares directo a tu agenda y no perder
+            ninguna fecha límite.</p>
         </div>
       </div>
 
@@ -641,7 +694,8 @@
         </div>
         <div class="video-content">
           <h3>Planes de repaso y división de tareas</h3>
-          <p>Estrategias para desglosar proyectos grandes en pasos sencillos y crear cronogramas de estudio efectivos antes de un examen.</p>
+          <p>Estrategias para desglosar proyectos grandes en pasos sencillos y crear cronogramas de estudio efectivos
+            antes de un examen.</p>
         </div>
       </div>
 
@@ -651,7 +705,8 @@
         </div>
         <div class="video-content">
           <h3>Creación de contraseñas seguras</h3>
-          <p>Mejora tu seguridad digital pidiéndole a la IA ejemplos de claves robustas y patrones difíciles de vulnerar.</p>
+          <p>Mejora tu seguridad digital pidiéndole a la IA ejemplos de claves robustas y patrones difíciles de
+            vulnerar.</p>
         </div>
       </div>
 
@@ -661,41 +716,42 @@
         </div>
         <div class="video-content">
           <h3>Redacción asistida para consultas docentes</h3>
-          <p>Utiliza Gemini para formular preguntas claras, correos formales y listas de dudas organizadas para tus reuniones.</p>
+          <p>Utiliza Gemini para formular preguntas claras, correos formales y listas de dudas organizadas para tus
+            reuniones.</p>
         </div>
       </div>
 
-      
+
 
     </div>
   </section>
 
 
-  
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <h3>Enlaces</h3>
-                <ul>
-                    <li><a href="#">Privacidad</a></li>
-                    <li><a href="#">Términos de Uso</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="social-media">
-                <h3>Seguínos</h3>
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-            </div>
-           
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 Todos los derechos reservados.</p>
-        </div>
-    </footer>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <h3>Seguínos</h3>
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
   <script>
     // Efecto scroll en navbar
@@ -709,4 +765,5 @@
     });
   </script>
 </body>
+
 </html>
