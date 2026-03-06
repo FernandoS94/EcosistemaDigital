@@ -1118,8 +1118,33 @@
      color: #718096;
      font-size: 0.9rem;
      font-style: italic;
+     text-align: left;
  }
 
+ .button-left-container {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: #002733;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/*.secondary-button:hover {
+    background: var(--primary-color);
+    color: white;
+}
+ */
  /* ============================================
    RESPONSIVE
    ============================================ */
@@ -1455,3 +1480,4 @@
          padding: 8px 16px;
      }
  }
+
