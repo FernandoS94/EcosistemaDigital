@@ -197,7 +197,7 @@ const VIDEOS = {
     khanmigo: 'https://www.youtube.com/embed/yJ8fpSxSzP8?si=if1A3-_cgFxKdBQ9',
     khanacademy: 'https://www.youtube.com/embed/M81Aez7PJX0?si=zimMNRx7VMXr-et5',
     teachingandlearning: 'https://www.youtube.com/embed/kLXKp_Z0xnE?si=5wOexZp46qnxZIvQ',
-    avatar: 'https://www.youtube.com/embed/iEI9r8J7H5E?si=W55GLnWLENZqPSlJ',
+    avatar: 'https://www.youtube.com/embed/wQJN1T8H-tA?si=Lfh3bO9WegcUw3b-',
 };
 
 function openVideo(url, title) {

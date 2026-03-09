@@ -171,9 +171,10 @@
     .features-section p {
       font-size: clamp(1rem, 2vw, 1.1rem);
       color: #666;
-      max-width: 800px;
+      max-width: 1100px;
       margin: 0 auto 60px;
       animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s backwards;
+      text-align: left;
     }
 
     .features-grid {
@@ -392,9 +393,9 @@
     }
 
     .videos-section>p {
-      text-align: center;
+      text-align: left;
       /* Centra el texto */
-      max-width: 800px;
+      max-width: 1100px;
       /* Evita que el texto se estire demasiado a los lados */
       margin: 10px auto 40px;
       /* Margen: Arriba | Auto (centrado) | Abajo (separación de los videos) */
@@ -569,14 +570,175 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+       /* ===== SECCIÓN DOCUMENTOS ===== */
+   .docs-section {
+      background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+      padding: 100px 20px;
+    }
+
+    .docs-section h2 {
+      text-align: center;
+      font-size: clamp(1.9rem, 4vw, 2.3rem);
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .docs-intro {
+      text-align: left;
+      max-width: 1100px;
+      margin: 10px auto 50px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+      padding: 0 20px;
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .doc-card {
+      background: white;
+      border-radius: 20px;
+      padding: 28px 28px 24px;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07),
+        0 1px 3px rgba(0, 0, 0, 0.04);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+      border: 2px solid transparent;
+    }
+
+    .doc-card:nth-child(1) { animation-delay: 0.15s; }
+    .doc-card:nth-child(2) { animation-delay: 0.25s; }
+    .doc-card:nth-child(3) { animation-delay: 0.35s; }
+    .doc-card:nth-child(4) { animation-delay: 0.45s; }
+
+    .doc-card:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        0 20px 50px rgba(36, 160, 165, 0.18),
+        0 5px 15px rgba(0, 0, 0, 0.08);
+      border-color: var(--primary-color);
+    }
+
+    .doc-icon-wrap {
+      width: 64px;
+      height: 64px;
+      min-width: 64px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #f18489 0%, #e06b71 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: white;
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 14px rgba(241, 132, 137, 0.4);
+    }
+
+    .doc-icon-wrap--infografia {
+      background: linear-gradient(135deg, var(--primary-color) 0%, #1d8a8f 100%);
+      box-shadow: 0 4px 14px rgba(36, 160, 165, 0.4);
+    }
+
+    .doc-card:hover .doc-icon-wrap {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    .doc-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .doc-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+
+    .doc-badge--pdf {
+      background: rgba(241, 132, 137, 0.12);
+      color: #c0464c;
+    }
+
+    .doc-badge--infografia {
+      background: rgba(36, 160, 165, 0.12);
+      color: var(--primary-color);
+    }
+
+    .doc-content h3 {
+      font-size: 1.1rem;
+      color: var(--secondary-color);
+      margin-bottom: 6px;
+      transition: color 0.3s ease;
+    }
+
+    .doc-card:hover .doc-content h3 {
+      color: var(--primary-color);
+    }
+
+    .doc-content p {
+      font-size: 0.88rem;
+      color: #777;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .doc-arrow {
+      color: var(--primary-color);
+      font-size: 1rem;
+      opacity: 0;
+      transform: translateX(-8px);
+      transition: all 0.3s ease;
+      min-width: 20px;
+    }
+
+    .doc-card:hover .doc-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    @media (max-width: 768px) {
+      .docs-section {
+        padding: 60px 20px;
+      }
+      .docs-grid {
+        gap: 20px;
+      }
+      .doc-card {
+        padding: 22px 20px;
+      }
+    }
   </style>
 </head>
 
 <body>
+
 <nav class="navbar">
   <div class="navbar-container">
     <div class="navbar-title">Familias</div>
     <div class="navbar-links">
+      <a href="#videos" class="nav-link">Videos</a>
+      <a href="#documentos" class="nav-link">Documentos</a>
       <a href="index.html" class="nav-link">← Volver a Inicio</a>
     </div>
   </div>
@@ -584,8 +746,8 @@
 
   <section class="hero">
 
-    <h1> Recursos y Videos Educativos</h1>
-    <p>Un espacio pensado para acompañar a las familias en el proceso educativo de sus hijos.</p>
+    <h1> Recursos y videos educativos</h1>
+   
   </section>
 
   <section class="features-section">
@@ -594,12 +756,7 @@
       promoviendo el acompañamiento en el aprendizaje desde casa.</p>
 
     <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">👨‍👩‍👧‍👦</div>
-        <h3>Recursos para el hogar</h3>
-        <p>Ideas, guías y herramientas para acompañar las tareas escolares y el desarrollo personal de los estudiantes.
-        </p>
-      </div>
+    
 
       <div class="feature-card">
         <div class="feature-icon">🎥</div>
@@ -615,6 +772,55 @@
     </div>
   </section>
 
+  <!-- SECCIÓN DOCUMENTOS 
+  <section id="documentos" class="docs-section">
+    <h2>Documentos</h2>
+    <p class="docs-intro">Accedé a materiales descargables: PDFs, infografías y recursos de apoyo para acompañar el aprendizaje desde casa. Hacé clic en cualquier tarjeta para abrir el documento.</p>
+
+    <div class="docs-grid"> -->
+
+      <!-- Tarjeta 1 - PDF 
+      <a href="https://drive.google.com/TU_LINK_AQUI" target="_blank" class="doc-card" data-type="PDF">
+        <div class="doc-icon-wrap">
+          <i class="fas fa-file-pdf"></i>
+        </div>
+        <div class="doc-content">
+          <span class="doc-badge doc-badge--pdf">PDF</span>
+          <h3>Título del documento</h3>
+          <p>Descripción breve del contenido del documento o recurso.</p>
+        </div>
+        <div class="doc-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a> -->
+
+      <!-- Tarjeta 2 - Infografía 
+      <a href="https://drive.google.com/file/d/1h1Yc61pKIqzXapal6RJ_SFSjwHPJdl91/view" target="_blank" class="doc-card" data-type="Infografía">
+        <div class="doc-icon-wrap doc-icon-wrap--infografia">
+          <i class="fas fa-image"></i>
+        </div>
+        <div class="doc-content">
+          <span class="doc-badge doc-badge--infografia">Infografía</span>
+          <h3>Guía de Protección Digital Infantil</h3>
+          <p>Compartimos algunas recomendaciones que pueden ayudarte a proteger a tus hijos en los entornos digitales..</p>
+        </div>
+        <div class="doc-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a> -->
+
+      <!-- Tarjeta 3 - PDF 
+      <a href="https://drive.google.com/TU_LINK_AQUI" target="_blank" class="doc-card" data-type="PDF">
+        <div class="doc-icon-wrap">
+          <i class="fas fa-file-pdf"></i>
+        </div>
+        <div class="doc-content">
+          <span class="doc-badge doc-badge--pdf">PDF</span>
+          <h3>Título del documento</h3>
+          <p>Descripción breve del contenido del documento o recurso.</p>
+        </div>
+        <div class="doc-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a> -->
+<!--
+    </div>
+  </section> -->
+
   <section id="videos" class="videos-section">
     <h2>Videos </h2>
     <p>Explora el potencial de las nuevas herramientas digitales en el entorno educativo. A través de estos videos, te
@@ -626,14 +832,14 @@
     <div class="videos-grid">
       <div class="video-card">
         <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/ut4q3Upacj4?si=tnTA_BEXh-jaU3n1" allowfullscreen></iframe>
         </div>
         <div class="video-content">
-          <h3>¿Qué significa que naveguen el ecosistema digital?</h3>
-          <p>----------------------------------------</p>
+          <h3>¿Qué es el bienestar digital?</h3>
+          <p>Accedé al video para profundizar el concepto.</p>
         </div>
       </div>
-
+<!--
       <div class="video-card">
         <div class="video-frame">
           <iframe src="https://www.youtube.com/embed/jZ51YyQFiK0?si=e0W_ryOPVVq5lyyq" allowfullscreen></iframe>
@@ -708,7 +914,7 @@
             reuniones.</p>
         </div>
       </div>
-
+    -->
 
 
     </div>

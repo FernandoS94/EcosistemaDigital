@@ -22,6 +22,7 @@
      line-height: 1.6;
      color: #333;
      overflow-x: hidden;
+     padding-top:70px;
  }
 
  * {
@@ -148,7 +149,7 @@
      padding: 20px;
      border-radius: 15px;
      background: rgba(255, 255, 255, 0.1);
-     backdrop-filter: blur(50px);
+     backdrop-filter: blur(1px);
      border: 1px solid rgba(255, 255, 255, 0.2);
  }
 
@@ -1109,13 +1110,13 @@
      text-align: center;
      margin-top: 40px;
      padding: 30px 20px;
-     background: linear-gradient(135deg, rgba(241, 245, 90, 0.1), rgba(249, 178, 250, 0.1));
+     background: linear-gradient(135deg, rgba(249, 178, 250, 0.1), rgba(249, 178, 250, 0.1));
      border-radius: 20px;
  }
 
  .action-note {
      margin-top: 12px;
-     color: #718096;
+     color: black;
      font-size: 0.9rem;
      font-style: italic;
      text-align: left;
