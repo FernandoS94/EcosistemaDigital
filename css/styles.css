@@ -1481,3 +1481,178 @@
      }
  }
 
+/* boton como usar los avatares*/
+
+.how-to-video-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: calc(-1 * var(--container-padding, 40px));    /* Sale del container */
+    margin-right: calc(-1 * var(--container-padding, 40px));   /* Sale del container */
+    padding: 30px 40px;
+    
+    border-radius: 20px;
+    width: auto;
+}
+
+.how-to-video-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: var(--cuarto-color);
+    color: black;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.how-to-video-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(36, 160, 165, 0.4);
+    background:  var(--tercer-color);
+}
+
+.how-to-video-button i {
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .how-to-video-container {
+        margin-left: -30px;
+        margin-right: -30px;
+        padding: 25px 30px;
+    }
+    
+    .how-to-video-button {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .how-to-video-container {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 20px 20px;
+    }
+    
+    .how-to-video-button {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+/* FAQ Section: Eliminación de fondos de color y gradientes */
+        .faq-section {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .faq-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 40px;
+        }
+
+        .faq-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            align-items: start;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #eee;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .faq-question {
+            padding: 14px 18px;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+
+        .faq-item.active .faq-question {
+            background: var(--light-color);
+        }
+
+        .faq-question:hover {
+            background: var(--light-color);
+        }
+
+        .faq-question h3 {
+            margin: 0;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .faq-icon {
+            font-size: 1rem;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--secondary-color);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: #555;
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 14px 18px;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            margin: 0 0 8px 0;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-answer ul {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 768px) {
+            .faq-container {
+                grid-template-columns: 1fr;
+            }
+        }

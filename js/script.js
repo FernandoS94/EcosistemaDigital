@@ -197,6 +197,7 @@ const VIDEOS = {
     khanmigo: 'https://www.youtube.com/embed/yJ8fpSxSzP8?si=if1A3-_cgFxKdBQ9',
     khanacademy: 'https://www.youtube.com/embed/M81Aez7PJX0?si=zimMNRx7VMXr-et5',
     teachingandlearning: 'https://www.youtube.com/embed/kLXKp_Z0xnE?si=5wOexZp46qnxZIvQ',
+    avatar: 'https://www.youtube.com/embed/iEI9r8J7H5E?si=W55GLnWLENZqPSlJ',
 };
 
 function openVideo(url, title) {
@@ -253,6 +254,7 @@ const VIDEO_TITLES = {
     copilot: 'Tutorial: Microsoft Copilot',
     perplexity: 'Tutorial: Perplexity AI',
     gem: 'Tutorial: Creá tu Docente GEM',
+    avatar: 'Tutorial: ¿Cómo utilizar los avatares?',
 };
 
 // Función para abrir videos de aplicaciones
@@ -285,3 +287,9 @@ const btn2 = document.getElementById("btnFamilias");
 // Asignamos la misma función a ambos
 btn1.addEventListener("click", mostrarNoDisponible);
 btn2.addEventListener("click", mostrarNoDisponible);
+
+
+// Toggle FAQ
+        function toggleFaq(element) {
+            element.classList.toggle('active');
+        }
