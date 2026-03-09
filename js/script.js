@@ -282,11 +282,11 @@ function mostrarNoDisponible(event) {
 
 // Seleccionamos los botones
 const btn1 = document.getElementById("noDisponible");
-const btn2 = document.getElementById("btnFamilias");
+
 
 // Asignamos la misma función a ambos
 btn1.addEventListener("click", mostrarNoDisponible);
-btn2.addEventListener("click", mostrarNoDisponible);
+
 
 
 // Toggle FAQ
