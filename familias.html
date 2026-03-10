@@ -198,6 +198,13 @@
       animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
     }
 
+    a.feature-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
     .feature-card:nth-child(1) {
       animation-delay: 0.2s;
     }
@@ -659,6 +666,11 @@
       transform: scale(1.1) rotate(5deg);
     }
 
+     .doc-icon-wrap--otro {
+  background: linear-gradient(135deg, #f5a623 0%, #e08c0a 100%);
+  box-shadow: 0 4px 14px rgba(245, 166, 35, 0.4);
+}
+
     .doc-content {
       flex: 1;
       min-width: 0;
@@ -684,6 +696,13 @@
       background: rgba(36, 160, 165, 0.12);
       color: var(--primary-color);
     }
+
+   
+
+.doc-badge--otro {
+  background: rgba(245, 166, 35, 0.12);
+  color: #c47d00;
+}
 
     .doc-content h3 {
       font-size: 1.1rem;
@@ -758,26 +777,25 @@
     <div class="features-grid">
     
 
-      <div class="feature-card">
-        <div class="feature-icon">🎥</div>
-        <h3>Videos educativos</h3>
-        <p>Explicaciones sencillas y prácticas sobre temas escolares y estrategias familiares para el aprendizaje.</p>
-      </div>
+     <a href="#videos" class="feature-card">
+    <div class="feature-icon">🎥</div>
+    <h3>Videos educativos</h3>
+    <p>Explicaciones sencillas y prácticas sobre temas escolares y estrategias familiares para el aprendizaje.</p>
+</a>
 
-      <div class="feature-card">
-        <div class="feature-icon">💬</div>
-        <h3>Comunicación y acompañamiento</h3>
-        <p>Orientaciones sobre cómo mantener un diálogo efectivo entre familia y escuela.</p>
-      </div>
-    </div>
+<a href="#documentos" class="feature-card">
+    <div class="feature-icon">💬</div>
+    <h3>Comunicación y acompañamiento</h3>
+    <p>Orientaciones sobre cómo mantener un diálogo efectivo entre familia y escuela.</p>
+</a>
   </section>
 
-  <!-- SECCIÓN DOCUMENTOS 
+  <!-- SECCIÓN DOCUMENTOS -->
   <section id="documentos" class="docs-section">
     <h2>Documentos</h2>
     <p class="docs-intro">Accedé a materiales descargables: PDFs, infografías y recursos de apoyo para acompañar el aprendizaje desde casa. Hacé clic en cualquier tarjeta para abrir el documento.</p>
 
-    <div class="docs-grid"> -->
+    <div class="docs-grid"> 
 
       <!-- Tarjeta 1 - PDF 
       <a href="https://drive.google.com/TU_LINK_AQUI" target="_blank" class="doc-card" data-type="PDF">
@@ -792,7 +810,7 @@
         <div class="doc-arrow"><i class="fas fa-arrow-right"></i></div>
       </a> -->
 
-      <!-- Tarjeta 2 - Infografía 
+      <!-- Tarjeta 2 - Infografía -->
       <a href="https://drive.google.com/file/d/1h1Yc61pKIqzXapal6RJ_SFSjwHPJdl91/view" target="_blank" class="doc-card" data-type="Infografía">
         <div class="doc-icon-wrap doc-icon-wrap--infografia">
           <i class="fas fa-image"></i>
@@ -803,23 +821,23 @@
           <p>Compartimos algunas recomendaciones que pueden ayudarte a proteger a tus hijos en los entornos digitales..</p>
         </div>
         <div class="doc-arrow"><i class="fas fa-arrow-right"></i></div>
-      </a> -->
+      </a> 
 
-      <!-- Tarjeta 3 - PDF 
-      <a href="https://drive.google.com/TU_LINK_AQUI" target="_blank" class="doc-card" data-type="PDF">
-        <div class="doc-icon-wrap">
-          <i class="fas fa-file-pdf"></i>
+      <!-- Tarjeta 3 - otro -->
+        <a href="https://buenosaires.gob.ar/gcaba_historico/educacion/familias/familias-en-comunidad" target="_blank" class="doc-card" data-type="otro">
+        <div class="doc-icon-wrap doc-icon-wrap--otro">
+          <i class="fas fa-link"></i>
         </div>
         <div class="doc-content">
-          <span class="doc-badge doc-badge--pdf">PDF</span>
-          <h3>Título del documento</h3>
-          <p>Descripción breve del contenido del documento o recurso.</p>
+          <span class="doc-badge doc-badge--otro">Web</span>
+          <h3>Escuela en familia</h3>
+          <p>Accedé a la oferta de talleres virtuales para acompañar la crianza y las trayectorias escolares de los chicos.</p>
         </div>
         <div class="doc-arrow"><i class="fas fa-arrow-right"></i></div>
-      </a> -->
-<!--
+      </a>
+
     </div>
-  </section> -->
+  </section> 
 
   <section id="videos" class="videos-section">
     <h2>Videos </h2>
