@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zona Alumnos - Tu Espacio Digital</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <style>
         :root {
             --primary-color: #24a0a5;
@@ -129,8 +131,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            50% { transform: translate(50px, 50px) rotate(180deg); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(50px, 50px) rotate(180deg);
+            }
         }
 
         .hero-content {
@@ -155,8 +164,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         .hero h1 {
@@ -174,8 +190,15 @@
         }
 
         @keyframes gradient-shift {
-            0%, 100% { filter: hue-rotate(0deg); }
-            50% { filter: hue-rotate(20deg); }
+
+            0%,
+            100% {
+                filter: hue-rotate(0deg);
+            }
+
+            50% {
+                filter: hue-rotate(20deg);
+            }
         }
 
         .hero p {
@@ -191,7 +214,8 @@
             flex-wrap: wrap;
         }
 
-        .btn-primary, .btn-secondary {
+        .btn-primary,
+        .btn-secondary {
             padding: 15px 40px;
             border-radius: 50px;
             font-weight: 700;
@@ -304,10 +328,21 @@
             transform: scale(1.1) rotate(5deg);
         }
 
-        .zone-card.primary .zone-icon { color: var(--primary-color); }
-        .zone-card.secondary .zone-icon { color: var(--cuarto-color); }
-        .zone-card.accent .zone-icon { color: var(--tercer-color); }
-        .zone-card.special .zone-icon { color: var(--accent-color); }
+        .zone-card.primary .zone-icon {
+            color: var(--primary-color);
+        }
+
+        .zone-card.secondary .zone-icon {
+            color: var(--cuarto-color);
+        }
+
+        .zone-card.accent .zone-icon {
+            color: var(--tercer-color);
+        }
+
+        .zone-card.special .zone-icon {
+            color: var(--accent-color);
+        }
 
         .zone-card h3 {
             font-size: 1.6rem;
@@ -635,6 +670,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
@@ -648,21 +684,22 @@
     </nav>
 
     <section class="hero">
-    <div class="hero-content">
-        <div class="hero-badge">🎮 Programación + IA + Creatividad</div>
-        <h1>
-            No solo consumas tecnología,<br>
-            <span class="gradient-text">aprende a crearla</span>
-        </h1>
-        <p>Desde programar tu primer videojuego hasta dominar herramientas de Inteligencia Artificial. Aquí reunimos los tutoriales, videos y links clave para tus proyectos.</p>
-        <div class="cta-buttons">
-            <a href="#" class="btn-primary">Empezar a crear</a>
-            <a href="#" class="btn-secondary">Ver herramientas</a>
+        <div class="hero-content">
+            <div class="hero-badge">🎮 Programación + IA + Creatividad</div>
+            <h1>
+                No solo consumas tecnología,<br>
+                <span class="gradient-text">aprende a crearla</span>
+            </h1>
+            <p>Desde programar tu primer videojuego hasta dominar herramientas de Inteligencia Artificial. Aquí reunimos
+                los tutoriales, videos y links clave para tus proyectos.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">Empezar a crear</a>
+                <a href="#" class="btn-secondary">Ver herramientas</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    
+
 
     <script>
         // Navbar scroll effect
@@ -680,9 +717,9 @@
             const body = document.body;
             const modeText = document.getElementById('modeText');
             const modeToggle = document.querySelector('.mode-toggle');
-            
+
             body.classList.toggle('light-mode');
-            
+
             if (body.classList.contains('light-mode')) {
                 modeText.textContent = 'Modo Dark';
                 modeToggle.innerHTML = '<i class="fas fa-moon"></i><span id="modeText">Modo Dark</span>';
@@ -699,7 +736,7 @@
             const savedTheme = localStorage.getItem('theme');
             const body = document.body;
             const modeToggle = document.querySelector('.mode-toggle');
-            
+
             if (savedTheme === 'light') {
                 body.classList.add('light-mode');
                 modeToggle.innerHTML = '<i class="fas fa-moon"></i><span id="modeText">Modo Dark</span>';
@@ -747,4 +784,5 @@
         });
     </script>
 </body>
+
 </html>

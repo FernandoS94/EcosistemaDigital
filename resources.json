@@ -282,5 +282,95 @@
             "Esquema Técnico"
         ],
         "url": "https://rise.articulate.com/share/lziRlhr_86NvX0N0tO473yFACkGRmBYw"
+    },
+     {
+        "id": 22,
+        "title": "Mitos y leyendas: su importancia en cada cultura",
+        "level": "Nivel 1",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura I",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan explora el universo de los mitos y las leyendas (tradicionales y urbanas). Se prioriza el estudio de sus definiciones, características y diferenciación. El material busca que el estudiante se sumerja en la reflexión sobre el valor de estos relatos como constructores fundamentales de la identidad y el imaginario colectivo de una comunidad. Los alumnos analizan críticamente narrativas de diversas culturas, incluyendo mitos cosmogónicos y etiológicos, y finalizan el plan con la creación de sus propias producciones orales y escritas.",
+        "tags": [
+            "Mitos",
+            "Leyendas",
+            "Identidad"
+        ],
+        "url": "https://rise.articulate.com/share/suBACuScb_xCmE5zl_13VeU0Zsa5qqXN"
+    },
+    {
+        "id": 23,
+        "title": "El cuento del terror",
+        "level": "Nivel 1",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura I",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan profundiza en el género del cuento de terror y sus características fundamentales, como la construcción de escenarios y personajes para crear una atmósfera de miedo. Se analiza la distinción entre terror fantástico y terror realista, y los recursos del lenguaje (adjetivos, verbos, sustantivos) utilizados para generar tensión y sugestión en el lector. Además, el material aborda las claves narrativas postuladas por Edgar Allan Poe, tales como la brevedad y la unidad de efecto.",
+        "tags": [
+            "Cuento de terror",
+            "Construcción de escenarios",
+            "Recursos del lenguaje"
+        ],
+        "url": "https://rise.articulate.com/share/IrczAifMg3l7eB32OUB0PzW8icz4uTMV"
+    },
+    {
+        "id": 24,
+        "title": "Ciencia y tecnología",
+        "level": "Nivel 1",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura I",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan se enfoca en la ciencia ficción como género narrativo que explora futuros posibles y dilemas sociotecnológicos. El material guía el análisis del cuento de ciencia ficción a través de la lectura de autores clave como Isaac Asimov y Ray Bradbury. Además, se profundiza en las Tres Leyes de la Robótica y su relevancia ética en la Inteligencia Artificial y se incluye el estudio del texto de divulgación científica y los recursos de cohesión textual.",
+        "tags": [
+            "Ciencia Ficción",
+            "Texto de divulgación",
+            "Cohesión textual"
+        ],
+        "url": "https://rise.articulate.com/share/QhHHYOFWtM2ZhNBePP5XseEyyqjg1fVO"
+    },
+    {
+        "id": 25,
+        "title": "Relatos de viajes",
+        "level": "Nivel 2",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura II",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan explora el tópico del viaje, tanto real como imaginario, y su impacto transformador en personajes y lectores. El material propone el análisis de diversos géneros narrativos centrados en viajes, incluyendo la novela de aventuras (Moby Dick), la ciencia ficción (La máquina del tiempo), y la crónica (de Indias y actual), desarrollando habilidades de interpretación, descripción de escenarios y reflexión sobre el cambio personal y los desafíos de viajar.",
+        "tags": [
+            "Relatos de viaje",
+            "Aventuras",
+            "Crónicas"
+        ],
+        "url": "https://rise.articulate.com/share/HrjzjPClwQ0yTscPgKs7EkU_YFISCoZw"
+    },
+    {
+        "id": 26,
+        "title": "Microficciones y poemas",
+        "level": "Nivel 2",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura II",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan aborda dos géneros breves:  la microficción y el poema. Se analizan sus características distintivas, como la elipsis, la intertextualidad y el lenguaje poético. El material busca desarrollar habilidades de análisis crítico y producción creativa, incluyendo la escritura de textos y la creación de material audiovisual basado en microrrelatos. Se leen autores clave de estos géneros como Ana María Shua, Alfonsina Storni y Baldomero Fernández Moreno.",
+        "tags": [
+            "Microficciones",
+            "Poemas",
+            "Lenguaje poético"
+        ],
+        "url": "https://rise.articulate.com/share/n3w4JBEvxfm9bobTCONcR4liWtFFgaco"
+    },
+    {
+        "id": 27,
+        "title": "Héroes y antihéroes de la literatura universal",
+        "level": "Nivel 2",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura II",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan se centra en el género épico como reflejo de los valores sociales, desde sus orígenes orales hasta la épica clásica, medieval y la gauchesca. Se analiza la construcción y evolución de la figura del héroe a partir de ejemplos como Odiseo, el Cid Campeador y Martín Fierro. Se espera que los estudiantes desarrollen habilidades de interpretación de textos, así como destrezas para crear hipótesis y argumentar sobre los temas literarios propuestos.",
+        "tags": [
+            "Épica",
+            "Héroes",
+            "Argumentación"
+        ],
+        "url": "https://rise.articulate.com/share/5DzkqXZcWkYGRM9VWhn_t4dUMqC53U8b"
     }
 ]

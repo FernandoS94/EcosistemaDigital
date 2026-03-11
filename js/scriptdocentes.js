@@ -8,7 +8,7 @@ async function loadResources() {
         initializeApp();
     } catch (error) {
         console.error('Error al cargar recursos:', error);
-        document.getElementById('resourcesGrid').innerHTML = 
+        document.getElementById('resourcesGrid').innerHTML =
             '<div style="text-align:center;padding:40px;color:#e74c3c;"><h3>⚠️ Error al cargar los recursos</h3><p>Por favor, recarga la página.</p></div>';
     }
 }
@@ -37,10 +37,10 @@ function splitMultipleValues(value) {
 // Función helper para verificar si un recurso coincide con el filtro
 function resourceMatchesFilter(resourceValue, activeFilterSet) {
     if (activeFilterSet.size === 0) return true;
-    
+
     // Dividir el valor del recurso por comas
     const resourceValues = splitMultipleValues(resourceValue);
-    
+
     // El recurso coincide si ALGUNO de sus valores está en el filtro activo
     return resourceValues.some(val => activeFilterSet.has(val));
 }
@@ -144,7 +144,7 @@ function updateActiveFilters() {
 // Remover filtro individual
 function removeFilter(filterType, value) {
     activeFilters[filterType].delete(value);
-    
+
     // Actualizar chip visual
     const chips = document.querySelectorAll('.chip');
     chips.forEach(chip => {
@@ -159,9 +159,9 @@ function removeFilter(filterType, value) {
 
 // Filtrar recursos
 function filterResources() {
-    const hasActiveFilters = 
-        activeFilters.level.size > 0 || 
-        activeFilters.category.size > 0 || 
+    const hasActiveFilters =
+        activeFilters.level.size > 0 ||
+        activeFilters.category.size > 0 ||
         activeFilters.subject.size > 0 ||
         activeFilters.mode.size > 0;
 
@@ -254,12 +254,12 @@ function redirectToMaterial(url) {
     window.open(url, '_blank');
 }
 
-        // Toggle FAQ
-        function toggleFaq(element) {
-            element.classList.toggle('active');
-        }
+// Toggle FAQ
+function toggleFaq(element) {
+    element.classList.toggle('active');
+}
 
-       
 
-      // Inicializar aplicación cargando recursos
-        window.onload = loadResources;
+
+// Inicializar aplicación cargando recursos
+window.onload = loadResources;

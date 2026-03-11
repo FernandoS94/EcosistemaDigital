@@ -25,12 +25,12 @@ navbar.classList.add('visible');
 //window.addEventListener('scroll', () => {
 //    const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
 
-  //  if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
-   //     navbar.classList.remove('visible');
-   // } else if (currentScrollTop < lastScrollTop) {
-   //     navbar.classList.add('visible');
-   // }
-   // lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+//  if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
+//     navbar.classList.remove('visible');
+// } else if (currentScrollTop < lastScrollTop) {
+//     navbar.classList.add('visible');
+// }
+// lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
 //});
 
 // Scroll animations
@@ -290,6 +290,6 @@ btn1.addEventListener("click", mostrarNoDisponible);
 
 
 // Toggle FAQ
-        function toggleFaq(element) {
-            element.classList.toggle('active');
-        }
+function toggleFaq(element) {
+    element.classList.toggle('active');
+}
