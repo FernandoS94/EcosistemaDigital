@@ -372,5 +372,79 @@
             "Argumentación"
         ],
         "url": "https://rise.articulate.com/share/5DzkqXZcWkYGRM9VWhn_t4dUMqC53U8b"
+    },
+     {
+        "id": 28,
+        "title": "La novela",
+        "level": "Nivel 2",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura II",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan se enfoca en el estudio del género novela a través de la lectura de Los vecinos mueren en las novelas de Sergio Aguirre. Este recorrido busca que los estudiantes descubran las características distintivas de este género, tales como su extensión, el desarrollo de múltiples conflictos y la complejidad de los personajes. Además, se profundiza en recursos narrativos clave como el relato enmarcado y el punto de vista del narrador, así como en la función de las descripciones y los diálogos directos/indirectos. Finalmente, el plan incluye un análisis detallado del uso de los verbos en pasado (pretérito perfecto simple, imperfecto y pluscuamperfecto) y los signos de puntuación (rayas, comillas, interrogación y exclamación) para construir el ritmo y el tono del relato.",
+        "tags": [
+            "Novela",
+            "Relato enmarcado",
+            "Puntuación"
+        ],
+        "url": "https://rise.articulate.com/share/bWPGB4CYnbZ-zIdU9rz4hM1nA4Q4v0Pj"
+    },
+    {
+        "id": 29,
+        "title": "Teatro",
+        "level": "Nivel 3",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura III",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan aborda el género teatral desde sus orígenes en la Antigua Grecia hasta la diferenciación de sus subgéneros principales, tragedia y comedia. Se espera que los estudiantes analicen la estructura del texto dramático y los roles clave (autor, director, espectador), y que adquieran los conocimientos necesarios para la planificación y escritura colectiva de una obra propia con miras a su posible representación.",
+        "tags": [
+            "Teatro. Texto dramático. Puesta en escena"
+        ],
+        "url": "https://rise.articulate.com/share/GpAicVb3f4rioZ_CBwJdRQDook5UaoRY"
+    },
+    {
+        "id": 30,
+        "title": "Discursos que moldean: leer y analizar estereotipos",
+        "level": "Nivel 3",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura III",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan propone la lectura crítica de obras literarias y mensajes publicitarios para identificar y cuestionar estereotipos de belleza, éxito y género. Se exploran estrategias persuasivas de los medios y se promueve el desarrollo de una postura reflexiva para la producción de discursos más inclusivos y diversos.",
+        "tags": [
+            "Estereotipos",
+            "Publicidad",
+            "Literatura"
+        ],
+        "url": "https://rise.articulate.com/share/Wn0GvNLXVXFX09kMJht17YPmLoIYs2Lb"
+    },
+    {
+        "id": 31,
+        "title": "Leer y argumentar",
+        "level": "Nivel 3",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura III",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan se centra en la lectura y el análisis de cuentos realistas. El material guía a los estudiantes para comentar y recomendar obras con argumentos sólidos. Los contenidos abordan la identificación de las características del cuento realista, la estructura de la reseña literaria (ficha técnica, resumen, crítica), las estrategias para sintetizar argumentos, y la construcción de la posición enunciativa utilizando recursos para argumentar y para lograr distancia (como la tercera persona y el vocabulario técnico). ",
+        "tags": [
+            "Cuento realista",
+            "Reseña literaria",
+            "Argumentación"
+        ],
+        "url": "https://rise.articulate.com/share/iCHRCFkMBPNygKYgm_ddDHnJ3hBHmqkZ"
+    },
+    {
+        "id": 32,
+        "title": "Lo fantástico: Cortázar y Borges",
+        "level": "Nivel 3",
+        "category": "Troncal",
+        "subject": "Lengua y Literatura III",
+        "mode": "Bachiller, Técnica",
+        "description": "El plan introduce el género fantástico mediante el análisis de cuentos de Borges y Cortázar. A través de estos autores se exploran las características del género, como la vacilación entre lo real y lo inexplicable y la superposición de planos. Además, se analiza la resignificación de la mitología por parte de los autores y se incluye el análisis de cuentos clave como \"El Aleph\", \"Las ruinas circulares\", \"La noche boca arriba\" y \"Continuidad de los parques\".",
+        "tags": [
+            "Fantástico",
+            "Vacilación",
+            "Doble"
+        ],
+        "url": "https://rise.articulate.com/share/nAeNjFb6XjyXMkUxPsJqmI71oN1x2aEE"
     }
+   
 ]
