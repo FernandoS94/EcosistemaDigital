@@ -243,12 +243,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const VIDEO_TITLES = {
-    classroom: 'Tutorial: ¿ Qué es Google Classroom ?',
-    gemini: 'Tutorial:  Introducción a Gemini',
+    classroom: 'Tutorial:  ¿Qué es un aula digitial? ',
+    gemini: 'Tutorial:  Introducción a la herramienta de IA',
     khanmigo: 'Tutorial: ¿ Qué es Khanmigo?',
-    notebook: 'Tutorial: ¿Qué es Notebook LM?',
+    notebook: 'Tutorial: ¿Conocías esta herramienta de IA para la organización e investigación?',
     khanacademy: 'Tutorial: ¿Qué es Khan Academy?',
-    teachingandlearning: 'Tutorial: ¿Qué es Teaching and Learning?',
+    teachingandlearning: 'Tutorial: ¿Cómo potenciar tu entorno digital de trabajo?',
     chatgpt: 'Tutorial: ChatGPT',
     canva: 'Tutorial: Canva',
     copilot: 'Tutorial: Microsoft Copilot',
