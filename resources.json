@@ -893,6 +893,261 @@
             "trayectoria"
         ],
         "url": "https://es.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/v/race-cars-with-constant-speed-around-curve"
+    },
+     {
+        "id": 670.0,
+        "title": "Ideas intuitivas sobre la fuerza centrípeta y la aceleración",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video aborda la cinemática y dinámica del movimiento circular, centrándose en la fuerza centrípeta y las Leyes de Newton. Analiza cómo una fuerza neta modifica la dirección de la velocidad en ejemplos como órbitas o fricción en giros. Promueve habilidades de observación, representación vectorial, formulación de conjeturas y el uso de modelos físicos para explicar y predecir cambios en el movimiento según los contenidos priorizados",
+        "tags": [
+            "Fuerza centrípeta",
+            "leyes de Newton"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/v/centripetal-force-and-acceleration-intuition"
+    },
+    {
+        "id": 671.0,
+        "title": "Una comprensión visual de la fórmula de la aceleración centrípeta",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video aborda la cinemática del movimiento circular, enfocándose en la deducción de la fórmula de la aceleración centrípeta mediante el análisis de vectores de posición, velocidad y aceleración. Permite desarrollar habilidades de observación, representación vectorial y formulación de conjeturas. Asimismo, promueve el uso de modelos matemáticos para describir y predecir fenómenos físicos, integrando magnitudes vectoriales en movimientos curvilíneos.",
+        "tags": [
+            "Aceleración centrípeta",
+            "movimiento circular",
+            "vectores"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/v/visual-understanding-of-centripetal-acceleration-formula"
+    },
+    {
+        "id": 672.0,
+        "title": "La vuelta de la muerte, pregunta",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video plantea un problema acerca de la cinemática y dinámica de un auto en un bucle vertical. Trata el cálculo de la velocidad mínima y promedio para completar el giro. Desarrolla habilidades de observación, representación y conjeturas mediante el uso de modelos físicos para explicar fenómenos. Fomenta la toma de datos y comunicación precisa de resultados, integrando la matemática como herramienta descriptiva según los contenidos priorizados.",
+        "tags": [
+            "Problema",
+            "velocidad",
+            "aceleración"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/v/loop-de-loop-question"
+    },
+    {
+        "id": 673.0,
+        "title": "La vuelta de la muerte, respuesta (parte 2)",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video presenta la respuesta al problema de un auto en un bucle vertical. Aborda el cálculo de rapidez promedio y el análisis de márgenes de seguridad. Desarrolla habilidades de observación, representación y detección de variables mediante modelos matemáticos para explicar procesos físicos. Fomenta la comunicación precisa y el uso de unidades, vinculando la teoría con fenómenos reales según los contenidos priorizados.",
+        "tags": [
+            "Rapidez promedio",
+            "Rizo vertical",
+            "Modelización matemática."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/v/loop-de-loop-answer-part-2"
+    },
+    {
+        "id": 674.0,
+        "title": "Introducción a vectores y escalares",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video explica la distinción entre magnitudes escalares y vectoriales, analizando los conceptos de magnitud y dirección. A través de ejemplos prácticos, diferencia distancia de desplazamiento y rapidez de velocidad. El material permite desarrollar habilidades de observación, representación de movimientos y el uso de lenguaje simbólico con vocabulario específico de la física. Además, fomenta la modelización de procesos y la comunicación clara y precisa de ideas fundamentales.",
+        "tags": [
+            "Vectores",
+            "Magnitudes",
+            "Desplazamiento."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/introduction-to-vectors-and-scalars"
+    },
+    {
+        "id": 675.0,
+        "title": "Introducción a los marcos de referencia",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video define el marco de referencia como el punto de vista para medir magnitudes físicas. Explica cómo la velocidad y el desplazamiento cambian según el observador mediante ejemplos con un auto y un avión. Muestra que no hay un marco único correcto, sino que todos son válidos. El recurso desarrolla habilidades de observación, representación, conjeturas y el uso de modelos físicos para explicar fenómenos de la vida diaria.",
+        "tags": [
+            "Marco de referencia",
+            "Cinemática",
+            "Observación."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/introduction-to-reference-frames"
+    },
+    {
+        "id": 676.0,
+        "title": "Calcular la velocidad promedio, o rapidez",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video distingue magnitudes escalares y vectoriales, tratando velocidad, rapidez, desplazamiento y distancia. Explica el cálculo de velocidad promedio y la conversión de unidades por análisis dimensional. Desarrolla habilidades de observación, representación de movimientos, detección de variables relevantes y el uso de modelos matemáticos para describir y predecir procesos físicos, promoviendo la comunicación de ideas de manera clara y precisa.",
+        "tags": [
+            "Velocidad",
+            "Rapidez",
+            "movimiento"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/calculating-average-velocity-or-speed"
+    },
+    {
+        "id": 677.0,
+        "title": "El desplazamiento a partir del tiempo y la velocidad. Ejemplo",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video aborda la cinemática mediante el cálculo del desplazamiento y la velocidad. Se centra en la modelización matemática de movimientos sencillos, la detección de variables y la conversión de unidades por análisis dimensional. Desarrolla habilidades de representación de movimientos, comunicación precisa con lenguaje simbólico y el uso de modelos físicos para explicar fenómenos, diferenciando escalares de vectores y promoviendo el manejo de unidades.",
+        "tags": [
+            "Desplazamiento",
+            "Análisis dimensional",
+            "Vectores"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/displacement-from-time-and-velocity-example"
+    },
+    {
+        "id": 678.0,
+        "title": "Las gráficas de posición versus tiempo",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video analiza las gráficas de posición-tiempo para describir el movimiento. Aborda contenidos sobre desplazamiento, distancia, velocidad y rapidez, destacando que la pendiente de la recta equivale a la velocidad instantánea. Desarrolla habilidades de observación, representación de trayectorias e interpretación de modelos matemáticos. Promueve el uso de vocabulario técnico, el manejo de unidades y la comunicación precisa de ideas fundamentales, integrando matemática y física.",
+        "tags": [
+            "Posición",
+            "Desplazamiento",
+            "Tiempo."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/position-vs-time-graphs"
+    },
+    {
+        "id": 682.0,
+        "title": "¿Qué es el desplazamiento?",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso aborda los conceptos de posición, distancia y desplazamiento. Explica la distinción entre magnitudes escalares y vectoriales. Permite desarrollar habilidades de razonamiento lógico, representación en sistemas de referencia y diferenciación entre trayectoria y cambio neto de ubicación. A través del mismo, los estudiantes pueden aprender a modelar movimientos unidimensionales y a interpretar la dirección del movimiento mediante signos matemáticos.",
+        "tags": [
+            "Posición",
+            "Desplazamiento",
+            "Distancia."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/a/what-is-displacement"
+    },
+    {
+        "id": 683.0,
+        "title": "Fuerzas y leyes del movimiento de Newton",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso aborda las leyes del movimiento de Newton y el concepto de fuerza como vector. Incluye el estudio de la inercia (1.ª ley), la relación entre fuerza, masa y aceleración (2.ª ley, $F=ma$), y los pares de acción-reacción (3.ª ley). Explora fuerzas específicas como la normal, tensión, fricción y gravitación en diversos escenarios. Permite desarrollar habilidades de modelado físico, interpretación de diagramas de cuerpo libre y resolución de problemas complejos mediante el análisis de sistemas de fuerzas y el razonamiento cuantitativo.",
+        "tags": [
+            "Fuerzas",
+            "leyes de Newton",
+            "Gravedad"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/forces-newtons-laws"
+    },
+    {
+        "id": 684.0,
+        "title": "Introducción a los resortes y la ley de Hooke",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este videoexplica la Ley de Hooke y la dinámica de resortes mediante el análisis de la fuerza de restitución y el desplazamiento. Aborda la proporcionalidad entre fuerza y deformación, la constante elástica y la diferencia entre compresión y estiramiento. Desarrolla habilidades de observación, modelización, conjeturas y uso de lenguaje simbólico para predecir el comportamiento de sistemas físicos.",
+        "tags": [
+            "Ley de Hooke",
+            "Constante elástica",
+            "Fuerza de restitución."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/work-and-energy/hookes-law/v/intro-to-springs-and-hooke-s-law"
+    },
+    {
+        "id": 685.0,
+        "title": "¿Qué es la energía potencial elástica?",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso aborda la energía potencial elástica y su relación con la Ley de Hooke. Explica contenidos sobre la constante de elasticidad, el trabajo realizado por fuerzas variables y la conservación de la energía en sistemas con resortes. Permite desarrollar habilidades de interpretación gráfica (área bajo la curva fuerza-desplazamiento), cálculo de magnitudes físicas y modelado de sistemas deformables, vinculando la teoría con aplicaciones mecánicas prácticas.",
+        "tags": [
+            "Energía potencial elástica",
+            "resortes",
+            "ley de Hooke"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/work-and-energy/hookes-law/a/what-is-elastic-potential-energy"
+    },
+    {
+        "id": 686.0,
+        "title": "La energía potencial almacenada en un resorte",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video explica la energía potencial elástica a partir de la Ley de Hooke y el cálculo del trabajo como el área bajo la curva en gráficos de fuerza-desplazamiento. Aborda contenidos sobre la constante elástica y la modelización matemática de sistemas físicos. Desarrolla habilidades de observación, representación y el uso de modelos para predecir comportamientos. Fomenta la comunicación precisa mediante lenguaje simbólico y el manejo de unidades.",
+        "tags": [
+            "Energía potencial",
+            "Ley de Hooke",
+            "Modelización."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/work-and-energy/hookes-law/v/potential-energy-stored-in-a-spring"
+    },
+    {
+        "id": 687.0,
+        "title": "¿Qué es la ley de Hooke?",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso aborda la Ley de Hooke, explicando la relación entre fuerza restauradora, constante elástica y deformación. Trata contenidos sobre el límite de elasticidad y el comportamiento de materiales deformables. Permite desarrollar habilidades de análisis de proporcionalidad directa, interpretación de signos en vectores y modelado de sistemas físicos. Los estudiantes aprenden a cuantificar la rigidez de objetos y a predecir respuestas mecánicas bajo carga.",
+        "tags": [
+            "Elasticidad",
+            "Restauración",
+            "Proporcionalidad"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/work-and-energy/hookes-law/a/what-is-hookes-law"
+    },
+    {
+        "id": 688.0,
+        "title": "Péndulos",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video analiza el péndulo simple como un oscilador armónico, explorando la fuerza restauradora, la longitud y el periodo. Trata la independencia de la masa y la aplicación de modelos matemáticos para ángulos pequeños. El recurso permite desarrollar habilidades de observación, representación de movimientos y formulación de conjeturas. Promueve el uso de lenguaje simbólico y la modelización para explicar y predecir procesos físicos reales.",
+        "tags": [
+            "Oscilador armónico",
+            "Péndulo simple",
+            "Periodo."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/mechanical-waves-and-sound/harmonic-motion/v/pendulum"
+    },
+    {
+        "id": 689.0,
+        "title": "¿Qué es la energía potencial gravitacional?",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso explica la energía potencial gravitatoria, analizando su dependencia de la masa, la altura y la aceleración de la gravedad. Aborda contenidos sobre el trabajo realizado por el peso y la elección de niveles de referencia. Permite desarrollar habilidades de modelado energético, interpretación de sistemas conservativos y cálculo de variables en campos gravitatorios. Facilita que el estudiante comprenda la energía como una propiedad relativa de la posición de los cuerpos.",
+        "tags": [
+            "Gravitación",
+            "Posición",
+            "Referencia"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/a/what-is-gravitational-potential-energy"
     }
+   
    
 ]
