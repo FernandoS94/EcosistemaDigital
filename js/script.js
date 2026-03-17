@@ -293,3 +293,14 @@ btn1.addEventListener("click", mostrarNoDisponible);
 function toggleFaq(element) {
     element.classList.toggle('active');
 }
+
+function toggleMateriales(e) {
+  e.preventDefault();
+  document.querySelector('.nav-dropdown').classList.toggle('open');
+}
+
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelector('.nav-dropdown')?.classList.remove('open');
+  }
+});

@@ -38,7 +38,7 @@
 
 <body>
 
-    <nav class="navbar">
+    <!--<nav class="navbar">
         <div class="navbar-container">
             <a href="#" class="logo">
                 <img src="./img/ECO_HORIZONTAL.png" alt="Logo de la Empresa">
@@ -55,7 +55,38 @@
 
             <div class="logo-spacer"></div>
         </div>
-    </nav>
+    </nav>-->
+
+    <nav class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="logo">
+      <img src="./img/ECO_HORIZONTAL.png" alt="Logo de la Empresa">
+    </a>
+
+    <div class="nav-links-centered">
+      <a href="#about" class="nav-link">Inicio</a>
+      <a href="#avatares" class="nav-link">Avatares</a>
+      <a href="#apps" class="nav-link">Aplicaciones</a>
+
+      <div class="nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" onclick="toggleMateriales(event)">
+          Materiales
+          <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 10 10">
+            <path d="M2 3.5 L5 6.5 L8 3.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <div class="nav-dropdown-menu" id="materiales-menu">
+          <a href="docentes.html" class="nav-dropdown-item">Docentes</a>
+          <a href="familias.html" class="nav-dropdown-item">Familias</a>
+        </div>
+      </div>
+
+      <a href="#faq" class="nav-link">Ayuda</a>
+    </div>
+
+    <div class="logo-spacer"></div>
+  </div>
+</nav>
 
     <main>
         <section class="hero" id="hero" aria-label="Introducción al Ecosistema Educativo Digital">
