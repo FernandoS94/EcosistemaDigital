@@ -1441,6 +1441,45 @@
             "Demanda. Elasticidad. Cálculo"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/introduction-to-price-elasticity-of-demand-ap-microeconomics-khan-academy"
+    },
+    {
+        "id": 716.0,
+        "title": "La demanda de mercado como la suma de las demandas individuales",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda el concepto de demanda de mercado y la incidencia de las demandas individuales que intervienen en la constitución de la misma.",
+        "tags": [
+            "Demanda. Mercado. Demandas individuales"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/demand-curve-tutorial/v/market-demand-as-the-sum-of-individual-demand"
+    },
+    {
+        "id": 714.0,
+        "title": "La ley de demanda",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video explica la ley de demanda en función del precio, la cantidad de bienes y sus consecuencias para graficar curvas de demanda.",
+        "tags": [
+            "Microeconomía. Demanda. Precios"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/demand-curve-tutorial/v/law-of-demand"
+    },
+    {
+        "id": 715.0,
+        "title": "Más sobre la elasticidad de la demanda",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video profundiza sobre la ley de demanda y las posibilidades de variación de la curva de demanda de acuerdo a determinantes que pueden intervenir en el ciclo económico.",
+        "tags": [
+            "Demanda. Elasticidad. Curva"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/more-on-elasticity-of-demand"
     }
     
    
