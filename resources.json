@@ -1147,7 +1147,302 @@
             "Referencia"
         ],
         "url": "https://es.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/a/what-is-gravitational-potential-energy"
+    },
+     {
+        "id": 690.0,
+        "title": "Introducción a la gravedad",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video explica la gravitación universal y la aceleración de la gravedad. Aborda la relación entre fuerza, masa y distancia con modelos matemáticos. Desarrolla habilidades de observación, conjeturas y representación. Los alumnos logran explicar fenómenos cotidianos y comunicar ideas con lenguaje simbólico, vinculando la teoría con la detección de variables relevantes.",
+        "tags": [
+            "Gravitación",
+            "Fuerzas",
+            "Aceleración."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/centripetal-force-and-gravitation/gravity-newtonian/v/introduction-to-gravity"
+    },
+    {
+        "id": 691.0,
+        "title": "Potencia",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video define la potencia como la tasa de realización de trabajo, distinguiendo entre potencia promedio e instantánea. Incluye energía cinética, potencial y la relación entre fuerza y rapidez. Desarrolla habilidades de observación, representación y el uso de modelos físicos para explicar fenómenos. Fomenta la comunicación precisa con lenguaje simbólico y el manejo de unidades como el watt.",
+        "tags": [
+            "Potencia",
+            "Energía",
+            "Tiempo"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/v/power"
+    },
+    {
+        "id": 692.0,
+        "title": "¿Qué es la potencia?",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso aborda el concepto de potencia como la rapidez con la que se realiza un trabajo. Explica contenidos sobre vatios (Watts), caballos de fuerza y la relación entre potencia, fuerza y velocidad. Desarrolla habilidades de razonamiento físico-matemático, análisis de eficiencia temporal en procesos energéticos y conversión de unidades. Los estudiantes aprenden a cuantificar el rendimiento de máquinas y a evaluar el consumo energético en sistemas mecánicos.",
+        "tags": [
+            "Potencia",
+            "rapidez",
+            "rendimiento"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/a/what-is-power"
+    },
+    {
+        "id": 693.0,
+        "title": "La ley de Faraday para generar electricidad",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video analiza la Ley de Faraday y la inducción de fuerza electromotriz mediante la rotación de un circuito en un campo magnético. Explica la relación entre flujo magnético, corriente y aplicaciones en generadores o centrales hidroeléctricas. Desarrolla habilidades de observación, formulación de conjeturas y el uso de modelos físicos para explicar fenómenos, fomentando la comunicación precisa y la interpretación de variables en procesos mecánicos y tecnológicos.",
+        "tags": [
+            "Ley de Faraday",
+            "Inducción electromagnética",
+            "Generadores."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/magnetic-forces-and-magnetic-fields/magnetic-flux-faradays-law/v/faradays-law-for-generating-electricity"
+    },
+    {
+        "id": 694.0,
+        "title": "La primera ley del movimiento de Newton",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video aborda la Primera Ley de Newton, explorando inercia, reposo y movimiento rectilíneo uniforme. Explica el impacto de fuerzas externas como la fricción en la detención de objetos. Fomenta habilidades de observación, representación y formulación de conjeturas mediante modelos físicos. Permite a los estudiantes explicar fenómenos cotidianos y distinguir marcos de referencia con precisión.",
+        "tags": [
+            "Inercia",
+            "Leyes de Newton",
+            "Fricción."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-first-law-of-motion"
+    },
+    {
+        "id": 695.0,
+        "title": "La segunda ley del movimiento de Newton",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video aborda la segunda ley de Newton, definiendo la masa como medida de materia y constante de proporcionalidad entre fuerza y aceleración. Diferencia masa de peso mediante ejemplos de cálculo y análisis de variables. Desarrolla habilidades de observación, representación vectorial y conjeturas. Promueve el uso de modelos físicos y lenguaje simbólico para explicar y predecir fenómenos mecánicos, integrando magnitudes y unidades de medida según los marcos de priorización.",
+        "tags": [
+            "Segunda ley de Newton",
+            "Masa",
+            "Proporcionalidad."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-second-law-of-motion"
+    },
+    {
+        "id": 696.0,
+        "title": "La tercera ley del movimiento de Newton",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video explica la ley de interacciones de Newton, analizando cómo las fuerzas entre dos cuerpos son iguales y opuestas. Mediante ejemplos como el empuje de objetos, la propulsión de cohetes y el movimiento espacial, aborda contenidos de dinámica. Desarrolla habilidades de observación, conjetura y el uso de modelos físicos para explicar fenómenos y predecir movimientos de manera precisa.",
+        "tags": [
+            "Ley de interacciones",
+            "Acción y reacción",
+            "Modelos físicos."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-third-law-of-motion"
+    },
+    {
+        "id": 697.0,
+        "title": "¿Qué es la conservación de la energía?",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso aborda el principio de conservación de la energía mecánica en sistemas aislados y la transformación entre energías cinética y potencial. Explica contenidos sobre fuerzas conservativas, disipación por fricción y el balance energético total. Desarrolla habilidades de modelado de sistemas físicos, predicción de estados dinámicos y resolución de problemas mediante balances de energía. Los estudiantes aprenden a analizar la invariabilidad de la energía en procesos mecánicos complejos.",
+        "tags": [
+            "Sistema",
+            "Transformación",
+            "conservación"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/a/what-is-conservation-of-energy"
+    },
+    {
+        "id": 698.0,
+        "title": "Efecto fotoeléctrico",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video aborda el efecto fotoeléctrico y la dualidad onda-partícula de la luz. Explora conceptos como el fotón, la función de trabajo y la energía cinética mediante la modelización matemática de procesos físicos. Desarrolla habilidades de observación, representación y formulación de conjeturas. Fomenta el uso de lenguaje simbólico y la comunicación precisa para explicar y predecir la liberación de electrones según la frecuencia lumínica.",
+        "tags": [
+            "Dualidad onda-partícula",
+            "Función de trabajo",
+            "Fotones."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/quantum-physics/photons/v/photoelectric-effect"
+    },
+    {
+        "id": 699.0,
+        "title": "Efecto fotoeléctrico",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso aborda el efecto fotoeléctrico, la naturaleza particulada de la luz (fotones) y la función de trabajo de los metales. Explica contenidos sobre energía de umbral, potencial de frenado y la ecuación de Einstein. Desarrolla habilidades de interpretación de modelos cuánticos, análisis de datos experimentales y distinción entre física clásica y moderna. Los estudiantes aprenden a cuantificar la energía radiante y a comprender la interacción luz-materia.",
+        "tags": [
+            "Energía de umbral",
+            "fotón",
+            "luz"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/quantum-physics/photons/a/photoelectric-effect"
+    },
+    {
+        "id": 700.0,
+        "title": "Introducción a las ondas",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video define las ondas como perturbaciones que propagan energía a través del espacio. Diferencia ondas transversales y longitudinales mediante ejemplos de cuerdas y sonido. El material permite desarrollar habilidades de observación, representación y formulación de conjeturas. Aborda la modelización matemática para describir fenómenos físicos, fomentando el uso de lenguaje científico y la comunicación de ideas de manera clara y precisa.",
+        "tags": [
+            "Ondas",
+            "Energía",
+            "Modelización."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/mechanical-waves-and-sound/mechanical-waves/v/introduction-to-waves"
+    },
+    {
+        "id": 701.0,
+        "title": "Definición de la amplitud y el periodo",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video analiza la terminología de los osciladores armónicos, abordando amplitud, periodo y gráficas de posición-tiempo. Desarrolla habilidades de observación, representación y uso de modelos físicos para explicar fenómenos. Fomenta la comunicación precisa con lenguaje simbólico y la detección de variables en procesos mecánicos, integrando la matemática como herramienta descriptiva para caracterizar movimientos oscilatorios.",
+        "tags": [
+            "Amplitud",
+            "Periodo",
+            "Oscilador."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/mechanical-waves-and-sound/harmonic-motion/v/definition-of-amplitude-and-period"
+    },
+    {
+        "id": 702.0,
+        "title": "La luz: ondas electromagnéticas, espectro electromagnético y fotones",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso aborda la naturaleza dual de la luz y el espectro electromagnético, desde ondas de radio hasta rayos gamma. Explica conceptos de longitud de onda, frecuencia y energía fotónica. Desarrolla habilidades de clasificación de radiaciones, interpretación de modelos ondulatorios y análisis de la interacción materia-energía. Los estudiantes aprenden a vincular magnitudes físicas con aplicaciones tecnológicas y a comprender la luz como una perturbación de campos eléctricos y magnéticos.",
+        "tags": [
+            "Radiación",
+            "Dualidad",
+            "Frecuencia"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/light-waves/introduction-to-light-waves/a/light-and-the-electromagnetic-spectrum"
+    },
+    {
+        "id": 703.0,
+        "title": "Interferencia de ondas",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video analiza la interferencia de ondas y el principio de superposición, explicando la suma de pulsos en una misma región. Aborda contenidos sobre el comportamiento de ondas mecánicas y electromagnéticas. Desarrolla habilidades de observación, representación y conjeturas mediante modelos físicos para explicar fenómenos. Fomenta la comunicación precisa y el uso de la matemática para predecir y describir procesos ondulatorios.",
+        "tags": [
+            "Interferencia",
+            "Superposición",
+            "Modelos físicos."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/mechanical-waves-and-sound/standing-waves/v/wave-interference-pulses"
+    },
+    {
+        "id": 704.0,
+        "title": "Interferencia constructiva y destructiva",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video profundiza en la interferencia constructiva y destructiva, analizando la superposición, el desfase y la diferencia de camino. Aborda modelos para predecir comportamientos ondulatorios y explica aplicaciones como la cancelación de ruido. Desarrolla habilidades de observación, representación, conjeturas y comunicación precisa. Permite vincular la longitud de onda y la fase para explicar procesos físicos.",
+        "tags": [
+            "Interferencia",
+            "Superposición",
+            "Longitud de onda."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/light-waves/interference-of-light-waves/v/constructive-and-destructive-interference"
+    },
+    {
+        "id": 705.0,
+        "title": "Relatividad especial",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este recurso introduce los postulados de la relatividad especial de Einstein, abordando la constancia de la velocidad de la luz y la relatividad de la simultaneidad. Explica conceptos de dilatación del tiempo, contracción de la longitud y la equivalencia masa-energía ($E=mc²$). Permite desarrollar habilidades de pensamiento abstracto, cuestionamiento de la intuición clásica y resolución de problemas en marcos de referencia inerciales, transformando la comprensión del espacio-tiempo.",
+        "tags": [
+            "Relatividad",
+            "Contracción de la longitud",
+            "Dilatación del tiempo"
+        ],
+        "url": "https://es.khanacademy.org/science/physics/special-relativity"
+    },
+    {
+        "id": 706.0,
+        "title": "Transformación de Lorentz para cambio de coordenadas",
+        "level": "4° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "mode": "Bachiller",
+        "description": "Este video explica las transformaciones de Lorentz para cambios en coordenadas espaciales y temporales. Analiza cómo se transforman los desplazamientos entre marcos relativistas mediante álgebra para estudiar velocidades. Desarrolla habilidades de representación, modelización de procesos y comunicación precisa con lenguaje simbólico. Fomenta el uso de la matemática como herramienta para describir, explicar y predecir fenómenos físicos.",
+        "tags": [
+            "Relatividad especial",
+            "Marcos de referencia",
+            "Modelización matemática."
+        ],
+        "url": "https://es.khanacademy.org/science/physics/special-relativity/einstein-velocity-addition/v/lorentz-transformation-for-change-in-coordinates"
+    },
+    {
+        "id": 719.0,
+        "title": "Más sobre la elasticidad de la demanda",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video hace foco en el cálculo y las determinantes que intervienen en el mismo de la elasticidad de la oferta y la demanda.",
+        "tags": [
+            "Inelasticidad. Elasticidad perfecta. Cálculo"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/more-on-elasticity-of-demand"
+    },
+    {
+        "id": 718.0,
+        "title": "La elasticidad ingreso de la demanda",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video profundiza el concepto de elasticidad de la oferta y la demanda.",
+        "tags": [
+            "Demanda. Oferta. Elasticidad"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/income-elasticity-of-demand/v/income-elasticity-of-demand"
+    },
+    {
+        "id": 717,
+        "title": "Introducción a la elasticidad precio de la demanda",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video profundiza la noción de elasticidad de la demanda con foco en su cálculo.",
+        "tags": [
+            "Demanda. Elasticidad. Cálculo"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/introduction-to-price-elasticity-of-demand-ap-microeconomics-khan-academy"
     }
+    
    
    
 ]
