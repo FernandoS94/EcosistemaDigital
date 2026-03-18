@@ -631,7 +631,7 @@
         "title": "Los descendientes de LUCA A",
         "level": "3° año, 4° año, 5° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales V + VI, Laboratorio Ciencias Naturales VII + VIII, Laboratorio Ciencias Naturales IX",
+        "subject": "Laboratorio Ciencias Naturales V + VI Laboratorio Ciencias Naturales VII + VIII, Laboratorio Ciencias Naturales IX",
         "mode": "Bachiller",
         "description": "El plan se enfoca en la diversidad biológica y su evolución (partiendo de LUCA), y aborda el cambio climático como amenaza a la biodiversidad, instando a analizar la capacidad de adaptación de las especies. Se promueven las capacidades de indagación a través de la creación de un video explicativo sobre la conservación de especies. Fomenta la reflexión metacognitiva sobre aprendizajes y la conexión de la biodiversidad con la vida cotidiana, retomando la pregunta guía de la unidad.",
         "tags": [
@@ -1412,7 +1412,7 @@
         "mode": "Bachiller",
         "description": "El video hace foco en el cálculo y las determinantes que intervienen en el mismo de la elasticidad de la oferta y la demanda.",
         "tags": [
-            "Inelasticidad. Elasticidad perfecta. Cálculo"
+            "Inelasticidad","Elasticidad perfecta","Cálculo"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/more-on-elasticity-of-demand"
     },
@@ -1425,7 +1425,7 @@
         "mode": "Bachiller",
         "description": "El video profundiza el concepto de elasticidad de la oferta y la demanda.",
         "tags": [
-            "Demanda. Oferta. Elasticidad"
+            "Demanda", "Oferta", "Elasticidad"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/income-elasticity-of-demand/v/income-elasticity-of-demand"
     },
@@ -1438,7 +1438,7 @@
         "mode": "Bachiller",
         "description": "El video profundiza la noción de elasticidad de la demanda con foco en su cálculo.",
         "tags": [
-            "Demanda. Elasticidad. Cálculo"
+            "Demanda","Elasticidad","Cálculo"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/introduction-to-price-elasticity-of-demand-ap-microeconomics-khan-academy"
     },
@@ -1451,7 +1451,7 @@
         "mode": "Bachiller",
         "description": "El video aborda el concepto de demanda de mercado y la incidencia de las demandas individuales que intervienen en la constitución de la misma.",
         "tags": [
-            "Demanda. Mercado. Demandas individuales"
+            "Demanda","Mercado"," Demandas individuales"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/demand-curve-tutorial/v/market-demand-as-the-sum-of-individual-demand"
     },
@@ -1464,7 +1464,7 @@
         "mode": "Bachiller",
         "description": "El video explica la ley de demanda en función del precio, la cantidad de bienes y sus consecuencias para graficar curvas de demanda.",
         "tags": [
-            "Microeconomía. Demanda. Precios"
+            "Microeconomía","Demanda", "Precios"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/demand-curve-tutorial/v/law-of-demand"
     },
@@ -1477,10 +1477,219 @@
         "mode": "Bachiller",
         "description": "El video profundiza sobre la ley de demanda y las posibilidades de variación de la curva de demanda de acuerdo a determinantes que pueden intervenir en el ciclo económico.",
         "tags": [
-            "Demanda. Elasticidad. Curva"
+            "Demanda","Elasticidad","Curva"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/more-on-elasticity-of-demand"
+    },
+    {
+        "id": 713.0,
+        "title": "La ley de oferta",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video explica, con ejemplos graficados, los cambios en la oferta y los factores que intervienen para que esto suceda.",
+        "tags": [
+            "Microeconomía","Oferta","Bienes"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/supply-curve-tutorial/v/law-of-supply"
+    },
+    {
+        "id": 712.0,
+        "title": "El equilibrio de mercado",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video explica los cambios que se producen en el mercado, la dinámica de la oferta y la demanda y las variables que intervienen, así como la noción de equilibrio de mercado.",
+        "tags": [
+            "Microeconomía","Oferta","Demanda"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/market-equilibrium-tutorial/v/market-equilibrium"
+    },
+    {
+        "id": 711.0,
+        "title": "El ciclo económico",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video explora el funcionamiento del circuito económico mediante la acción de los agentes económicos.",
+        "tags": [
+            "Macroeconomía","Política monetaria","Política fiscal"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/business-cycle-tutorial/v/the-business-cycle"
+    },
+    {
+        "id": 710.0,
+        "title": "La tragedia de los comunes",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda los distintos tipos de bienes que circulan en la economía, tales como: bienes privados, bienes públicos, recursos comunes.",
+        "tags": [
+            "Bienes","Recursos","Monopolios"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/market-failure-and-the-role-of-government/externalities-topic/v/tragedy-of-the-commons"
+    },
+    {
+        "id": 709.0,
+        "title": "La economía keynesiana",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video explica comparativamente la teoría clásica y la keynesiana de la economía.",
+        "tags": [
+            "Economía","Keynesianismo","Teoría"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/keynesian-thinking/v/keynesian-economics"
+    },
+    {
+        "id": 707.0,
+        "title": "Introducción a la economía",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video explica el surgimiento de la economía como ciencia social en el marco del pensamiento liberal.",
+        "tags": [
+            "Economía","Teoria","Liberalismo"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old/econ-intro-in-macro-tutorial/v/introduction-to-economics"
+    },
+    {
+        "id": 720.0,
+        "title": "Resumen de la lección: la demanda y sus determinantes",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video propene abordar las nociones de elasticidad y demanda. Con este cruce entre elasticidad, oferta y demanda se puede ver cómo inciden los cambios en los ingresos.",
+        "tags": [
+            "Demanda","Elasticidad demanda","Ingreso demanda"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/demand-curve-tutorial/a/lesson-summary-demand-and-the-determinants-of-demand"
+    },
+    {
+        "id": 721.0,
+        "title": "Introducción a la competencia perfecta",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video explica el concepto teórico de competencia perfecta, como una estructura teórica en la que hay muchos compradores y productores, productos idénticos (también llamados productos homogéneos) e información perfecta, y no existe ninguna barrera de entrada.",
+        "tags": [
+            "Competencia","Oligopolio","Monopolio","Mercado"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/perfect-competition-topic/perfect-competition/v/perfect-competition-microeconomics"
+    },
+    {
+        "id": 722.0,
+        "title": "Oligopolios, duopolios, colusión y cárteles",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video trabaja a partir de la idea de estructuras de mercado los conceptos de: competencia perfecta, monopolio, oligopolio y competencia monopolística; como situaciones hipotéticas sin contextos específicos. Profundiza en ejemplos teóricos.",
+        "tags": [
+            "Mercado","Oligopolios","Competencia monopolística"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/perfect-competition-topic/game-theory/v/oligopolies-duopolies-collusion-and-cartels"
+    },
+    {
+        "id": 723.0,
+        "title": "La competencia oligopólica y monopólica",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda el concepto de competencia desde una perspectiva teórica comparativa, utilizando gráficos para mostrar el espectro que va de la competencia perfecta al monopolio, y dos tipos de competencia que se encuentran dentro de este espectro: la competencia monopólica y la competencia oligopólica.",
+        "tags": [
+            "Mercado","Oligopolio","Monopolio"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/perfect-competition-topic/monopolistic-competition-oligop/v/oligopolies-and-monopolisitc-competition"
+    },
+    {
+        "id": 724.0,
+        "title": "Los monopolios y la competencia perfecta",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda el concepto de competencia desde una perspectiva teórica comparativa, utilizando gráficos para mostrar los extremos: la competencia y el monopolio.",
+        "tags": [
+            "Mercado","Oligopolios","Monopolio"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/perfect-competition-topic/monopolies-tutorial/v/monopolies-vs-perfect-competition"
+    },
+    {
+        "id": 725.0,
+        "title": "Análisis del producto interno bruto",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video propone identificar los elementos que se contabilizan para la medición de la actividad económica: PBI y PBN.",
+        "tags": [
+            "Macroeconomía","Política Económica","PBI"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old/circular-econ-gdp-tutorial/v/parsing-gross-domestic-product"
+    },
+    {
+        "id": 726.0,
+        "title": "La banca 5: introducción al papel moneda",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda el concepto de dinero y sus funciones, así como los movimientos que se realizan en un banco en relación al uso del mismo.",
+        "tags": [
+            "Moneda","Historia","Banca"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-5-introduction-to-bank-notes"
+    },
+    {
+        "id": 727.0,
+        "title": "La banca 6: papel moneda y cheques",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda el concepto de dinero y sus funciones . Los movimientos que se realizan en un banco en relación al uso del mismo y amplia con ejemplos el uso del cheque y el papel moneda",
+        "tags": [
+            "Moneda","Historia","Cheque"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-6-bank-notes-and-checks"
+    },
+    {
+        "id": 728.0,
+        "title": "El valor del dinero en el tiempo",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda el concepto de dinero y sus funciones, así como los movimientos que se realizan en un banco en relación al uso del mismo y amplia con ejemplos el uso del cheque y el papel moneda. Además, se suma la reflexión sobre la importancia tanto de la cantidad de dinero, como del tiempo.",
+        "tags": [
+            "Moneda","Historia"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/core-finance/interest-tutorial/present-value/v/time-value-of-money"
+    },
+    {
+        "id": 729,
+        "title": "La demanda agregada",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video analiza el concepto de demanda agregada, diferenciándolo de la demanda de un bien o servicio e introduciendo conceptos macroeconómicos y sobre el rol de las institucione como el Banco Central.",
+        "tags": [
+            "Macroeconomía","Política monetaria","Demanda agregada"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/aggregate-supply-demand-tut/v/aggregate-demand"
     }
+   
     
    
    
