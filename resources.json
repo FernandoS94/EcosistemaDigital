@@ -1688,8 +1688,60 @@
             "Macroeconomía","Política monetaria","Demanda agregada"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/aggregate-supply-demand-tut/v/aggregate-demand"
+    },
+    {
+        "id": 730.0,
+        "title": "Política monetaria y política fiscal",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video ejemplifica en situaciones hipotéticas el rol del Banco Central y de las políticas monetarias.",
+        "tags": [
+            "Macroeconomía. Política monetaria. Banco Central"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/monetary-fiscal-policy/v/monetary-and-fiscal-policy"
+    },
+    {
+        "id": 731.0,
+        "title": "Cambios en los equilibrios del comercio",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video desarrolla el concepto teórico de autarquía en situaciones hipotéticas de países cerrados al comercio. Se explora lo que sucede con el precio interno de un bien, el excedente del consumidor y el excedente del productor cuando se abre la economía. El comercio internacional y la regulación del Estado aparecen como temas para la reflexión.",
+        "tags": [
+            "Macroeconomía. Comercio Internacional. Autarquía"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/international-trade/v/changing-equilibria-from-trade"
+    },
+    {
+        "id": 732.0,
+        "title": "Comercio y aranceles",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "En este video se expone el impacto de los aranceles sobre el precio, el excedente del consumidor, el excedente del productor, los ingresos tributarios y la pérdida de eficiencia.",
+        "tags": [
+            "Macroeconomía. Aranceles. Excedente"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/international-trade/v/trade-and-tariffs"
+    },
+    {
+        "id": 733.0,
+        "title": "Política monetaria y política fiscal",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda las mecánicas básicas de la política monetaria y fiscal, con ejercicios hipotéticos y el uso de gráficos.",
+        "tags": [
+            "Macroeconomía. Política Monetaria. Política Fiscal"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/monetary-fiscal-policy/v/monetary-and-fiscal-policy"
     }
-   
+    
     
    
    
