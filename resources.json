@@ -815,7 +815,7 @@
         "mode": "Técnica",
         "description": "El plan transforma la propuesta inicial en un sistema de inyección electrónica de combustible (EFI) funcional, ya sea maqueta, prototipo o simulación. Se enfoca en el diseño técnico detallado del sistema, elaborando diagramas funcionales y layouts de conexiones reales. Los estudiantes deben calcular parámetros eléctricos, como el consumo total, y verificar la compatibilidad de componentes. El plan cubre la selección de materiales, el montaje inicial aplicando protocolos de seguridad, la puesta en marcha, la medición de señales, el registro de incidencias y los ajustes técnicos. Culmina con pruebas finales de rendimiento y la organización de la carpeta e informe técnico profesional. ",
         "tags": [
-            "Palabras Clave: Sistema Inyección. Calibración. Ajustes Técnicos."
+            "Sistema Inyección","Calibración","Ajustes Técnicos"
         ],
         "url": "https://rise.articulate.com/share/tbOs6sBXCarBy7IXlzh1vDX7BMWBNVcg"
     },
@@ -949,7 +949,7 @@
         "tags": [
             "Rapidez promedio",
             "Rizo vertical",
-            "Modelización matemática."
+            "Modelización matemática"
         ],
         "url": "https://es.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/v/loop-de-loop-answer-part-2"
     },
@@ -964,7 +964,7 @@
         "tags": [
             "Vectores",
             "Magnitudes",
-            "Desplazamiento."
+            "Desplazamiento"
         ],
         "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/introduction-to-vectors-and-scalars"
     },
@@ -979,7 +979,7 @@
         "tags": [
             "Marco de referencia",
             "Cinemática",
-            "Observación."
+            "Observación"
         ],
         "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/introduction-to-reference-frames"
     },
@@ -1024,7 +1024,7 @@
         "tags": [
             "Posición",
             "Desplazamiento",
-            "Tiempo."
+            "Tiempo"
         ],
         "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/position-vs-time-graphs"
     },
@@ -1039,7 +1039,7 @@
         "tags": [
             "Posición",
             "Desplazamiento",
-            "Distancia."
+            "Distancia"
         ],
         "url": "https://es.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/a/what-is-displacement"
     },
@@ -1069,7 +1069,7 @@
         "tags": [
             "Ley de Hooke",
             "Constante elástica",
-            "Fuerza de restitución."
+            "Fuerza de restitución"
         ],
         "url": "https://es.khanacademy.org/science/physics/work-and-energy/hookes-law/v/intro-to-springs-and-hooke-s-law"
     },
@@ -1099,7 +1099,7 @@
         "tags": [
             "Energía potencial",
             "Ley de Hooke",
-            "Modelización."
+            "Modelización"
         ],
         "url": "https://es.khanacademy.org/science/physics/work-and-energy/hookes-law/v/potential-energy-stored-in-a-spring"
     },
@@ -1129,7 +1129,7 @@
         "tags": [
             "Oscilador armónico",
             "Péndulo simple",
-            "Periodo."
+            "Periodo"
         ],
         "url": "https://es.khanacademy.org/science/physics/mechanical-waves-and-sound/harmonic-motion/v/pendulum"
     },
@@ -1159,7 +1159,7 @@
         "tags": [
             "Gravitación",
             "Fuerzas",
-            "Aceleración."
+            "Aceleración"
         ],
         "url": "https://es.khanacademy.org/science/physics/centripetal-force-and-gravitation/gravity-newtonian/v/introduction-to-gravity"
     },
@@ -1204,7 +1204,7 @@
         "tags": [
             "Ley de Faraday",
             "Inducción electromagnética",
-            "Generadores."
+            "Generadores"
         ],
         "url": "https://es.khanacademy.org/science/physics/magnetic-forces-and-magnetic-fields/magnetic-flux-faradays-law/v/faradays-law-for-generating-electricity"
     },
@@ -1219,7 +1219,7 @@
         "tags": [
             "Inercia",
             "Leyes de Newton",
-            "Fricción."
+            "Fricción"
         ],
         "url": "https://es.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-first-law-of-motion"
     },
@@ -1234,7 +1234,7 @@
         "tags": [
             "Segunda ley de Newton",
             "Masa",
-            "Proporcionalidad."
+            "Proporcionalidad"
         ],
         "url": "https://es.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-second-law-of-motion"
     },
@@ -1249,7 +1249,7 @@
         "tags": [
             "Ley de interacciones",
             "Acción y reacción",
-            "Modelos físicos."
+            "Modelos físicos"
         ],
         "url": "https://es.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-third-law-of-motion"
     },
@@ -1279,7 +1279,7 @@
         "tags": [
             "Dualidad onda-partícula",
             "Función de trabajo",
-            "Fotones."
+            "Fotones"
         ],
         "url": "https://es.khanacademy.org/science/physics/quantum-physics/photons/v/photoelectric-effect"
     },
@@ -1309,7 +1309,7 @@
         "tags": [
             "Ondas",
             "Energía",
-            "Modelización."
+            "Modelización"
         ],
         "url": "https://es.khanacademy.org/science/physics/mechanical-waves-and-sound/mechanical-waves/v/introduction-to-waves"
     },
@@ -1324,7 +1324,7 @@
         "tags": [
             "Amplitud",
             "Periodo",
-            "Oscilador."
+            "Oscilador"
         ],
         "url": "https://es.khanacademy.org/science/physics/mechanical-waves-and-sound/harmonic-motion/v/definition-of-amplitude-and-period"
     },
@@ -1354,7 +1354,7 @@
         "tags": [
             "Interferencia",
             "Superposición",
-            "Modelos físicos."
+            "Modelos físicos"
         ],
         "url": "https://es.khanacademy.org/science/physics/mechanical-waves-and-sound/standing-waves/v/wave-interference-pulses"
     },
@@ -1369,7 +1369,7 @@
         "tags": [
             "Interferencia",
             "Superposición",
-            "Longitud de onda."
+            "Longitud de onda"
         ],
         "url": "https://es.khanacademy.org/science/physics/light-waves/interference-of-light-waves/v/constructive-and-destructive-interference"
     },
@@ -1399,7 +1399,7 @@
         "tags": [
             "Relatividad especial",
             "Marcos de referencia",
-            "Modelización matemática."
+            "Modelización matemática"
         ],
         "url": "https://es.khanacademy.org/science/physics/special-relativity/einstein-velocity-addition/v/lorentz-transformation-for-change-in-coordinates"
     },
@@ -1698,7 +1698,7 @@
         "mode": "Bachiller",
         "description": "El video ejemplifica en situaciones hipotéticas el rol del Banco Central y de las políticas monetarias.",
         "tags": [
-            "Macroeconomía. Política monetaria. Banco Central"
+            "Macroeconomía","Política monetaria","Banco Central"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/monetary-fiscal-policy/v/monetary-and-fiscal-policy"
     },
@@ -1711,7 +1711,7 @@
         "mode": "Bachiller",
         "description": "El video desarrolla el concepto teórico de autarquía en situaciones hipotéticas de países cerrados al comercio. Se explora lo que sucede con el precio interno de un bien, el excedente del consumidor y el excedente del productor cuando se abre la economía. El comercio internacional y la regulación del Estado aparecen como temas para la reflexión.",
         "tags": [
-            "Macroeconomía. Comercio Internacional. Autarquía"
+            "Macroeconomía","Comercio Internacional","Autarquía"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/international-trade/v/changing-equilibria-from-trade"
     },
@@ -1724,7 +1724,7 @@
         "mode": "Bachiller",
         "description": "En este video se expone el impacto de los aranceles sobre el precio, el excedente del consumidor, el excedente del productor, los ingresos tributarios y la pérdida de eficiencia.",
         "tags": [
-            "Macroeconomía. Aranceles. Excedente"
+            "Macroeconomía","Aranceles","Excedente"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/international-trade/v/trade-and-tariffs"
     },
@@ -1737,7 +1737,7 @@
         "mode": "Bachiller",
         "description": "El video aborda las mecánicas básicas de la política monetaria y fiscal, con ejercicios hipotéticos y el uso de gráficos.",
         "tags": [
-            "Macroeconomía. Política Monetaria. Política Fiscal"
+            "Macroeconomía","Política Monetaria","Política Fiscal"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/monetary-fiscal-policy/v/monetary-and-fiscal-policy"
     }
