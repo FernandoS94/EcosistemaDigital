@@ -190,7 +190,7 @@ document.onkeydown = function (e) {
 
 
 const VIDEOS = {
-    gem: 'https://www.youtube.com/embed/U2yoSlaRXp8',
+    gem: 'https://www.youtube.com/embed/tG1RtI9Vq4g?si=9CaP6OC9My47BWee',
     gemini: 'https://www.youtube.com/embed/EcfmsklVV-8?si=c26UaPIPxRA4BB-C',
     classroom: 'https://www.youtube.com/embed/L6RJ-gpAROE?si=y6hxgicQqxYotQu3',
     notebook: 'https://www.youtube.com/embed/-jtBN6_VsK4?si=SKGj7iLgHa9wYOem',
@@ -209,6 +209,7 @@ function openVideo(url, title) {
     modalTitle.textContent = title;
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    
 }
 
 function closeVideo() {
@@ -218,11 +219,12 @@ function closeVideo() {
     modal.classList.remove('active');
     iframe.src = '';
     document.body.style.overflow = '';
+    
 }
 
 function openVideoGEM(event) {
     if (event) event.preventDefault();
-    openVideo(VIDEOS.gem, 'Tutorial: Creá tu asistente de planificacion');
+    openVideo(VIDEOS.gem, 'Tutorial: ¿Cómo crear un asistente personalizado con IA para planificar tus clases?');
 }
 
 document.addEventListener('keydown', function (e) {
