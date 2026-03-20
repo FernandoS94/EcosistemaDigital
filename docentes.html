@@ -18,7 +18,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "vxwt1ulniz");
 </script>
-  <link rel="icon" type="image/png" href="./img/icon.png">
+   <link rel="icon" type="image/png" href="./img/icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
@@ -347,9 +347,24 @@
             <div class="chips-container" id="categoryChips"></div>
           </div>
 
-          <div class="filter-category">
-            <div class="filter-category-title">Materia:</div>
-            <div class="chips-container" id="subjectChips"></div>
+          <div class="filter-category" style="align-items: flex-start; flex-direction: column; gap: 6px;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div class="filter-category-title" style="margin-top:6px;">Materia:</div>
+              <div class="subject-search-wrapper" id="subjectSearchWrapper">
+                <input
+                  type="text"
+                  class="subject-search-input"
+                  id="subjectSearchInput"
+                  placeholder="Buscar materia..."
+                  autocomplete="off"
+                  oninput="filterSubjectDropdown()"
+                  onfocus="openSubjectDropdown()"
+                />
+                <i class="fas fa-search subject-search-icon"></i>
+                <div class="subject-dropdown" id="subjectDropdown"></div>
+              </div>
+            </div>
+
           </div>
 
           <div class="filter-category">

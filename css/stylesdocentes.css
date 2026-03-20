@@ -393,10 +393,10 @@
  }
 
 
+ /* ===== FILTROS ===== */
  .filters-section {
      padding: 15px 0;
      background: var(--light-color);
-     /*position: sticky;*/
      top: 66px;
      z-index: 100;
      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -453,13 +453,14 @@
  .filter-categories {
      display: flex;
      flex-direction: column;
-     gap: 8px;
+     gap: 10px;
  }
 
  .filter-category {
      display: flex;
      align-items: center;
      gap: 10px;
+     flex-wrap: wrap;
  }
 
  .filter-category-title {
@@ -512,9 +513,9 @@
  }
 
  .chip.subject-chip.active {
-     background: #f39c12;
-     border-color: #f39c12;
-     box-shadow: 0 2px 4px rgba(243, 156, 18, 0.25);
+     background: #e67e22;
+     border-color: #e67e22;
+     box-shadow: 0 2px 4px rgba(230, 126, 34, 0.25);
  }
 
  .chip.mode-chip.active {
@@ -528,6 +529,120 @@
      color: #7d3c98;
  }
 
+ /* ── Buscador de materia ── */
+ .subject-search-wrapper {
+     position: relative;
+     display: flex;
+     align-items: center;
+ }
+
+ .subject-search-input {
+     padding: 5px 32px 5px 12px;
+     border: 1.5px solid #ddd;
+     border-radius: 16px;
+     font-size: 0.82rem;
+     font-family: var(--font-main);
+     color: #444;
+     background: white;
+     outline: none;
+     width: 230px;
+     transition: border-color 0.2s, box-shadow 0.2s;
+ }
+
+ .subject-search-input:focus {
+     border-color: #e67e22;
+     box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
+ }
+
+ .subject-search-icon {
+     position: absolute;
+     right: 10px;
+     color: #bbb;
+     font-size: 0.8rem;
+     pointer-events: none;
+ }
+
+ /* Dropdown de resultados */
+ .subject-dropdown {
+     position: absolute;
+     top: calc(100% + 6px);
+     left: 0;
+     background: white;
+     border: 1.5px solid #e8e8e8;
+     border-radius: 12px;
+     box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+     z-index: 300;
+     width: 320px;
+     max-height: 260px;
+     overflow-y: auto;
+     display: none;
+     padding: 6px;
+ }
+
+ .subject-dropdown.open {
+     display: block;
+ }
+
+ .subject-dropdown-item {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     padding: 8px 12px;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 0.82rem;
+     color: #444;
+     font-family: var(--font-main);
+     transition: background 0.15s;
+ }
+
+ .subject-dropdown-item:hover {
+     background: #fef6ee;
+     color: #e67e22;
+ }
+
+ .subject-dropdown-item.selected {
+     background: #fef6ee;
+     color: #e67e22;
+     font-weight: 600;
+ }
+
+ .subject-dropdown-item .item-check {
+     width: 16px;
+     height: 16px;
+     border: 1.5px solid #ddd;
+     border-radius: 4px;
+     flex-shrink: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 0.65rem;
+     transition: all 0.15s;
+ }
+
+ .subject-dropdown-item.selected .item-check {
+     background: #e67e22;
+     border-color: #e67e22;
+     color: white;
+ }
+
+ .subject-dropdown-empty {
+     padding: 14px 12px;
+     text-align: center;
+     font-size: 0.8rem;
+     color: #bbb;
+     font-family: var(--font-main);
+ }
+
+ /* Chips de materias seleccionadas (bajo el input) */
+ .subject-selected-chips {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 5px;
+     margin-top: 6px;
+ }
+
+ /* ── Footer filtros ── */
  .filters-footer {
      display: flex;
      justify-content: space-between;
@@ -578,32 +693,14 @@
 
  /* Responsive */
  @media (max-width: 768px) {
-     .hero-content h1 {
-         font-size: 2rem;
-     }
-
-     .hero-content p {
-         font-size: 1.1rem;
-     }
-
-     .features-section h2,
-     .how-to-section h2 {
-         font-size: 2rem;
-     }
-
-     .stat-number {
-         font-size: 2.5rem;
-     }
-
-     .filters-header {
-         flex-direction: column;
-         align-items: flex-start;
-     }
-
-     .reset-filters-btn {
-         width: 100%;
-         justify-content: center;
-     }
+     .hero-content h1 { font-size: 2rem; }
+     .hero-content p { font-size: 1.1rem; }
+     .features-section h2, .how-to-section h2 { font-size: 2rem; }
+     .stat-number { font-size: 2.5rem; }
+     .filters-header { flex-direction: column; align-items: flex-start; }
+     .reset-filters-btn { width: 100%; justify-content: center; }
+     .subject-search-input { width: 180px; }
+     .subject-dropdown { width: calc(100vw - 40px); }
  }
 
  /* Content Section */

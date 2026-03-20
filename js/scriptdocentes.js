@@ -1,265 +1,404 @@
-let resources = [];
+// Script de recursos docentes
 
-async function loadResources() {
-    try {
-        const response = await fetch('resources.json');
-        if (!response.ok) throw new Error('No se pudieron cargar los recursos');
-        resources = await response.json();
-        initializeApp();
-    } catch (error) {
-        console.error('Error al cargar recursos:', error);
-        document.getElementById('resourcesGrid').innerHTML =
-            '<div style="text-align:center;padding:40px;color:#e74c3c;"><h3>⚠️ Error al cargar los recursos</h3><p>Por favor, recarga la página.</p></div>';
-    }
-}
-
-// Función para inicializar la aplicación
-function initializeApp() {
-    initializeChips();
-    renderResources(resources);
-    updateResultsCount(resources.length, resources.length);
-}
-
-// Estado de filtros
-let activeFilters = {
+// ─────────────────────────────────────────────
+//  Estado global
+// ─────────────────────────────────────────────
+const STATE = {
+  resources: [],       // todos los recursos (inline)
+  filtered: [],        // resultado del filtro actual
+  allSubjects: [],
+  activeFilters: {
     level: new Set(),
     category: new Set(),
     subject: new Set(),
     mode: new Set()
+  },
+  // Virtualización
+  PAGE_SIZE: 24,
+  renderedCount: 0,
+  isLoading: false
 };
 
-// Función helper para dividir valores múltiples (separados por coma)
-function splitMultipleValues(value) {
-    if (!value) return [];
-    return value.split(',').map(v => v.trim()).filter(v => v);
+// ─────────────────────────────────────────────
+//  Carga de recursos desde resources.json
+// ─────────────────────────────────────────────
+async function loadResources() {
+  try {
+    const response = await fetch('resources.json');
+    if (!response.ok) throw new Error('Error al cargar recursos');
+    STATE.resources = await response.json();
+    init();
+  } catch (error) {
+    console.error(error);
+    document.getElementById('resourcesGrid').innerHTML =
+      '<div style="grid-column:1/-1;text-align:center;padding:40px;color:#e74c3c;">' +
+      '<h3>⚠️ Error al cargar los recursos</h3><p>Por favor, recargá la página.</p></div>';
+  }
 }
 
-// Función helper para verificar si un recurso coincide con el filtro
-function resourceMatchesFilter(resourceValue, activeFilterSet) {
-    if (activeFilterSet.size === 0) return true;
+// ─────────────────────────────────────────────
+//  Init
+// ─────────────────────────────────────────────
+function init() {
+  buildFilters();
 
-    // Dividir el valor del recurso por comas
-    const resourceValues = splitMultipleValues(resourceValue);
+  // Mostrar todos los recursos al cargar con scroll infinito
+  STATE.filtered = STATE.resources;
+  STATE.renderedCount = 0;
+  renderBatch(true);
+  document.getElementById('resultsCount').textContent =
+    STATE.resources.length + ' recursos';
 
-    // El recurso coincide si ALGUNO de sus valores está en el filtro activo
-    return resourceValues.some(val => activeFilterSet.has(val));
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  document.addEventListener('click', (e) => {
+    const wrapper = document.getElementById('subjectSearchWrapper');
+    if (wrapper && !wrapper.contains(e.target)) closeSubjectDropdown();
+  });
 }
 
-// Inicializar chips
-function initializeChips() {
-    const levelContainer = document.getElementById('levelChips');
-    const categoryContainer = document.getElementById('categoryChips');
-    const subjectContainer = document.getElementById('subjectChips');
-    const modeContainer = document.getElementById('modeChips');
+// ─────────────────────────────────────────────
+//  Filtros — chips (nivel, espacio, modalidad)
+// ─────────────────────────────────────────────
+function buildFilters() {
+  const unique = (key) =>
+    [...new Set(STATE.resources.flatMap(r => splitValues(r[key])))].sort();
 
-    // Limpiar contenedores
-    levelContainer.innerHTML = '';
-    categoryContainer.innerHTML = '';
-    subjectContainer.innerHTML = '';
-    modeContainer.innerHTML = '';
+  STATE.allSubjects = unique('subject');
 
-    // Obtener valores únicos (dividiendo los valores múltiples)
-    const allLevels = resources.flatMap(r => splitMultipleValues(r.level));
-    const allCategories = resources.flatMap(r => splitMultipleValues(r.category));
-    const allSubjects = resources.flatMap(r => splitMultipleValues(r.subject));
-    const allModes = resources.flatMap(r => splitMultipleValues(r.mode));
-
-    const uniqueLevels = [...new Set(allLevels)].sort();
-    const uniqueCategories = [...new Set(allCategories)].sort();
-    const uniqueSubjects = [...new Set(allSubjects)].sort();
-    const uniqueModes = [...new Set(allModes)].filter(Boolean).sort();
-
-    uniqueLevels.forEach(level => {
-        const chip = createChip(level, 'level');
-        levelContainer.appendChild(chip);
-    });
-
-    uniqueCategories.forEach(category => {
-        const chip = createChip(category, 'category', 'category-chip');
-        categoryContainer.appendChild(chip);
-    });
-
-    uniqueSubjects.forEach(subject => {
-        const chip = createChip(subject, 'subject', 'subject-chip');
-        subjectContainer.appendChild(chip);
-    });
-
-    uniqueModes.forEach(mode => {
-        const chip = createChip(mode, 'mode', 'mode-chip');
-        modeContainer.appendChild(chip);
-    });
+  renderChips('levelChips',    unique('level'),    'level');
+  renderChips('categoryChips', unique('category'), 'category', 'category-chip');
+  renderChips('modeChips',     unique('mode').filter(Boolean), 'mode', 'mode-chip');
+  buildSubjectDropdown('');
 }
 
-// Crear chip individual
-function createChip(value, filterType, extraClass = '') {
+function renderChips(containerId, values, filterType, extraClass = '') {
+  const container = document.getElementById(containerId);
+  // Construir todo el DOM de una sola vez con fragment
+  const fragment = document.createDocumentFragment();
+  values.forEach(v => {
     const chip = document.createElement('div');
-    chip.className = `chip ${extraClass}`;
-    chip.textContent = value;
-    chip.onclick = () => toggleFilter(filterType, value, chip);
-    return chip;
+    chip.className = 'chip ' + extraClass;
+    chip.textContent = v;
+    chip.dataset.value = v;
+    chip.dataset.filter = filterType;
+    chip.addEventListener('click', () => toggleChip(chip, filterType, v));
+    fragment.appendChild(chip);
+  });
+  container.appendChild(fragment);
 }
 
-// Toggle filtro
-function toggleFilter(filterType, value, chipElement) {
-    if (activeFilters[filterType].has(value)) {
-        activeFilters[filterType].delete(value);
-        chipElement.classList.remove('active');
-    } else {
-        activeFilters[filterType].add(value);
-        chipElement.classList.add('active');
-    }
-    updateActiveFilters();
-    filterResources();
+function toggleChip(chipEl, filterType, value) {
+  if (STATE.activeFilters[filterType].has(value)) {
+    STATE.activeFilters[filterType].delete(value);
+    chipEl.classList.remove('active');
+  } else {
+    STATE.activeFilters[filterType].add(value);
+    chipEl.classList.add('active');
+  }
+  applyFilters();
 }
 
-// Actualizar visualización de filtros activos
-function updateActiveFilters() {
-    const footer = document.getElementById('filtersFooter');
-    const tagsContainer = document.getElementById('activeFilterTags');
-    tagsContainer.innerHTML = '';
+// ─────────────────────────────────────────────
+//  Filtros — buscador de materias
+// ─────────────────────────────────────────────
+function buildSubjectDropdown(query) {
+  const dropdown = document.getElementById('subjectDropdown');
+  if (!dropdown) return;
 
-    const allFilters = [
-        ...Array.from(activeFilters.level).map(v => ({ type: 'level', value: v, label: v })),
-        ...Array.from(activeFilters.category).map(v => ({ type: 'category', value: v, label: v })),
-        ...Array.from(activeFilters.subject).map(v => ({ type: 'subject', value: v, label: v })),
-        ...Array.from(activeFilters.mode).map(v => ({ type: 'mode', value: v, label: v }))
-    ];
+  const filtered = query
+    ? STATE.allSubjects.filter(s => s.toLowerCase().includes(query.toLowerCase()))
+    : STATE.allSubjects;
 
-    if (allFilters.length > 0) {
-        footer.style.display = 'flex';
-        allFilters.forEach(filter => {
-            const tag = document.createElement('div');
-            tag.className = 'active-filter-tag';
-            tag.innerHTML = `
-                ${filter.label}
-                <span class="remove-filter" onclick="removeFilter('${filter.type}', '${filter.value}')">×</span>
-            `;
-            tagsContainer.appendChild(tag);
-        });
-    } else {
-        footer.style.display = 'none';
-    }
+  if (filtered.length === 0) {
+    dropdown.innerHTML = '<div class="subject-dropdown-empty">Sin resultados</div>';
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+  filtered.forEach(subject => {
+    const isSelected = STATE.activeFilters.subject.has(subject);
+    const item = document.createElement('div');
+    item.className = 'subject-dropdown-item' + (isSelected ? ' selected' : '');
+    item.innerHTML =
+      '<span class="item-check">' + (isSelected ? '✓' : '') + '</span>' +
+      '<span>' + subject + '</span>';
+    item.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleSubjectFilter(subject);
+    });
+    fragment.appendChild(item);
+  });
+
+  dropdown.innerHTML = '';
+  dropdown.appendChild(fragment);
 }
 
-// Remover filtro individual
+function openSubjectDropdown() {
+  buildSubjectDropdown(document.getElementById('subjectSearchInput').value);
+  document.getElementById('subjectDropdown').classList.add('open');
+}
+
+function closeSubjectDropdown() {
+  document.getElementById('subjectDropdown')?.classList.remove('open');
+}
+
+function filterSubjectDropdown() {
+  buildSubjectDropdown(document.getElementById('subjectSearchInput').value);
+  document.getElementById('subjectDropdown').classList.add('open');
+}
+
+function toggleSubjectFilter(subject) {
+  if (STATE.activeFilters.subject.has(subject)) {
+    STATE.activeFilters.subject.delete(subject);
+  } else {
+    STATE.activeFilters.subject.add(subject);
+  }
+  buildSubjectDropdown(document.getElementById('subjectSearchInput').value);
+  renderSelectedSubjectChips();
+  applyFilters();
+}
+
+function renderSelectedSubjectChips() {
+  const container = document.getElementById('subjectChips');
+  if (!container) return;
+  const fragment = document.createDocumentFragment();
+  STATE.activeFilters.subject.forEach(subject => {
+    const chip = document.createElement('div');
+    chip.className = 'chip subject-chip active';
+    chip.innerHTML =
+      subject +
+      ' <span style="margin-left:5px;opacity:.7;font-weight:700;cursor:pointer"' +
+      ' data-subject="' + subject + '">×</span>';
+    chip.querySelector('span').addEventListener('click', () => toggleSubjectFilter(subject));
+    fragment.appendChild(chip);
+  });
+  container.innerHTML = '';
+  container.appendChild(fragment);
+}
+
+// ─────────────────────────────────────────────
+//  Tags activos (resumen debajo de los filtros)
+// ─────────────────────────────────────────────
+function updateActiveTags() {
+  const footer = document.getElementById('filtersFooter');
+  const container = document.getElementById('activeFilterTags');
+
+  const allActive = [
+    ...Array.from(STATE.activeFilters.level).map(v    => ({ type: 'level',    value: v })),
+    ...Array.from(STATE.activeFilters.category).map(v => ({ type: 'category', value: v })),
+    ...Array.from(STATE.activeFilters.subject).map(v  => ({ type: 'subject',  value: v })),
+    ...Array.from(STATE.activeFilters.mode).map(v     => ({ type: 'mode',     value: v }))
+  ];
+
+  if (allActive.length === 0) {
+    footer.style.display = 'none';
+    container.innerHTML = '';
+    return;
+  }
+
+  footer.style.display = 'flex';
+  const fragment = document.createDocumentFragment();
+  allActive.forEach(f => {
+    const tag = document.createElement('div');
+    tag.className = 'active-filter-tag';
+    tag.innerHTML = f.value + ' <span class="remove-filter">×</span>';
+    tag.querySelector('.remove-filter').addEventListener('click', () => removeFilter(f.type, f.value));
+    fragment.appendChild(tag);
+  });
+  container.innerHTML = '';
+  container.appendChild(fragment);
+}
+
 function removeFilter(filterType, value) {
-    activeFilters[filterType].delete(value);
+  STATE.activeFilters[filterType].delete(value);
 
-    // Actualizar chip visual
-    const chips = document.querySelectorAll('.chip');
-    chips.forEach(chip => {
-        if (chip.textContent === value) {
-            chip.classList.remove('active');
-        }
-    });
-
-    updateActiveFilters();
-    filterResources();
+  if (filterType === 'subject') {
+    renderSelectedSubjectChips();
+    buildSubjectDropdown(document.getElementById('subjectSearchInput').value);
+  } else {
+    document.querySelectorAll(
+      `.chip[data-filter="${filterType}"][data-value="${CSS.escape(value)}"]`
+    ).forEach(c => c.classList.remove('active'));
+  }
+  applyFilters();
 }
 
-// Filtrar recursos
-function filterResources() {
-    const hasActiveFilters =
-        activeFilters.level.size > 0 ||
-        activeFilters.category.size > 0 ||
-        activeFilters.subject.size > 0 ||
-        activeFilters.mode.size > 0;
-
-    let filtered = resources;
-
-    if (hasActiveFilters) {
-        filtered = resources.filter(resource => {
-            const levelMatch = resourceMatchesFilter(resource.level, activeFilters.level);
-            const categoryMatch = resourceMatchesFilter(resource.category, activeFilters.category);
-            const subjectMatch = resourceMatchesFilter(resource.subject, activeFilters.subject);
-            const modeMatch = resourceMatchesFilter(resource.mode, activeFilters.mode);
-            return levelMatch && categoryMatch && subjectMatch && modeMatch;
-        });
-    }
-
-    renderResources(filtered);
-    updateResultsCount(filtered.length, resources.length);
+// ─────────────────────────────────────────────
+//  Lógica de filtrado
+// ─────────────────────────────────────────────
+function splitValues(value) {
+  if (!value) return [];
+  return value.split(',').map(v => v.trim()).filter(Boolean);
 }
 
-// Actualizar contador de resultados
-function updateResultsCount(filtered, total) {
-    const countElement = document.getElementById('resultsCount');
-    if (activeFilters.level.size > 0 || activeFilters.category.size > 0 || activeFilters.subject.size > 0 || activeFilters.mode.size > 0) {
-        countElement.textContent = `${filtered} de ${total}`;
-    } else {
-        countElement.textContent = `${total} recursos`;
-    }
+function matchesFilter(resourceValue, filterSet) {
+  if (filterSet.size === 0) return true;
+  return splitValues(resourceValue).some(v => filterSet.has(v));
 }
 
-// Renderizar recursos
-function renderResources(data) {
-    const grid = document.getElementById('resourcesGrid');
-    const noResults = document.getElementById('noResults');
+function applyFilters() {
+  const { activeFilters, resources } = STATE;
+  const hasActive =
+    activeFilters.level.size > 0 || activeFilters.category.size > 0 ||
+    activeFilters.subject.size > 0 || activeFilters.mode.size > 0;
 
+  updateActiveTags();
+
+  if (!hasActive) {
+    STATE.filtered = STATE.resources;
+    STATE.renderedCount = 0;
+    renderBatch(true);
+    document.getElementById('resultsCount').textContent =
+      resources.length + ' recursos';
+    return;
+  }
+
+  STATE.filtered = resources.filter(r =>
+    matchesFilter(r.level,    activeFilters.level)    &&
+    matchesFilter(r.category, activeFilters.category) &&
+    matchesFilter(r.subject,  activeFilters.subject)  &&
+    matchesFilter(r.mode,     activeFilters.mode)
+  );
+
+  STATE.renderedCount = 0;
+  renderBatch(true); // primer batch, reemplaza grid
+  document.getElementById('resultsCount').textContent =
+    STATE.filtered.length + ' de ' + resources.length + ' recursos';
+}
+
+// ─────────────────────────────────────────────
+//  Renderizado por lotes (scroll infinito)
+// ─────────────────────────────────────────────
+function renderBatch(reset = false) {
+  const grid = document.getElementById('resourcesGrid');
+  const noResults = document.getElementById('noResults');
+  const { filtered, PAGE_SIZE } = STATE;
+
+  if (reset) {
     grid.innerHTML = '';
+    grid.style.display = 'grid';
+    noResults.style.display = 'none';
+  }
 
-    if (data.length === 0) {
-        noResults.style.display = 'block';
-        grid.style.display = 'none';
-        return;
-    } else {
-        noResults.style.display = 'none';
-        grid.style.display = 'grid';
-    }
+  if (filtered.length === 0) {
+    noResults.style.display = 'block';
+    grid.style.display = 'none';
+    return;
+  }
 
-    data.forEach(resource => {
-        const tagsHtml = resource.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+  const slice = filtered.slice(STATE.renderedCount, STATE.renderedCount + PAGE_SIZE);
+  if (slice.length === 0) return;
 
-        const cardHtml = `
-            <div class="resource-card">
-                <div class="resource-header">
-                    <span class="resource-level">${resource.level}</span>
-                    <h3 class="resource-title">${resource.title}</h3>
-                </div>
-                <div class="resource-meta">
-                    <p class="resource-description">${resource.description}</p>
-                    <div class="resource-tags">
-                        <span class="tag category">${resource.category}</span>
-                        <span class="tag subject">${resource.subject}</span>
-                        ${resource.mode ? `<span class="tag mode">${resource.mode}</span>` : ''}
-                        ${tagsHtml}
-                    </div>
-                </div>
-                <div class="resource-actions">
-                    <button class="btn-view-pdf" onclick="redirectToMaterial('${resource.url}')">Ver Material</button>
-                </div>
-            </div>
-        `;
-        grid.innerHTML += cardHtml;
-    });
+  const fragment = document.createDocumentFragment();
+  slice.forEach(resource => {
+    const card = document.createElement('div');
+    card.className = 'resource-card';
+    card.innerHTML = cardHTML(resource);
+    fragment.appendChild(card);
+  });
+  grid.appendChild(fragment);
+  STATE.renderedCount += slice.length;
 }
 
-// Reiniciar filtros
+function cardHTML(r) {
+  const tagsHtml = r.tags.map(t => '<span class="tag">' + t + '</span>').join('');
+  const modeTag  = r.mode ? '<span class="tag mode">' + r.mode + '</span>' : '';
+  return (
+    '<div class="resource-header">' +
+      '<span class="resource-level">' + r.level + '</span>' +
+      '<h3 class="resource-title">' + r.title + '</h3>' +
+    '</div>' +
+    '<div class="resource-meta">' +
+      '<p class="resource-description">' + r.description + '</p>' +
+      '<div class="resource-tags">' +
+        '<span class="tag category">' + r.category + '</span>' +
+        '<span class="tag subject">' + r.subject + '</span>' +
+        modeTag + tagsHtml +
+      '</div>' +
+    '</div>' +
+    '<div class="resource-actions">' +
+      '<button class="btn-view-pdf"' +
+        ' data-clarity-mask="false"' +
+        ' data-resource-id="'      + r.id       + '"' +
+        ' data-resource-title="'   + r.title.replace(/"/g, '&quot;') + '"' +
+        ' data-resource-subject="' + r.subject.replace(/"/g, '&quot;') + '"' +
+        ' data-resource-level="'   + r.level.replace(/"/g, '&quot;') + '"' +
+        ' data-resource-category="'+ r.category.replace(/"/g, '&quot;') + '"' +
+        ' onclick="redirectToMaterial(\'' + r.url + '\')">Ver Material</button>' +
+    '</div>'
+  );
+}
+
+// ─────────────────────────────────────────────
+//  Scroll infinito
+// ─────────────────────────────────────────────
+function onScroll() {
+  if (STATE.isLoading) return;
+  if (STATE.renderedCount >= STATE.filtered.length) return;
+
+  const scrollBottom = window.innerHeight + window.scrollY;
+  const docHeight    = document.documentElement.scrollHeight;
+
+  if (scrollBottom >= docHeight - 300) {
+    STATE.isLoading = true;
+    // requestAnimationFrame para no bloquear el hilo principal
+    requestAnimationFrame(() => {
+      renderBatch();
+      STATE.isLoading = false;
+    });
+  }
+}
+
+// ─────────────────────────────────────────────
+//  Estado vacío
+// ─────────────────────────────────────────────
+function showEmptyState() {
+  const grid = document.getElementById('resourcesGrid');
+  const noResults = document.getElementById('noResults');
+  noResults.style.display = 'none';
+  grid.style.display = 'grid';
+  grid.innerHTML =
+    '<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:#aaa;">' +
+      '<div style="font-size:2.5rem;margin-bottom:16px;">🔍</div>' +
+      '<h3 style="color:var(--secondary-color);font-size:1.2rem;margin-bottom:8px;">' +
+        'Seleccioná un filtro para ver los recursos' +
+      '</h3>' +
+      '<p style="font-size:0.95rem;">' +
+        'Usá los filtros de arriba para encontrar materiales por nivel, espacio, materia o modalidad.' +
+      '</p>' +
+    '</div>';
+}
+
+// ─────────────────────────────────────────────
+//  Reset
+// ─────────────────────────────────────────────
 function resetFilters() {
-    activeFilters.level.clear();
-    activeFilters.category.clear();
-    activeFilters.subject.clear();
-    activeFilters.mode.clear();
+  Object.keys(STATE.activeFilters).forEach(k => STATE.activeFilters[k].clear());
 
-    document.querySelectorAll('.chip').forEach(chip => {
-        chip.classList.remove('active');
-    });
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  const subjectChips = document.getElementById('subjectChips');
+  if (subjectChips) subjectChips.innerHTML = '';
+  document.getElementById('subjectSearchInput').value = '';
+  buildSubjectDropdown('');
 
-    updateActiveFilters();
-    filterResources();
+  updateActiveTags();
+  STATE.filtered = STATE.resources;
+  STATE.renderedCount = 0;
+  renderBatch(true);
+  document.getElementById('resultsCount').textContent =
+    STATE.resources.length + ' recursos';
 }
 
-// Redirigir a material
+// ─────────────────────────────────────────────
+//  Utils
+// ─────────────────────────────────────────────
 function redirectToMaterial(url) {
-    window.open(url, '_blank');
+  window.open(url, '_blank');
 }
 
-// Toggle FAQ
 function toggleFaq(element) {
-    element.classList.toggle('active');
+  element.classList.toggle('active');
 }
 
-
-
-// Inicializar aplicación cargando recursos
 window.onload = loadResources;
