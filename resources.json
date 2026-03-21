@@ -1729,7 +1729,7 @@
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/international-trade/v/trade-and-tariffs"
     },
     {
-        "id": 733.0,
+        "id": 733,
         "title": "Política monetaria y política fiscal",
         "level": "3° año",
         "category": "Laboratorio",
@@ -1740,6 +1740,84 @@
             "Macroeconomía","Política Monetaria","Política Fiscal"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/monetary-fiscal-policy/v/monetary-and-fiscal-policy"
+    },
+    {
+        "id": 734.0,
+        "title": "El gasto público y el modelo IS-LM",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda las modificaciones que se verifican en el modelo IS-LM cuando se realizan cambios en el gasto público y/o en la política fiscal.",
+        "tags": [
+            "Macroeconomía. Gasto público. Política Fiscal"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/income-and-expenditure-topic-old/is-lm-model-tutorial/v/government-spending-and-the-is-lm-model"
+    },
+    {
+        "id": 735.0,
+        "title": "Detalles sobre el cambio de los gastos planificados agregados",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda las modificaciones que se verifican en el modelo IS-LM cuando se realizan cambios gasto público y/o en la política fiscal, además de cómo se puede volver a una situación de equilibrio.",
+        "tags": [
+            "Macroeconomía. Gasto público. Equilibrio"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/income-and-expenditure-topic-old/keynesian-cross-tutorial/v/details-on-shifting-aggregate-planned-expenditures"
+    },
+    {
+        "id": 736.0,
+        "title": "PIB: medir el ingreso nacional",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "Esta unidad completa de trabajo aborda conceptos tales como: nociones generales de Economía, PBI, ingresos y gastos; así como los componentes del PBI nacional.",
+        "tags": [
+            "Macroeconomía. Presupuesto. Política Económica. PBI"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old"
+    },
+    {
+        "id": 737.0,
+        "title": "Componentes del producto interno bruto (PIB)",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video describe específicamente los componente del PBI que permiten abordar el concepto de ingresos a nivel de un Estado.",
+        "tags": [
+            "Macroeconomía. PBI. Ingresos"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old/gdp-components-tutorial/v/components-of-gdp"
+    },
+    {
+        "id": 738.0,
+        "title": "La perspectiva keynesiana sobre las fuerzas del mercado",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video aborda algunos aspectos de la teoría económica conocida como keynesianismo, la cual plantea la necesidad de la intervención estatal en la economía participando en  el mercado para equilibrar y orientar la economía.",
+        "tags": [
+            "Macroeconomía. Política Económica. Keynesianismo"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/income-and-expenditure-topic-old/keynesian-articles/a/the-keynesian-perspective-on-market-forces-cnx"
+    },
+    {
+        "id": 739.0,
+        "title": "La economía keynesiana",
+        "level": "3° año",
+        "category": "Laboratorio",
+        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "mode": "Bachiller",
+        "description": "El video realiza una comparación de alguno de los conceptos básicos de la teoría económica clásica y keynesiana.",
+        "tags": [
+            "Macroeconomía. Teoría clásica. Teoría keynesiana"
+        ],
+        "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/keynesian-thinking/v/keynesian-economics"
     }
     
     
