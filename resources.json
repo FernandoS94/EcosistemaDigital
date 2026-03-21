@@ -1671,9 +1671,7 @@
         "subject": "Laboratorio Ciencias Sociales V + VI",
         "mode": "Bachiller",
         "description": "El video aborda el concepto de dinero y sus funciones, así como los movimientos que se realizan en un banco en relación al uso del mismo y amplia con ejemplos el uso del cheque y el papel moneda. Además, se suma la reflexión sobre la importancia tanto de la cantidad de dinero, como del tiempo.",
-        "tags": [
-            "Moneda","Historia"
-        ],
+        "tags": ["Moneda","Historia" ],
         "url": "https://es.khanacademy.org/economics-finance-domain/core-finance/interest-tutorial/present-value/v/time-value-of-money"
     },
     {
@@ -1750,7 +1748,7 @@
         "mode": "Bachiller",
         "description": "El video aborda las modificaciones que se verifican en el modelo IS-LM cuando se realizan cambios en el gasto público y/o en la política fiscal.",
         "tags": [
-            "Macroeconomía. Gasto público. Política Fiscal"
+            "Macroeconomía","Gasto público","Política Fiscal"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/income-and-expenditure-topic-old/is-lm-model-tutorial/v/government-spending-and-the-is-lm-model"
     },
@@ -1763,7 +1761,7 @@
         "mode": "Bachiller",
         "description": "El video aborda las modificaciones que se verifican en el modelo IS-LM cuando se realizan cambios gasto público y/o en la política fiscal, además de cómo se puede volver a una situación de equilibrio.",
         "tags": [
-            "Macroeconomía. Gasto público. Equilibrio"
+            "Macroeconomía","Gasto público","Equilibrio"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/income-and-expenditure-topic-old/keynesian-cross-tutorial/v/details-on-shifting-aggregate-planned-expenditures"
     },
@@ -1776,7 +1774,7 @@
         "mode": "Bachiller",
         "description": "Esta unidad completa de trabajo aborda conceptos tales como: nociones generales de Economía, PBI, ingresos y gastos; así como los componentes del PBI nacional.",
         "tags": [
-            "Macroeconomía. Presupuesto. Política Económica. PBI"
+            "Macroeconomía","Presupuesto","Política Económica","PBI"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old"
     },
@@ -1789,7 +1787,7 @@
         "mode": "Bachiller",
         "description": "El video describe específicamente los componente del PBI que permiten abordar el concepto de ingresos a nivel de un Estado.",
         "tags": [
-            "Macroeconomía. PBI. Ingresos"
+            "Macroeconomía","PBI","Ingresos"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old/gdp-components-tutorial/v/components-of-gdp"
     },
@@ -1802,7 +1800,7 @@
         "mode": "Bachiller",
         "description": "El video aborda algunos aspectos de la teoría económica conocida como keynesianismo, la cual plantea la necesidad de la intervención estatal en la economía participando en  el mercado para equilibrar y orientar la economía.",
         "tags": [
-            "Macroeconomía. Política Económica. Keynesianismo"
+            "Macroeconomía","Política Económica","Keynesianismo"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/income-and-expenditure-topic-old/keynesian-articles/a/the-keynesian-perspective-on-market-forces-cnx"
     },
@@ -1815,7 +1813,7 @@
         "mode": "Bachiller",
         "description": "El video realiza una comparación de alguno de los conceptos básicos de la teoría económica clásica y keynesiana.",
         "tags": [
-            "Macroeconomía. Teoría clásica. Teoría keynesiana"
+            "Macroeconomía","Teoría clásica","Teoría keynesiana"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/keynesian-thinking/v/keynesian-economics"
     }
