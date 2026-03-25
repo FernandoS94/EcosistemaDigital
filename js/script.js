@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const VIDEO_TITLES = {
-    classroom: 'Tutorial:  ¿Qué es un aula digitial? ',
+    classroom: 'Tutorial:  ¿Qué es un aula digital? ',
     gemini: 'Tutorial:  Introducción a la herramienta de IA',
     khanmigo: 'Tutorial: ¿ Qué es Khanmigo?',
     notebook: 'Tutorial: ¿Conocías esta herramienta de IA para la organización e investigación?',

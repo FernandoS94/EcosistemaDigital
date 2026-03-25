@@ -18,7 +18,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "vxwt1ulniz");
 </script>
-   <link rel="icon" type="image/png" href="./img/icon.png">
+  <link rel="icon" type="image/png" href="./img/icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
@@ -326,6 +326,25 @@
 
   <section id="recursos" class="filters-section">
     <div class="container">
+
+      <!-- Buscador global: encima de los filtros, ancho completo -->
+      <div class="global-search-bar">
+        <div class="global-search-wrapper">
+          <i class="fas fa-search global-search-icon"></i>
+          <input
+            type="text"
+            id="globalSearchInput"
+            class="global-search-input"
+            placeholder="Buscar recurso.."
+            autocomplete="off"
+            oninput="onGlobalSearch()"
+          />
+          <button class="global-search-clear" id="globalSearchClear" onclick="clearGlobalSearch()" style="display:none">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+
       <div class="filters-header">
         <h2 class="filters-title">
           <i class="fas fa-filter"></i> Filtros

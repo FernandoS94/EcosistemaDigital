@@ -4,16 +4,16 @@
 //  Estado global
 // ─────────────────────────────────────────────
 const STATE = {
-  resources: [],       // todos los recursos (inline)
-  filtered: [],        // resultado del filtro actual
+  resources: [],
+  filtered: [],
   allSubjects: [],
+  searchQuery: '',
   activeFilters: {
     level: new Set(),
     category: new Set(),
     subject: new Set(),
     mode: new Set()
   },
-  // Virtualización
   PAGE_SIZE: 24,
   renderedCount: 0,
   isLoading: false
@@ -224,12 +224,36 @@ function removeFilter(filterType, value) {
   applyFilters();
 }
 
+
+// ─────────────────────────────────────────────
+//  Búsqueda global
+// ─────────────────────────────────────────────
+function onGlobalSearch() {
+  const input = document.getElementById('globalSearchInput');
+  const clear  = document.getElementById('globalSearchClear');
+  STATE.searchQuery = normalize(input.value.trim());
+  clear.style.display = STATE.searchQuery ? 'flex' : 'none';
+  applyFilters();
+}
+
+function clearGlobalSearch() {
+  document.getElementById('globalSearchInput').value = '';
+  document.getElementById('globalSearchClear').style.display = 'none';
+  STATE.searchQuery = '';
+  applyFilters();
+}
+
 // ─────────────────────────────────────────────
 //  Lógica de filtrado
 // ─────────────────────────────────────────────
 function splitValues(value) {
   if (!value) return [];
   return value.split(',').map(v => v.trim()).filter(Boolean);
+}
+
+// Normaliza texto: minúsculas + sin tildes
+function normalize(str) {
+  return str.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 }
 
 function matchesFilter(resourceValue, filterSet) {
@@ -246,20 +270,39 @@ function applyFilters() {
   updateActiveTags();
 
   if (!hasActive) {
-    STATE.filtered = STATE.resources;
+    const q = STATE.searchQuery;
+    STATE.filtered = q
+      ? resources.filter(r =>
+          normalize(r.title).includes(q)       ||
+          normalize(r.description).includes(q) ||
+          normalize(r.subject).includes(q)     ||
+          r.tags.some(t => normalize(t).includes(q))
+        )
+      : resources;
     STATE.renderedCount = 0;
     renderBatch(true);
+    const count = STATE.filtered.length;
     document.getElementById('resultsCount').textContent =
-      resources.length + ' recursos';
+      q ? count + ' de ' + resources.length + ' recursos' : resources.length + ' recursos';
     return;
   }
 
-  STATE.filtered = resources.filter(r =>
-    matchesFilter(r.level,    activeFilters.level)    &&
-    matchesFilter(r.category, activeFilters.category) &&
-    matchesFilter(r.subject,  activeFilters.subject)  &&
-    matchesFilter(r.mode,     activeFilters.mode)
-  );
+  const q = STATE.searchQuery;
+  STATE.filtered = resources.filter(r => {
+    const matchesChips =
+      matchesFilter(r.level,    activeFilters.level)    &&
+      matchesFilter(r.category, activeFilters.category) &&
+      matchesFilter(r.subject,  activeFilters.subject)  &&
+      matchesFilter(r.mode,     activeFilters.mode);
+    if (!matchesChips) return false;
+    if (!q) return true;
+    return (
+      r.title.toLowerCase().includes(q)       ||
+      r.description.toLowerCase().includes(q) ||
+      r.subject.toLowerCase().includes(q)     ||
+      r.tags.some(t => t.toLowerCase().includes(q))
+    );
+  });
 
   STATE.renderedCount = 0;
   renderBatch(true); // primer batch, reemplaza grid
@@ -381,6 +424,13 @@ function resetFilters() {
   if (subjectChips) subjectChips.innerHTML = '';
   document.getElementById('subjectSearchInput').value = '';
   buildSubjectDropdown('');
+
+  // Limpiar búsqueda global
+  STATE.searchQuery = '';
+  const globalInput = document.getElementById('globalSearchInput');
+  if (globalInput) globalInput.value = '';
+  const globalClear = document.getElementById('globalSearchClear');
+  if (globalClear) globalClear.style.display = 'none';
 
   updateActiveTags();
   STATE.filtered = STATE.resources;
