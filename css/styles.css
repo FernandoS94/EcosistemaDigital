@@ -1,4 +1,4 @@
- /* CSS Variables for easier theme management */
+/* CSS Variables for easier theme management */
  :root {
      --primary-color: #24a0a5;
      --secondary-color: #4A487A;
@@ -1040,11 +1040,23 @@
  /* Reducir espaciado del título */
  .avatares-section .section-title {
      margin-bottom: 2rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 0.5em;
+ }
+
+ .title-beta-logo {
+     height: 3.5em;
+     width: auto;
+     display: inline-block;
+     vertical-align: middle;
+     flex-shrink: 0;
  }
 
  .avatares-section .about-text {
      margin-bottom: 30px;
-     max-width: 900px;
+     max-width: 1200px;
      margin-left: auto;
      margin-right: auto;
  }
@@ -1752,4 +1764,3 @@
         .nav-dropdown {
   position: relative;
 }
-
