@@ -1047,11 +1047,44 @@
  }
 
  .title-beta-logo {
-     height: 3.5em;
+     height: 1.8em;
      width: auto;
      display: inline-block;
      vertical-align: middle;
      flex-shrink: 0;
+ }
+
+ .beta-notice {
+     background-color: #fff8e1;
+     border-left: 4px solid #eed464;
+     border-radius: 8px;
+     padding: 14px 20px;
+     margin: 0 auto 2rem;
+     max-width: 900px;
+     font-size: 0.95rem;
+     color: #5a4e00;
+     line-height: 1.5;
+ }
+
+ .beta-notice-link {
+     color: #24a0a5;
+     font-weight: 600;
+     text-decoration: underline;
+     text-underline-offset: 3px;
+ }
+
+ .beta-notice-bottom {
+     background-color: #fff8e1;
+     border-left: 4px solid #eed464;
+     border-radius: 8px;
+     padding: 14px 20px;
+     margin: 0 auto 2rem;
+     max-width: 900px;
+     font-size: 0.95rem;
+     color: #5a4e00;
+     line-height: 1.5;
+     margin-top: 3rem;
+     
  }
 
  .avatares-section .about-text {
