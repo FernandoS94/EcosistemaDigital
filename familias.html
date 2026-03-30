@@ -101,6 +101,32 @@
       color: white;
     }
 
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 1100;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: var(--secondary-color);
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
     /* Hero mejorado con animaciones */
     .hero {
       background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -553,8 +579,46 @@
       }
 
       .navbar-links a {
-        margin-left: 15px;
-        font-size: 0.9rem;
+        margin-left: 0;
+        font-size: 0.95rem;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .navbar-container {
+        position: relative;
+      }
+
+      .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        padding: 10px 0 16px;
+        gap: 0;
+        z-index: 1050;
+      }
+
+      .navbar-links.open {
+        display: flex;
+      }
+
+      .nav-link {
+        width: 100%;
+        padding: 12px 24px;
+        border-radius: 0;
+      }
+
+      .nav-link:hover {
+        background-color: rgba(36, 160, 165, 0.1);
+        color: var(--primary-color);
       }
 
       .social-media .social-icon {
@@ -784,7 +848,14 @@
   <nav class="navbar">
     <div class="navbar-container">
       <div class="navbar-title">Familias</div>
-      <div class="navbar-links">
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="navbar-links" id="navMenu">
         <a href="#videos" class="nav-link">Videos</a>
         <a href="#documentos" class="nav-link">Documentos</a>
         <a href="index.html" class="nav-link">← Volver a Inicio</a>
@@ -1027,6 +1098,26 @@
         navbar.classList.remove('scrolled');
       }
     });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener('click', function () {
+        const isOpen = navMenu.classList.toggle('open');
+        hamburger.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen);
+      });
+
+      navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+          hamburger.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', false);
+        });
+      });
+    }
   </script>
 </body>
 
