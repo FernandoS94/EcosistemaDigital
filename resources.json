@@ -94,7 +94,7 @@
         "title": "¿Es posible la comunicación humana? Cuerpos, pantallas, redes…",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio de la Orientación",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación ",
         "mode": "Bachiller",
         "description": "El plan se centra en la comunicación humana como un fenómeno omnipresente. Se analizan modelos clave de este fenómeno, como el de emisor-receptor, feedback; y cuatro dimensiones de la comunicación: interpersonal, intercultural, institucional y mediada por los medios masivos. El recorrido incluye actividades prácticas para reflexionar sobre el vínculo entre comunicación y tecnología, la industria mediática y el papel activo de las audiencias, vinculando los conceptos teóricos con la práctica reflexiva.",
         "tags": [
@@ -109,7 +109,7 @@
         "title": "¿Es posible la comunicación humana? ",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio de la Orientación",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación",
         "mode": "Bachiller",
         "description": "El plan aborda diversos modelos comunicacionales, así como teorías y corrientes fundacionales del campo de la Comunicación, como la Agenda Setting, la Aguja Hipodérmica, la Escuela de Frankfurt, los Estudios Culturales Británicos, entre otros. Analiza también la influencia de los medios masivos (propaganda, publicidad), profundizando en conceptos como proxémica, kinésica, cultura algorítmica y gubernamentalidad, promoviendo la reflexión crítica sobre el proceso comunicativo y sus efectos sociales.",
         "tags": [
@@ -124,7 +124,7 @@
         "title": "Literatura, medios y consumos culturales en el siglo XXI - A",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio de la Orientación",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación",
         "mode": "Bachiller",
         "description": "El plan se centra en el impacto de los consumos culturales del siglo XXI en la producción y difusión de literatura, explorando la industria editorial (bestsellers, editoriales independientes) y la influencia de las nuevas tecnologías y redes sociales en las prácticas lectoras. También se estudian algunos géneros emergentes (chicklit, sagas, literatura juvenil) y sus circuitos de circulación.",
         "tags": [
@@ -139,7 +139,7 @@
         "title": "Un acercamiento al movimiento",
         "level": "3° año, 4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio de la Orientación",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación",
         "mode": "Bachiller",
         "description": "El plan desarrolla los contenidos de Movimiento Rectilíneo Uniforme (MRU) y Uniformemente Variado (MRUV), incluyendo problemas de encuentro, velocidad relativa, caída libre y tiro vertical. Las actividades propuestas incluyen la recuperación y aplicación de funciones lineales y cuadráticas, la resolución de problemas que reproducen situaciones reales, la interpretación de gráficos y la creación de una producción final de síntesis. Se espera que los alumnos apliquen la matemática a fenómenos reales y fortalezcan su capacidad para observar e interpretar el movimiento mediante modelos matemáticos.",
         "tags": [
@@ -154,7 +154,7 @@
         "title": "Instrumentos, medición y aplicaciones",
         "level": "3° año, 4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio de la Orientación",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación",
         "mode": "Bachiller",
         "description": "El plan aborda la medición de magnitudes físicas, la precisión, el error (instrumental, humano y ambiental), el valor representativo y la indeterminación experimental. Las actividades guían desde la exploración de saberes previos y cuestionarios interactivos hasta experimentos prácticos de medición repetida y el diseño de un proyecto final aplicado. Se espera que los alumnos identifiquen la precisión y la exactitud, minimicen errores calculando promedios y comprendan las aplicaciones de la luz (refracción, reflexión, absorción) en instrumentos ópticos como microscopios y telescopios. Palabras Clave: Magnitudes, Precisión en la medida, Luz.",
         "tags": [
@@ -283,7 +283,7 @@
         ],
         "url": "https://rise.articulate.com/share/lziRlhr_86NvX0N0tO473yFACkGRmBYw"
     },
-     {
+    {
         "id": 22,
         "title": "Mitos y leyendas: su importancia en cada cultura",
         "level": "Nivel 1",
@@ -373,7 +373,7 @@
         ],
         "url": "https://rise.articulate.com/share/5DzkqXZcWkYGRM9VWhn_t4dUMqC53U8b"
     },
-     {
+    {
         "id": 28,
         "title": "La novela",
         "level": "Nivel 2",
@@ -556,7 +556,7 @@
         "title": "Origenes del universo: Del universo a la célula A",
         "level": "1° año, 2° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales I + II, Laboratorio Ciencias Naturales III + IV",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "El plan aborda los orígenes del universo (Big Bang, materia y energía), incluyendo nociones de transformación y degradación de la energía, y conservación de la misma. Se estudian los niveles de organización de la materia (partículas subatómicas, átomos, moléculas), la evolución de los modelos atómicos y la Tabla Periódica. El material detalla las uniones químicas (iónicas y covalentes) y la importancia del carbono para los compuestos biológicos, sentando las bases para el estudio de los seres vivos.",
         "tags": [
@@ -571,7 +571,7 @@
         "title": "Origenes del universo: Del universo a la célula B",
         "level": "1° año, 2° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales I + II, Laboratorio Ciencias Naturales III + IV",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "El plan examina la célula como sistema abierto y unidad de vida, explorando sus procesos vitales esenciales (nutrición y reproducción). Se analiza la Teoría Celular, la refutación de la generación espontánea y la evolución de las organelas (teorías endosimbiótica y autógena). El material enfatiza el rol de las estructuras celulares en la homeostasis y la continuidad de las especies.",
         "tags": [
@@ -586,7 +586,7 @@
         "title": "El agua: de la naturaleza al laboratorio A",
         "level": "1° año, 2° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales I + II, Laboratorio Ciencias Naturales III + IV",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "El plan propone explorar las propiedades únicas del agua, como su capacidad calorífica y tensión superficial. Se analiza el papel del agua en la homeostasis hídrica y térmica de los seres vivos y se articulan conceptos fisicoquímicos con problemáticas ambientales y sociales relevantes, incluyendo el cambio climático (efecto invernadero) y los desafíos de la filtración y acceso al agua potable.",
         "tags": [
@@ -601,7 +601,7 @@
         "title": "El agua: de la naturaleza al laboratorio B",
         "level": "1° año, 2° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales I + II, Laboratorio Ciencias Naturales III + IV",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "El plan articula conceptos de Biología y Físico-Química para analizar los ecosistemas como modelos. Se explora el flujo de energía y los ciclos biogeoquímicos (agua, carbono), enfatizando el rol del agua en la productividad primaria y la regulación térmica del planeta. El material se centra en cómo la alteración de factores abióticos impacta las redes tróficas y la biodiversidad.",
         "tags": [
@@ -616,7 +616,7 @@
         "title": "Descontaminación ambiental: de la Tierra al espacio B",
         "level": "2° año, 1° año, 3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales V + VI",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "El plan está centrado en la descontaminación ambiental y extiende el análisis fisicoquímico a los recursos aire y suelo. El material desarrolla la composición atmosférica (aplicando la teoría de los gases y estudiando contaminantes como la lluvia ácida) y los contaminantes del suelo (vinculados a minería, hidrocarburos y residuos urbanos). Articula estos conceptos con la dinámica de los ecosistemas y la ecología urbana. El objetivo es promover la opinión crítica y la resolución de problemas mediante la modelización de soluciones.",
         "tags": [
@@ -631,7 +631,7 @@
         "title": "Los descendientes de LUCA A",
         "level": "3° año, 4° año, 5° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales V + VI Laboratorio Ciencias Naturales VII + VIII, Laboratorio Ciencias Naturales IX",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "El plan se enfoca en la diversidad biológica y su evolución (partiendo de LUCA), y aborda el cambio climático como amenaza a la biodiversidad, instando a analizar la capacidad de adaptación de las especies. Se promueven las capacidades de indagación a través de la creación de un video explicativo sobre la conservación de especies. Fomenta la reflexión metacognitiva sobre aprendizajes y la conexión de la biodiversidad con la vida cotidiana, retomando la pregunta guía de la unidad.",
         "tags": [
@@ -646,7 +646,7 @@
         "title": "Los descendientes de LUCA B",
         "level": "3° año, 4° año, 5° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales V + VI, Laboratorio Ciencias Naturales VII + VIII, Laboratorio Ciencias Naturales IX",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "El plan aborda la diversidad biológica como resultado del proceso evolutivo, partiendo del Ancestro Común (LUCA). Se estudian las ideas históricas (Fijismo, Lamarck, Darwin) y se profundiza en el mecanismo de la Selección Natural (variabilidad, adaptación), utilizando el caso de los Pinzones de Galápagos y la evolución de los homínidos. Promueve la capacidad de indagación a través de la creación de un \"Atlas de la Evolución\" y la reflexión metacognitiva.",
         "tags": [
@@ -661,7 +661,7 @@
         "title": "Ambiente, nutrición y salud reproductiva A",
         "level": "1° año, 2° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales I + II, Laboratorio Ciencias Naturales III + IV",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "El plan desarrolla la función de nutrición humana (sistemas digestivo, respiratorio, circulatorio y excretor) y la salud sexual y reproductiva (sistemas reproductores, prevención e ITS). Enfatiza la integración sistémica y celular para mantener la homeostasis. También integra la Ecología Urbana, analizando el impacto de los contaminantes ambientales (aire, agua, tierra) en la salud reproductiva y la fertilidad. Fomenta la indagación con la creación de una campaña de difusión y la reflexión metacognitiva a través de una \"carta a tu yo científico\".",
         "tags": [
@@ -676,7 +676,7 @@
         "title": "Ciencia y ambiente para un futuro sostenible A",
         "level": "1° año, 2° año, 3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales I + II, Laboratorio Ciencias Naturales III + IV, Laboratorio Ciencias Naturales V + VI",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "El plan aborda la relación entre la energía solar y el sostenimiento de la vida. Integra el estudio del espectro electromagnético y las combustiones con procesos biológicos como la fotosíntesis y la respiración celular. Analiza el efecto invernadero y el flujo de energía en redes tróficas. Promueve la capacidad de indagación mediante el análisis de ecosistemas en peligro, incentivando a los estudiantes a diseñar propuestas para un futuro sostenible",
         "tags": [
@@ -691,7 +691,7 @@
         "title": "Ciencia y ambiente para un futuro sostenible B",
         "level": "1° año, 2° año, 3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales I + II, Laboratorio Ciencias Naturales III + IV, Laboratorio Ciencias Naturales V + VI",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este plan aborda la biodiversidad como resultado de la evolución y la dinámica de los ecosistemas. Analiza la influencia de los factores bióticos y abióticos (clima, recursos, interacciones interespecíficas), profundizando en el flujo de energía mediante redes tróficas y pirámides ecológicas. Desarrolla los ciclos biogeoquímicos del agua, carbono, nitrógeno y fósforo. Incluye el estudio de la ecología urbana, los disturbios antrópicos, el calentamiento global y la sustentabilidad",
         "tags": [
@@ -701,12 +701,12 @@
         ],
         "url": "https://rise.articulate.com/share/sOi0F9yvYoebE0Z6Buui_xtLBYjJcm-0"
     },
-     {
+    {
         "id": 137.0,
         "title": "Genética y superpoderes A",
         "level": "3° año, 4° año, 5° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales V + VI, Laboratorio Ciencias Naturales VII + VIII, Laboratorio Ciencias Naturales IX",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este material profundiza en la estructura y función de los ácidos nucleicos (ADN y ARN) en el núcleo celular. Aborda los mecanismos hereditarios mendelianos, integrando conceptos de gen, alelo, dominancia y recesividad. Analiza el flujo de información biológica a través de la replicación semiconservativa, la transcripción y la traducción para la síntesis proteica. Asimismo, examina las mutaciones génicas y cromosómicas, contrastando sus bases científicas con la ficción",
         "tags": [
@@ -721,7 +721,7 @@
         "title": "¿Cómo llegamos hasta acá? Los medios de comunicación y las redes sociales",
         "level": "5° año",
         "category": "Laboratorio, Taller",
-        "subject": "Laboratorio de la Orientación III + Taller de la Orientación III",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación",
         "mode": "Bachiller",
         "description": "El plan recorre la evolución de la comunicación desde la oralidad y la escritura hasta la era digital. Analiza cómo hitos como la imprenta y los medios masivos reconfiguraron el poder, la opinión pública y la cultura. Se enfoca en el ecosistema actual, abordando algoritmos, metadatos y el rol del prosumidor en la sociedad hiperconectada. Se promueve una mirada crítica sobre el acceso a la información y los flujos mediáticos. ",
         "tags": [
@@ -736,7 +736,7 @@
         "title": "¿Cómo llegamos hasta acá?",
         "level": "5° año",
         "category": "Laboratorio, Taller",
-        "subject": "Laboratorio de la Orientación III + Taller de la Orientación III",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación",
         "mode": "Bachiller",
         "description": "El plan profundiza sobre la evolución de los medios, vinculando la historia con las dinámicas de poder y economía. Explora la transformación de la información en mercancía y el impacto de algoritmos, las noticias falsas (fake news) y la concentración mediática en la opinión pública. Además, aborda las distintas dimensiones de la brecha digital, fomentando el pensamiento crítico para formar ciudadanos informados en el ecosistema actual.",
         "tags": [
@@ -751,7 +751,7 @@
         "title": "Medios en acción - Gráfica",
         "level": "3° año",
         "category": "Laboratorio, Taller",
-        "subject": "Laboratorio de la Orientación I + Taller de la Orientación I",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación ",
         "mode": "Bachiller",
         "description": "El plan explora la influencia de textos e imágenes gráficas en la percepción del mundo. Desarrolla habilidades para el análisis crítico de mensajes mediáticos (masivos y alternativos), abordando la tipografía, composición, tipos discursivos (expositivo, narrativo, argumentativo) y géneros periodísticos. Culmina con una propuesta de producción colaborativa de un medio gráfico digital.",
         "tags": [
@@ -766,7 +766,7 @@
         "title": "Medios en acción - Radio",
         "level": "3° año",
         "category": "Laboratorio, Taller",
-        "subject": "Laboratorio de la Orientación I + Taller de la Orientación I",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación",
         "mode": "Bachiller",
         "description": "El plan desarrolla habilidades de comunicación en el medio radial, explorando su versatilidad, técnica y creatividad. Aborda los soportes (AM, FM, web) y el lenguaje sonoro (música, efectos, voz, silencio). Se enfoca en la distinción entre géneros y formatos radiales, culminando con la planificación, edición y realización de guiones (técnico y artístico) para crear diversos productos radiales, como micros, documentales y radioteatros.",
         "tags": [
@@ -781,7 +781,7 @@
         "title": "La publicidad del derecho y el revés A",
         "level": "5° año",
         "category": "Laboratorio, Taller",
-        "subject": "Laboratorio de la Orientación III + Taller de la Orientación III",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación",
         "mode": "Bachiller",
         "description": "El plan ofrece un análisis integral y crítico de la publicidad, cubriendo estrategias y diversos conceptos asociados al Marketing. Explora el ciclo de vida del producto, la transición al entorno digital y el impacto social de los mensajes, cuestionando estereotipos y aspectos vinculados a la discriminación presentes en la publicidad. Concluye con el estudio de la contrapublicidad y la publicidad humanizada, incentivando la creación de campañas éticas y responsables en diversos medios. ",
         "tags": [
@@ -796,7 +796,7 @@
         "title": "La publicidad del derecho y el revés B",
         "level": "5° año",
         "category": "Laboratorio, Taller",
-        "subject": "Laboratorio de la Orientación III + Taller de la Orientación III",
+        "subject": "Laboratorio de la Orientación  , Taller de la Orientación",
         "mode": "Bachiller",
         "description": "El plan profundiza en la publicidad como fenómeno comunicativo. A través de este se exploran géneros publicitarios, estructuras narrativas y la relación sinérgica entre imagen y texto. Se aborda el diseño de estrategias creativas, considerando el target y el posicionamiento; así como la investigación mediante muestras y publicidad no tradicional. Se promueve la producción de campañas originales, incentivando una mirada crítica sobre la ética y el impacto de los discursos en la sociedad. ",
         "tags": [
@@ -806,7 +806,7 @@
         ],
         "url": "https://rise.articulate.com/share/GkJ9xUGvoaT-pujf_HF7h7UMThBEWmGa"
     },
-     {
+    {
         "id": 437.0,
         "title": "PROYECTO INTEGRADOR 3",
         "level": "6° año",
@@ -815,7 +815,9 @@
         "mode": "Técnica",
         "description": "El plan transforma la propuesta inicial en un sistema de inyección electrónica de combustible (EFI) funcional, ya sea maqueta, prototipo o simulación. Se enfoca en el diseño técnico detallado del sistema, elaborando diagramas funcionales y layouts de conexiones reales. Los estudiantes deben calcular parámetros eléctricos, como el consumo total, y verificar la compatibilidad de componentes. El plan cubre la selección de materiales, el montaje inicial aplicando protocolos de seguridad, la puesta en marcha, la medición de señales, el registro de incidencias y los ajustes técnicos. Culmina con pruebas finales de rendimiento y la organización de la carpeta e informe técnico profesional. ",
         "tags": [
-            "Sistema Inyección","Calibración","Ajustes Técnicos"
+            "Sistema Inyección",
+            "Calibración",
+            "Ajustes Técnicos"
         ],
         "url": "https://rise.articulate.com/share/tbOs6sBXCarBy7IXlzh1vDX7BMWBNVcg"
     },
@@ -824,7 +826,7 @@
         "title": "¿Qué es la energía?",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video define la energía como la capacidad de realizar trabajo, vinculando la teoría física con situaciones cotidianas. Explica la relación matemática entre trabajo, fuerza y desplazamiento mediante ejemplos prácticos de transporte de objetos. Asimismo, presenta la energía como una propiedad cuantificable, analizando su transferencia entre sistemas y su transformación en diversas formas, permitiendo a los estudiantes comprender los procesos de cambio en el entorno físico.",
         "tags": [
@@ -839,7 +841,7 @@
         "title": "¿Qué es la energía cinética?",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso explica la energía cinética y el Teorema del Trabajo y la Energía. Aborda contenidos sobre unidades (Julios), masa y velocidad. Permite desarrollar habilidades de resolución de problemas, análisis de relaciones proporcionales y modelado de sistemas físicos. Facilita que el estudiante aprenda a cuantificar el movimiento y a vincular fuerzas con cambios energéticos, fomentando el razonamiento lógico-matemático en la interpretación de fenómenos físicos.",
         "tags": [
@@ -854,7 +856,7 @@
         "title": "¿Qué es la velocidad?",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso aborda la distinción entre velocidad (magnitud vectorial) y rapidez (escalar), explicando el desplazamiento y el intervalo de tiempo. Incluye el cálculo de velocidad media y la interpretación de la dirección mediante signos. Desarrolla habilidades de razonamiento lógico-matemático, diferenciación de magnitudes físicas y aplicación de fórmulas en sistemas de referencia. Permite que el estudiante modele movimientos unidimensionales y analice cambios de posición cuantitativamente.",
         "tags": [
@@ -869,7 +871,7 @@
         "title": "Calcular la velocidad promedio, o rapidez",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video distingue magnitudes escalares y vectoriales, tratando velocidad, rapidez, desplazamiento y distancia. Explica el cálculo de velocidad promedio y la conversión de unidades por análisis dimensional. Desarrolla habilidades de observación, representación de movimientos, detección de variables relevantes y el uso de modelos matemáticos para describir y predecir procesos físicos, promoviendo la comunicación de ideas de manera clara y precisa.",
         "tags": [
@@ -884,7 +886,7 @@
         "title": "Carreras de automóviles a velocidad constante alrededor de una curva",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video se centra en la cinemática, abordando movimientos con velocidad o aceleración constante. Incluye contenidos sobre la identificación de variables, análisis de gráficos de trayectorias y modelización de movimientos sencillos. Desarrolla habilidades de observación, representación, formulación de conjeturas y comunicación precisa de ideas. Permite a los estudiantes usar modelos físicos para explicar y predecir fenómenos, fomentando una comprensión profunda de los procesos mecánicos.",
         "tags": [
@@ -894,12 +896,12 @@
         ],
         "url": "https://es.khanacademy.org/science/physics/centripetal-force-and-gravitation/centripetal-acceleration-tutoria/v/race-cars-with-constant-speed-around-curve"
     },
-     {
+    {
         "id": 670.0,
         "title": "Ideas intuitivas sobre la fuerza centrípeta y la aceleración",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video aborda la cinemática y dinámica del movimiento circular, centrándose en la fuerza centrípeta y las Leyes de Newton. Analiza cómo una fuerza neta modifica la dirección de la velocidad en ejemplos como órbitas o fricción en giros. Promueve habilidades de observación, representación vectorial, formulación de conjeturas y el uso de modelos físicos para explicar y predecir cambios en el movimiento según los contenidos priorizados",
         "tags": [
@@ -913,7 +915,7 @@
         "title": "Una comprensión visual de la fórmula de la aceleración centrípeta",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video aborda la cinemática del movimiento circular, enfocándose en la deducción de la fórmula de la aceleración centrípeta mediante el análisis de vectores de posición, velocidad y aceleración. Permite desarrollar habilidades de observación, representación vectorial y formulación de conjeturas. Asimismo, promueve el uso de modelos matemáticos para describir y predecir fenómenos físicos, integrando magnitudes vectoriales en movimientos curvilíneos.",
         "tags": [
@@ -928,7 +930,7 @@
         "title": "La vuelta de la muerte, pregunta",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video plantea un problema acerca de la cinemática y dinámica de un auto en un bucle vertical. Trata el cálculo de la velocidad mínima y promedio para completar el giro. Desarrolla habilidades de observación, representación y conjeturas mediante el uso de modelos físicos para explicar fenómenos. Fomenta la toma de datos y comunicación precisa de resultados, integrando la matemática como herramienta descriptiva según los contenidos priorizados.",
         "tags": [
@@ -943,7 +945,7 @@
         "title": "La vuelta de la muerte, respuesta (parte 2)",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video presenta la respuesta al problema de un auto en un bucle vertical. Aborda el cálculo de rapidez promedio y el análisis de márgenes de seguridad. Desarrolla habilidades de observación, representación y detección de variables mediante modelos matemáticos para explicar procesos físicos. Fomenta la comunicación precisa y el uso de unidades, vinculando la teoría con fenómenos reales según los contenidos priorizados.",
         "tags": [
@@ -958,7 +960,7 @@
         "title": "Introducción a vectores y escalares",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video explica la distinción entre magnitudes escalares y vectoriales, analizando los conceptos de magnitud y dirección. A través de ejemplos prácticos, diferencia distancia de desplazamiento y rapidez de velocidad. El material permite desarrollar habilidades de observación, representación de movimientos y el uso de lenguaje simbólico con vocabulario específico de la física. Además, fomenta la modelización de procesos y la comunicación clara y precisa de ideas fundamentales.",
         "tags": [
@@ -973,7 +975,7 @@
         "title": "Introducción a los marcos de referencia",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video define el marco de referencia como el punto de vista para medir magnitudes físicas. Explica cómo la velocidad y el desplazamiento cambian según el observador mediante ejemplos con un auto y un avión. Muestra que no hay un marco único correcto, sino que todos son válidos. El recurso desarrolla habilidades de observación, representación, conjeturas y el uso de modelos físicos para explicar fenómenos de la vida diaria.",
         "tags": [
@@ -988,7 +990,7 @@
         "title": "Calcular la velocidad promedio, o rapidez",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video distingue magnitudes escalares y vectoriales, tratando velocidad, rapidez, desplazamiento y distancia. Explica el cálculo de velocidad promedio y la conversión de unidades por análisis dimensional. Desarrolla habilidades de observación, representación de movimientos, detección de variables relevantes y el uso de modelos matemáticos para describir y predecir procesos físicos, promoviendo la comunicación de ideas de manera clara y precisa.",
         "tags": [
@@ -1003,7 +1005,7 @@
         "title": "El desplazamiento a partir del tiempo y la velocidad. Ejemplo",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video aborda la cinemática mediante el cálculo del desplazamiento y la velocidad. Se centra en la modelización matemática de movimientos sencillos, la detección de variables y la conversión de unidades por análisis dimensional. Desarrolla habilidades de representación de movimientos, comunicación precisa con lenguaje simbólico y el uso de modelos físicos para explicar fenómenos, diferenciando escalares de vectores y promoviendo el manejo de unidades.",
         "tags": [
@@ -1018,7 +1020,7 @@
         "title": "Las gráficas de posición versus tiempo",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video analiza las gráficas de posición-tiempo para describir el movimiento. Aborda contenidos sobre desplazamiento, distancia, velocidad y rapidez, destacando que la pendiente de la recta equivale a la velocidad instantánea. Desarrolla habilidades de observación, representación de trayectorias e interpretación de modelos matemáticos. Promueve el uso de vocabulario técnico, el manejo de unidades y la comunicación precisa de ideas fundamentales, integrando matemática y física.",
         "tags": [
@@ -1033,7 +1035,7 @@
         "title": "¿Qué es el desplazamiento?",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso aborda los conceptos de posición, distancia y desplazamiento. Explica la distinción entre magnitudes escalares y vectoriales. Permite desarrollar habilidades de razonamiento lógico, representación en sistemas de referencia y diferenciación entre trayectoria y cambio neto de ubicación. A través del mismo, los estudiantes pueden aprender a modelar movimientos unidimensionales y a interpretar la dirección del movimiento mediante signos matemáticos.",
         "tags": [
@@ -1048,7 +1050,7 @@
         "title": "Fuerzas y leyes del movimiento de Newton",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso aborda las leyes del movimiento de Newton y el concepto de fuerza como vector. Incluye el estudio de la inercia (1.ª ley), la relación entre fuerza, masa y aceleración (2.ª ley, $F=ma$), y los pares de acción-reacción (3.ª ley). Explora fuerzas específicas como la normal, tensión, fricción y gravitación en diversos escenarios. Permite desarrollar habilidades de modelado físico, interpretación de diagramas de cuerpo libre y resolución de problemas complejos mediante el análisis de sistemas de fuerzas y el razonamiento cuantitativo.",
         "tags": [
@@ -1063,7 +1065,7 @@
         "title": "Introducción a los resortes y la ley de Hooke",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este videoexplica la Ley de Hooke y la dinámica de resortes mediante el análisis de la fuerza de restitución y el desplazamiento. Aborda la proporcionalidad entre fuerza y deformación, la constante elástica y la diferencia entre compresión y estiramiento. Desarrolla habilidades de observación, modelización, conjeturas y uso de lenguaje simbólico para predecir el comportamiento de sistemas físicos.",
         "tags": [
@@ -1078,7 +1080,7 @@
         "title": "¿Qué es la energía potencial elástica?",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso aborda la energía potencial elástica y su relación con la Ley de Hooke. Explica contenidos sobre la constante de elasticidad, el trabajo realizado por fuerzas variables y la conservación de la energía en sistemas con resortes. Permite desarrollar habilidades de interpretación gráfica (área bajo la curva fuerza-desplazamiento), cálculo de magnitudes físicas y modelado de sistemas deformables, vinculando la teoría con aplicaciones mecánicas prácticas.",
         "tags": [
@@ -1093,7 +1095,7 @@
         "title": "La energía potencial almacenada en un resorte",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video explica la energía potencial elástica a partir de la Ley de Hooke y el cálculo del trabajo como el área bajo la curva en gráficos de fuerza-desplazamiento. Aborda contenidos sobre la constante elástica y la modelización matemática de sistemas físicos. Desarrolla habilidades de observación, representación y el uso de modelos para predecir comportamientos. Fomenta la comunicación precisa mediante lenguaje simbólico y el manejo de unidades.",
         "tags": [
@@ -1108,7 +1110,7 @@
         "title": "¿Qué es la ley de Hooke?",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso aborda la Ley de Hooke, explicando la relación entre fuerza restauradora, constante elástica y deformación. Trata contenidos sobre el límite de elasticidad y el comportamiento de materiales deformables. Permite desarrollar habilidades de análisis de proporcionalidad directa, interpretación de signos en vectores y modelado de sistemas físicos. Los estudiantes aprenden a cuantificar la rigidez de objetos y a predecir respuestas mecánicas bajo carga.",
         "tags": [
@@ -1123,7 +1125,7 @@
         "title": "Péndulos",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video analiza el péndulo simple como un oscilador armónico, explorando la fuerza restauradora, la longitud y el periodo. Trata la independencia de la masa y la aplicación de modelos matemáticos para ángulos pequeños. El recurso permite desarrollar habilidades de observación, representación de movimientos y formulación de conjeturas. Promueve el uso de lenguaje simbólico y la modelización para explicar y predecir procesos físicos reales.",
         "tags": [
@@ -1138,7 +1140,7 @@
         "title": "¿Qué es la energía potencial gravitacional?",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso explica la energía potencial gravitatoria, analizando su dependencia de la masa, la altura y la aceleración de la gravedad. Aborda contenidos sobre el trabajo realizado por el peso y la elección de niveles de referencia. Permite desarrollar habilidades de modelado energético, interpretación de sistemas conservativos y cálculo de variables en campos gravitatorios. Facilita que el estudiante comprenda la energía como una propiedad relativa de la posición de los cuerpos.",
         "tags": [
@@ -1148,12 +1150,12 @@
         ],
         "url": "https://es.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/a/what-is-gravitational-potential-energy"
     },
-     {
+    {
         "id": 690.0,
         "title": "Introducción a la gravedad",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video explica la gravitación universal y la aceleración de la gravedad. Aborda la relación entre fuerza, masa y distancia con modelos matemáticos. Desarrolla habilidades de observación, conjeturas y representación. Los alumnos logran explicar fenómenos cotidianos y comunicar ideas con lenguaje simbólico, vinculando la teoría con la detección de variables relevantes.",
         "tags": [
@@ -1168,7 +1170,7 @@
         "title": "Potencia",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video define la potencia como la tasa de realización de trabajo, distinguiendo entre potencia promedio e instantánea. Incluye energía cinética, potencial y la relación entre fuerza y rapidez. Desarrolla habilidades de observación, representación y el uso de modelos físicos para explicar fenómenos. Fomenta la comunicación precisa con lenguaje simbólico y el manejo de unidades como el watt.",
         "tags": [
@@ -1183,7 +1185,7 @@
         "title": "¿Qué es la potencia?",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso aborda el concepto de potencia como la rapidez con la que se realiza un trabajo. Explica contenidos sobre vatios (Watts), caballos de fuerza y la relación entre potencia, fuerza y velocidad. Desarrolla habilidades de razonamiento físico-matemático, análisis de eficiencia temporal en procesos energéticos y conversión de unidades. Los estudiantes aprenden a cuantificar el rendimiento de máquinas y a evaluar el consumo energético en sistemas mecánicos.",
         "tags": [
@@ -1198,7 +1200,7 @@
         "title": "La ley de Faraday para generar electricidad",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video analiza la Ley de Faraday y la inducción de fuerza electromotriz mediante la rotación de un circuito en un campo magnético. Explica la relación entre flujo magnético, corriente y aplicaciones en generadores o centrales hidroeléctricas. Desarrolla habilidades de observación, formulación de conjeturas y el uso de modelos físicos para explicar fenómenos, fomentando la comunicación precisa y la interpretación de variables en procesos mecánicos y tecnológicos.",
         "tags": [
@@ -1213,7 +1215,7 @@
         "title": "La primera ley del movimiento de Newton",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video aborda la Primera Ley de Newton, explorando inercia, reposo y movimiento rectilíneo uniforme. Explica el impacto de fuerzas externas como la fricción en la detención de objetos. Fomenta habilidades de observación, representación y formulación de conjeturas mediante modelos físicos. Permite a los estudiantes explicar fenómenos cotidianos y distinguir marcos de referencia con precisión.",
         "tags": [
@@ -1228,7 +1230,7 @@
         "title": "La segunda ley del movimiento de Newton",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video aborda la segunda ley de Newton, definiendo la masa como medida de materia y constante de proporcionalidad entre fuerza y aceleración. Diferencia masa de peso mediante ejemplos de cálculo y análisis de variables. Desarrolla habilidades de observación, representación vectorial y conjeturas. Promueve el uso de modelos físicos y lenguaje simbólico para explicar y predecir fenómenos mecánicos, integrando magnitudes y unidades de medida según los marcos de priorización.",
         "tags": [
@@ -1243,7 +1245,7 @@
         "title": "La tercera ley del movimiento de Newton",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video explica la ley de interacciones de Newton, analizando cómo las fuerzas entre dos cuerpos son iguales y opuestas. Mediante ejemplos como el empuje de objetos, la propulsión de cohetes y el movimiento espacial, aborda contenidos de dinámica. Desarrolla habilidades de observación, conjetura y el uso de modelos físicos para explicar fenómenos y predecir movimientos de manera precisa.",
         "tags": [
@@ -1258,7 +1260,7 @@
         "title": "¿Qué es la conservación de la energía?",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso aborda el principio de conservación de la energía mecánica en sistemas aislados y la transformación entre energías cinética y potencial. Explica contenidos sobre fuerzas conservativas, disipación por fricción y el balance energético total. Desarrolla habilidades de modelado de sistemas físicos, predicción de estados dinámicos y resolución de problemas mediante balances de energía. Los estudiantes aprenden a analizar la invariabilidad de la energía en procesos mecánicos complejos.",
         "tags": [
@@ -1273,7 +1275,7 @@
         "title": "Efecto fotoeléctrico",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video aborda el efecto fotoeléctrico y la dualidad onda-partícula de la luz. Explora conceptos como el fotón, la función de trabajo y la energía cinética mediante la modelización matemática de procesos físicos. Desarrolla habilidades de observación, representación y formulación de conjeturas. Fomenta el uso de lenguaje simbólico y la comunicación precisa para explicar y predecir la liberación de electrones según la frecuencia lumínica.",
         "tags": [
@@ -1288,7 +1290,7 @@
         "title": "Efecto fotoeléctrico",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso aborda el efecto fotoeléctrico, la naturaleza particulada de la luz (fotones) y la función de trabajo de los metales. Explica contenidos sobre energía de umbral, potencial de frenado y la ecuación de Einstein. Desarrolla habilidades de interpretación de modelos cuánticos, análisis de datos experimentales y distinción entre física clásica y moderna. Los estudiantes aprenden a cuantificar la energía radiante y a comprender la interacción luz-materia.",
         "tags": [
@@ -1303,7 +1305,7 @@
         "title": "Introducción a las ondas",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video define las ondas como perturbaciones que propagan energía a través del espacio. Diferencia ondas transversales y longitudinales mediante ejemplos de cuerdas y sonido. El material permite desarrollar habilidades de observación, representación y formulación de conjeturas. Aborda la modelización matemática para describir fenómenos físicos, fomentando el uso de lenguaje científico y la comunicación de ideas de manera clara y precisa.",
         "tags": [
@@ -1318,7 +1320,7 @@
         "title": "Definición de la amplitud y el periodo",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video analiza la terminología de los osciladores armónicos, abordando amplitud, periodo y gráficas de posición-tiempo. Desarrolla habilidades de observación, representación y uso de modelos físicos para explicar fenómenos. Fomenta la comunicación precisa con lenguaje simbólico y la detección de variables en procesos mecánicos, integrando la matemática como herramienta descriptiva para caracterizar movimientos oscilatorios.",
         "tags": [
@@ -1333,7 +1335,7 @@
         "title": "La luz: ondas electromagnéticas, espectro electromagnético y fotones",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso aborda la naturaleza dual de la luz y el espectro electromagnético, desde ondas de radio hasta rayos gamma. Explica conceptos de longitud de onda, frecuencia y energía fotónica. Desarrolla habilidades de clasificación de radiaciones, interpretación de modelos ondulatorios y análisis de la interacción materia-energía. Los estudiantes aprenden a vincular magnitudes físicas con aplicaciones tecnológicas y a comprender la luz como una perturbación de campos eléctricos y magnéticos.",
         "tags": [
@@ -1348,7 +1350,7 @@
         "title": "Interferencia de ondas",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video analiza la interferencia de ondas y el principio de superposición, explicando la suma de pulsos en una misma región. Aborda contenidos sobre el comportamiento de ondas mecánicas y electromagnéticas. Desarrolla habilidades de observación, representación y conjeturas mediante modelos físicos para explicar fenómenos. Fomenta la comunicación precisa y el uso de la matemática para predecir y describir procesos ondulatorios.",
         "tags": [
@@ -1363,7 +1365,7 @@
         "title": "Interferencia constructiva y destructiva",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video profundiza en la interferencia constructiva y destructiva, analizando la superposición, el desfase y la diferencia de camino. Aborda modelos para predecir comportamientos ondulatorios y explica aplicaciones como la cancelación de ruido. Desarrolla habilidades de observación, representación, conjeturas y comunicación precisa. Permite vincular la longitud de onda y la fase para explicar procesos físicos.",
         "tags": [
@@ -1378,7 +1380,7 @@
         "title": "Relatividad especial",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este recurso introduce los postulados de la relatividad especial de Einstein, abordando la constancia de la velocidad de la luz y la relatividad de la simultaneidad. Explica conceptos de dilatación del tiempo, contracción de la longitud y la equivalencia masa-energía ($E=mc²$). Permite desarrollar habilidades de pensamiento abstracto, cuestionamiento de la intuición clásica y resolución de problemas en marcos de referencia inerciales, transformando la comprensión del espacio-tiempo.",
         "tags": [
@@ -1393,7 +1395,7 @@
         "title": "Transformación de Lorentz para cambio de coordenadas",
         "level": "4° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Naturales VII + VIII",
+        "subject": "Laboratorio Ciencias Naturales",
         "mode": "Bachiller",
         "description": "Este video explica las transformaciones de Lorentz para cambios en coordenadas espaciales y temporales. Analiza cómo se transforman los desplazamientos entre marcos relativistas mediante álgebra para estudiar velocidades. Desarrolla habilidades de representación, modelización de procesos y comunicación precisa con lenguaje simbólico. Fomenta el uso de la matemática como herramienta para describir, explicar y predecir fenómenos físicos.",
         "tags": [
@@ -1408,11 +1410,13 @@
         "title": "Más sobre la elasticidad de la demanda",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video hace foco en el cálculo y las determinantes que intervienen en el mismo de la elasticidad de la oferta y la demanda.",
         "tags": [
-            "Inelasticidad","Elasticidad perfecta","Cálculo"
+            "Inelasticidad",
+            "Elasticidad perfecta",
+            "Cálculo"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/more-on-elasticity-of-demand"
     },
@@ -1421,11 +1425,13 @@
         "title": "La elasticidad ingreso de la demanda",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video profundiza el concepto de elasticidad de la oferta y la demanda.",
         "tags": [
-            "Demanda", "Oferta", "Elasticidad"
+            "Demanda",
+            "Oferta",
+            "Elasticidad"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/income-elasticity-of-demand/v/income-elasticity-of-demand"
     },
@@ -1434,11 +1440,13 @@
         "title": "Introducción a la elasticidad precio de la demanda",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video profundiza la noción de elasticidad de la demanda con foco en su cálculo.",
         "tags": [
-            "Demanda","Elasticidad","Cálculo"
+            "Demanda",
+            "Elasticidad",
+            "Cálculo"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/introduction-to-price-elasticity-of-demand-ap-microeconomics-khan-academy"
     },
@@ -1447,11 +1455,13 @@
         "title": "La demanda de mercado como la suma de las demandas individuales",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda el concepto de demanda de mercado y la incidencia de las demandas individuales que intervienen en la constitución de la misma.",
         "tags": [
-            "Demanda","Mercado"," Demandas individuales"
+            "Demanda",
+            "Mercado",
+            " Demandas individuales"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/demand-curve-tutorial/v/market-demand-as-the-sum-of-individual-demand"
     },
@@ -1460,11 +1470,13 @@
         "title": "La ley de demanda",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video explica la ley de demanda en función del precio, la cantidad de bienes y sus consecuencias para graficar curvas de demanda.",
         "tags": [
-            "Microeconomía","Demanda", "Precios"
+            "Microeconomía",
+            "Demanda",
+            "Precios"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/demand-curve-tutorial/v/law-of-demand"
     },
@@ -1473,11 +1485,13 @@
         "title": "Más sobre la elasticidad de la demanda",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video profundiza sobre la ley de demanda y las posibilidades de variación de la curva de demanda de acuerdo a determinantes que pueden intervenir en el ciclo económico.",
         "tags": [
-            "Demanda","Elasticidad","Curva"
+            "Demanda",
+            "Elasticidad",
+            "Curva"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial/price-elasticity-tutorial/v/more-on-elasticity-of-demand"
     },
@@ -1486,11 +1500,13 @@
         "title": "La ley de oferta",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video explica, con ejemplos graficados, los cambios en la oferta y los factores que intervienen para que esto suceda.",
         "tags": [
-            "Microeconomía","Oferta","Bienes"
+            "Microeconomía",
+            "Oferta",
+            "Bienes"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/supply-curve-tutorial/v/law-of-supply"
     },
@@ -1499,11 +1515,13 @@
         "title": "El equilibrio de mercado",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video explica los cambios que se producen en el mercado, la dinámica de la oferta y la demanda y las variables que intervienen, así como la noción de equilibrio de mercado.",
         "tags": [
-            "Microeconomía","Oferta","Demanda"
+            "Microeconomía",
+            "Oferta",
+            "Demanda"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/market-equilibrium-tutorial/v/market-equilibrium"
     },
@@ -1512,11 +1530,13 @@
         "title": "El ciclo económico",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video explora el funcionamiento del circuito económico mediante la acción de los agentes económicos.",
         "tags": [
-            "Macroeconomía","Política monetaria","Política fiscal"
+            "Macroeconomía",
+            "Política monetaria",
+            "Política fiscal"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/business-cycle-tutorial/v/the-business-cycle"
     },
@@ -1525,11 +1545,13 @@
         "title": "La tragedia de los comunes",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda los distintos tipos de bienes que circulan en la economía, tales como: bienes privados, bienes públicos, recursos comunes.",
         "tags": [
-            "Bienes","Recursos","Monopolios"
+            "Bienes",
+            "Recursos",
+            "Monopolios"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/market-failure-and-the-role-of-government/externalities-topic/v/tragedy-of-the-commons"
     },
@@ -1538,11 +1560,13 @@
         "title": "La economía keynesiana",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video explica comparativamente la teoría clásica y la keynesiana de la economía.",
         "tags": [
-            "Economía","Keynesianismo","Teoría"
+            "Economía",
+            "Keynesianismo",
+            "Teoría"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/keynesian-thinking/v/keynesian-economics"
     },
@@ -1551,11 +1575,13 @@
         "title": "Introducción a la economía",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video explica el surgimiento de la economía como ciencia social en el marco del pensamiento liberal.",
         "tags": [
-            "Economía","Teoria","Liberalismo"
+            "Economía",
+            "Teoria",
+            "Liberalismo"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old/econ-intro-in-macro-tutorial/v/introduction-to-economics"
     },
@@ -1564,11 +1590,13 @@
         "title": "Resumen de la lección: la demanda y sus determinantes",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video propene abordar las nociones de elasticidad y demanda. Con este cruce entre elasticidad, oferta y demanda se puede ver cómo inciden los cambios en los ingresos.",
         "tags": [
-            "Demanda","Elasticidad demanda","Ingreso demanda"
+            "Demanda",
+            "Elasticidad demanda",
+            "Ingreso demanda"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/demand-curve-tutorial/a/lesson-summary-demand-and-the-determinants-of-demand"
     },
@@ -1577,11 +1605,14 @@
         "title": "Introducción a la competencia perfecta",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video explica el concepto teórico de competencia perfecta, como una estructura teórica en la que hay muchos compradores y productores, productos idénticos (también llamados productos homogéneos) e información perfecta, y no existe ninguna barrera de entrada.",
         "tags": [
-            "Competencia","Oligopolio","Monopolio","Mercado"
+            "Competencia",
+            "Oligopolio",
+            "Monopolio",
+            "Mercado"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/perfect-competition-topic/perfect-competition/v/perfect-competition-microeconomics"
     },
@@ -1590,11 +1621,13 @@
         "title": "Oligopolios, duopolios, colusión y cárteles",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video trabaja a partir de la idea de estructuras de mercado los conceptos de: competencia perfecta, monopolio, oligopolio y competencia monopolística; como situaciones hipotéticas sin contextos específicos. Profundiza en ejemplos teóricos.",
         "tags": [
-            "Mercado","Oligopolios","Competencia monopolística"
+            "Mercado",
+            "Oligopolios",
+            "Competencia monopolística"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/perfect-competition-topic/game-theory/v/oligopolies-duopolies-collusion-and-cartels"
     },
@@ -1603,11 +1636,13 @@
         "title": "La competencia oligopólica y monopólica",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda el concepto de competencia desde una perspectiva teórica comparativa, utilizando gráficos para mostrar el espectro que va de la competencia perfecta al monopolio, y dos tipos de competencia que se encuentran dentro de este espectro: la competencia monopólica y la competencia oligopólica.",
         "tags": [
-            "Mercado","Oligopolio","Monopolio"
+            "Mercado",
+            "Oligopolio",
+            "Monopolio"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/perfect-competition-topic/monopolistic-competition-oligop/v/oligopolies-and-monopolisitc-competition"
     },
@@ -1616,11 +1651,13 @@
         "title": "Los monopolios y la competencia perfecta",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda el concepto de competencia desde una perspectiva teórica comparativa, utilizando gráficos para mostrar los extremos: la competencia y el monopolio.",
         "tags": [
-            "Mercado","Oligopolios","Monopolio"
+            "Mercado",
+            "Oligopolios",
+            "Monopolio"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/perfect-competition-topic/monopolies-tutorial/v/monopolies-vs-perfect-competition"
     },
@@ -1629,11 +1666,13 @@
         "title": "Análisis del producto interno bruto",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video propone identificar los elementos que se contabilizan para la medición de la actividad económica: PBI y PBN.",
         "tags": [
-            "Macroeconomía","Política Económica","PBI"
+            "Macroeconomía",
+            "Política Económica",
+            "PBI"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old/circular-econ-gdp-tutorial/v/parsing-gross-domestic-product"
     },
@@ -1642,11 +1681,13 @@
         "title": "La banca 5: introducción al papel moneda",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda el concepto de dinero y sus funciones, así como los movimientos que se realizan en un banco en relación al uso del mismo.",
         "tags": [
-            "Moneda","Historia","Banca"
+            "Moneda",
+            "Historia",
+            "Banca"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-5-introduction-to-bank-notes"
     },
@@ -1655,11 +1696,13 @@
         "title": "La banca 6: papel moneda y cheques",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda el concepto de dinero y sus funciones . Los movimientos que se realizan en un banco en relación al uso del mismo y amplia con ejemplos el uso del cheque y el papel moneda",
         "tags": [
-            "Moneda","Historia","Cheque"
+            "Moneda",
+            "Historia",
+            "Cheque"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-6-bank-notes-and-checks"
     },
@@ -1668,10 +1711,13 @@
         "title": "El valor del dinero en el tiempo",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda el concepto de dinero y sus funciones, así como los movimientos que se realizan en un banco en relación al uso del mismo y amplia con ejemplos el uso del cheque y el papel moneda. Además, se suma la reflexión sobre la importancia tanto de la cantidad de dinero, como del tiempo.",
-        "tags": ["Moneda","Historia" ],
+        "tags": [
+            "Moneda",
+            "Historia"
+        ],
         "url": "https://es.khanacademy.org/economics-finance-domain/core-finance/interest-tutorial/present-value/v/time-value-of-money"
     },
     {
@@ -1679,11 +1725,13 @@
         "title": "La demanda agregada",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video analiza el concepto de demanda agregada, diferenciándolo de la demanda de un bien o servicio e introduciendo conceptos macroeconómicos y sobre el rol de las institucione como el Banco Central.",
         "tags": [
-            "Macroeconomía","Política monetaria","Demanda agregada"
+            "Macroeconomía",
+            "Política monetaria",
+            "Demanda agregada"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/aggregate-supply-demand-tut/v/aggregate-demand"
     },
@@ -1692,11 +1740,13 @@
         "title": "Política monetaria y política fiscal",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video ejemplifica en situaciones hipotéticas el rol del Banco Central y de las políticas monetarias.",
         "tags": [
-            "Macroeconomía","Política monetaria","Banco Central"
+            "Macroeconomía",
+            "Política monetaria",
+            "Banco Central"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/monetary-fiscal-policy/v/monetary-and-fiscal-policy"
     },
@@ -1705,11 +1755,13 @@
         "title": "Cambios en los equilibrios del comercio",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video desarrolla el concepto teórico de autarquía en situaciones hipotéticas de países cerrados al comercio. Se explora lo que sucede con el precio interno de un bien, el excedente del consumidor y el excedente del productor cuando se abre la economía. El comercio internacional y la regulación del Estado aparecen como temas para la reflexión.",
         "tags": [
-            "Macroeconomía","Comercio Internacional","Autarquía"
+            "Macroeconomía",
+            "Comercio Internacional",
+            "Autarquía"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/international-trade/v/changing-equilibria-from-trade"
     },
@@ -1718,11 +1770,13 @@
         "title": "Comercio y aranceles",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "En este video se expone el impacto de los aranceles sobre el precio, el excedente del consumidor, el excedente del productor, los ingresos tributarios y la pérdida de eficiencia.",
         "tags": [
-            "Macroeconomía","Aranceles","Excedente"
+            "Macroeconomía",
+            "Aranceles",
+            "Excedente"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/microeconomics/consumer-producer-surplus/international-trade/v/trade-and-tariffs"
     },
@@ -1731,11 +1785,13 @@
         "title": "Política monetaria y política fiscal",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda las mecánicas básicas de la política monetaria y fiscal, con ejercicios hipotéticos y el uso de gráficos.",
         "tags": [
-            "Macroeconomía","Política Monetaria","Política Fiscal"
+            "Macroeconomía",
+            "Política Monetaria",
+            "Política Fiscal"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/monetary-fiscal-policy/v/monetary-and-fiscal-policy"
     },
@@ -1744,11 +1800,13 @@
         "title": "El gasto público y el modelo IS-LM",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda las modificaciones que se verifican en el modelo IS-LM cuando se realizan cambios en el gasto público y/o en la política fiscal.",
         "tags": [
-            "Macroeconomía","Gasto público","Política Fiscal"
+            "Macroeconomía",
+            "Gasto público",
+            "Política Fiscal"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/income-and-expenditure-topic-old/is-lm-model-tutorial/v/government-spending-and-the-is-lm-model"
     },
@@ -1757,11 +1815,13 @@
         "title": "Detalles sobre el cambio de los gastos planificados agregados",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda las modificaciones que se verifican en el modelo IS-LM cuando se realizan cambios gasto público y/o en la política fiscal, además de cómo se puede volver a una situación de equilibrio.",
         "tags": [
-            "Macroeconomía","Gasto público","Equilibrio"
+            "Macroeconomía",
+            "Gasto público",
+            "Equilibrio"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/income-and-expenditure-topic-old/keynesian-cross-tutorial/v/details-on-shifting-aggregate-planned-expenditures"
     },
@@ -1770,11 +1830,14 @@
         "title": "PIB: medir el ingreso nacional",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "Esta unidad completa de trabajo aborda conceptos tales como: nociones generales de Economía, PBI, ingresos y gastos; así como los componentes del PBI nacional.",
         "tags": [
-            "Macroeconomía","Presupuesto","Política Económica","PBI"
+            "Macroeconomía",
+            "Presupuesto",
+            "Política Económica",
+            "PBI"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old"
     },
@@ -1783,11 +1846,13 @@
         "title": "Componentes del producto interno bruto (PIB)",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video describe específicamente los componente del PBI que permiten abordar el concepto de ingresos a nivel de un Estado.",
         "tags": [
-            "Macroeconomía","PBI","Ingresos"
+            "Macroeconomía",
+            "PBI",
+            "Ingresos"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/gdp-topic-old/gdp-components-tutorial/v/components-of-gdp"
     },
@@ -1796,11 +1861,13 @@
         "title": "La perspectiva keynesiana sobre las fuerzas del mercado",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video aborda algunos aspectos de la teoría económica conocida como keynesianismo, la cual plantea la necesidad de la intervención estatal en la economía participando en  el mercado para equilibrar y orientar la economía.",
         "tags": [
-            "Macroeconomía","Política Económica","Keynesianismo"
+            "Macroeconomía",
+            "Política Económica",
+            "Keynesianismo"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/income-and-expenditure-topic-old/keynesian-articles/a/the-keynesian-perspective-on-market-forces-cnx"
     },
@@ -1809,17 +1876,59 @@
         "title": "La economía keynesiana",
         "level": "3° año",
         "category": "Laboratorio",
-        "subject": "Laboratorio Ciencias Sociales V + VI",
+        "subject": "Laboratorio Ciencias Sociales",
         "mode": "Bachiller",
         "description": "El video realiza una comparación de alguno de los conceptos básicos de la teoría económica clásica y keynesiana.",
         "tags": [
-            "Macroeconomía","Teoría clásica","Teoría keynesiana"
+            "Macroeconomía",
+            "Teoría clásica",
+            "Teoría keynesiana"
         ],
         "url": "https://es.khanacademy.org/economics-finance-domain/old-macroeconomics/aggregate-supply-demand-topic-old/keynesian-thinking/v/keynesian-economics"
+    },
+    {
+        "id": 275.0,
+        "title": "Proyecto de egreso 2: Mediación de lectura",
+        "level": "5° año",
+        "category": "Otro",
+        "subject": "Proyecto de Vinculación con el Futuro",
+        "mode": "Bachiller",
+        "description": "Este plan de aprendizaje guía el diseño de proyectos sociocomunitarios centrados en la mediación de la lectura. Propone un recorrido que abarca desde la indagación de posibilidades de mediación de manera analógica y digital hasta el relevamiento sobre la lectura en la comunidad mediante entrevistas y encuestas. El objetivo es que los alumnos diseñen una intervención cultural centrada en la lectura de literatura para fortalecer vínculos y generar un impacto real en su entorno.",
+        "tags": [
+            "Mediación de la lectura",
+            "Relevamiento",
+            "Planificación"
+        ],
+        "url": "https://rise.articulate.com/share/h9yD-SXYqlGkDWrtZPsXeByaNtMnu15R"
+    },
+     {
+        "id": 266.0,
+        "title": "Investigación literaria B",
+        "level": "4° año, 5° año",
+        "category": "Laboratorio, Taller",
+        "subject": "Laboratorio de la Orientación , Taller de la Orientación ",
+        "mode": "Bachiller",
+        "description": "Este plan de aprendizaje aborda la crítica literaria como eje central para la construcción de sentido. Propone un recorrido por el canon, las escrituras no hegemónicas y la literatura expandida en la era digital. Analiza el conflicto trágico, la poeticidad y diversas teorías del siglo XX (formalismo, sociocrítica, deconstrucción) para promover la formulación de hipótesis de lectura y el diálogo crítico en torno a obras clásicas y contemporáneas.",
+        "tags": [
+            "Crítica literaria",
+            "Canon",
+            "Interpretación"
+        ],
+        "url": "https://share.articulate.com/zyYrJBIMfFKfmSzOiY03G"
+    },
+      {
+        "id": 274.0,
+        "title": "Lenguajes combinados B",
+        "level": "3° año",
+        "category": "Laboratorio, Taller",
+        "subject": "Laboratorio de la Orientación , Taller de la Orientación ",
+        "mode": "Bachiller",
+        "description": "El presente plan de aprendizaje explora la intersección entre literatura, artes y tecnologías digitales. Propone un recorrido por la hipertextualidad, narrativas transmedia, pódcasts, videojuegos y el uso de IA en la creación literaria. El material orienta a los docentes en el análisis de nuevos modos de construir significado y en la producción de obras intermediales, promoviendo la reflexión sobre el rol del lector activo en la actualidad.",
+        "tags": [
+            "Intermedialidad",
+            "Interactividad",
+            "narrativas transmedia"
+        ],
+        "url": "https://rise.articulate.com/share/UVaJ2GgmD9h48CH4nlx8V4iLFBs-3Bz8"
     }
-    
-    
-    
-   
-   
 ]
