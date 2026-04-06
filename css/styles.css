@@ -11,6 +11,7 @@
 }
 
 
+
 body {
     
     font-family: var(--font-main);
@@ -1883,4 +1884,91 @@ span {
 
 .nav-dropdown {
     position: relative;
+}
+
+/* Modal Flyer Cursos */
+.flyer-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.flyer-modal.active { display: flex; }
+.flyer-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(4px);
+}
+.flyer-modal-content {
+    position: relative;
+    background: #153244;
+    /*background: #fff;*/
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 70vh;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    animation: flyerFadeIn 0.35s ease;
+}
+@keyframes flyerFadeIn {
+    from { opacity: 0; transform: scale(0.92); }
+    to   { opacity: 1; transform: scale(1); }
+}
+.flyer-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: rgba(0,0,0,0.45);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+.flyer-modal-close:hover { background: rgba(0,0,0,0.7); }
+.flyer-modal-img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.flyer-modal-footer {
+    padding: 0;
+   /* background: #f8f8f8;*/
+   background: #153244;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;        /* distancia desde abajo */
+    left: 0;
+    right: 0;
+}
+.flyer-modal-btn {
+    display: inline-block;
+    background: var(--primary-color);
+    /*background: #24a0a5;*/
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: background 0.2s, transform 0.2s;
+}
+.flyer-modal-btn:hover {
+    background: var(--tercer-color);
+    transform: translateY(-2px);
+    color: #000;
 }

@@ -1,3 +1,20 @@
+// Modal Flyer Cursos 
+const MOSTRAR_FLYER = true;
+function openFlyerModal() {
+    document.getElementById('flyerModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeFlyerModal() {
+    document.getElementById('flyerModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+window.addEventListener('load', function () {
+    if (MOSTRAR_FLYER) setTimeout(openFlyerModal, 600);
+});
+// ----
+
 // Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
@@ -186,8 +203,15 @@ updateCarousel();
 // Cerrar con tecla ESC
 document.addEventListener('keydown', function (e) {
     const pdfViewer = document.getElementById('pdfViewer');
-    if (e.key === 'Escape' && pdfViewer.classList.contains('active')) {
+    if (e.key === 'Escape' && pdfViewer && pdfViewer.classList.contains('active')) {
         closePDF();
+    }
+    const modal = document.getElementById('videoModal');
+    if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+        closeVideo();
+    }
+    if (e.key === 'Escape') {
+        closeFlyerModal();
     }
 });
 
