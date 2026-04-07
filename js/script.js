@@ -8,10 +8,13 @@ function openFlyerModal() {
 function closeFlyerModal() {
     document.getElementById('flyerModal').classList.remove('active');
     document.body.style.overflow = '';
+    sessionStorage.setItem('flyerVisto', 'true'); 
 }
 
 window.addEventListener('load', function () {
-    if (MOSTRAR_FLYER) setTimeout(openFlyerModal, 600);
+    if (MOSTRAR_FLYER && !sessionStorage.getItem('flyerVisto')) {
+        setTimeout(openFlyerModal, 600);
+    }
 });
 // ----
 
