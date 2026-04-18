@@ -1,5 +1,5 @@
 // Modal Flyer Cursos 
-const MOSTRAR_FLYER = true;
+const MOSTRAR_FLYER = false;
 function openFlyerModal() {
     document.getElementById('flyerModal').classList.add('active');
     document.body.style.overflow = 'hidden';
