@@ -1930,5 +1930,161 @@
             "narrativas transmedia"
         ],
         "url": "https://rise.articulate.com/share/UVaJ2GgmD9h48CH4nlx8V4iLFBs-3Bz8"
+    },
+    {
+        "id": 427.0,
+        "title": "Proyecto integrador 2: Innovacion electromecánica en cinta transportadora",
+        "level": "6° año",
+        "category": "Otro",
+        "subject": "Proyecto de Egreso",
+        "mode": "Técnica",
+        "description": "El plan aborda el diagnóstico integral y el diseño técnico de una cinta transportadora industrial, formando parte del Proyecto Integrador. Se realiza el relevamiento de fallas específicas, abarcando subsistemas eléctricos, mecánicos y de automatización. El contenido incluye la investigación y comparación de sistemas de arranque (VFD, PLC), la aplicación de normativa IRAM/A.E.A. y el análisis de la viabilidad económica y técnica (FODA, costos). Finaliza con la formulación de la propuesta funcional y la elaboración del esquema técnico (Entradas ? Salidas) para el montaje de la maqueta didáctica.",
+        "tags": [
+            "Diagnóstico Integral. Viabilidad. Automatización"
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/68b5f7ea8fe9fdfeb092fc9d"
+    },
+    {
+        "id": 438.0,
+        "title": "PROYECTO INTEGRADOR 4",
+        "level": "6° año",
+        "category": "Otro",
+        "subject": "Proyecto de Egreso",
+        "mode": "Técnica",
+        "description": "El plan es la etapa final del Proyecto Integrador EFI, se centra en la evaluación crítica integral del sistema, verificando el cumplimiento de los objetivos técnicos (eficiencia, fiabilidad y rendimiento) y la normativa vigente. Se analizan el impacto social y ambiental del proyecto. El plan promueve la reflexión sobre el proceso de trabajo, el desempeño individual (compromiso, autonomía) y las habilidades técnicas y blandas adquiridas. Finalmente, se formulan propuestas de mejora e innovación, se evalúa la adaptación a nuevos contextos y se prepara la presentación técnica profesional de los resultados.",
+        "tags": [
+            "Evaluación Crítica. Impacto Ambiental. Sistema EFI"
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/68af1750b19f5cfe2ef4a3bb"
+    },
+    {
+        "id": 445.0,
+        "title": "PROYECTO INTEGRADOR 2: Diagnóstico, investigación y definición de la propuesta técnica",
+        "level": "6° año",
+        "category": "Otro",
+        "subject": "Proyecto de Egreso",
+        "mode": "Técnica",
+        "description": "El plan aborda el diagnóstico, la investigación y la definición técnica de una propuesta para rediseñar instalaciones eléctricas enfocadas en la eficiencia y seguridad. El proceso incluye el relevamiento de fallas en sistemas reales, el análisis normativo (AEA/IRAM), la justificación del problema mediante el Árbol de Problemas, la evaluación de la viabilidad técnica y económica (FODA), y la definición de objetivos SMART. Concluye con la elaboración del esquema técnico-funcional y el plan de montaje.",
+        "tags": [
+            "Instalaciones eléctricas. Normativa (AEA / IRAM). Fallas de sistemas"
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/68d2cbe4c72ae3c894867ba0"
+    },
+    {
+        "id": 446.0,
+        "title": "PROYECTO INTEGRADOR 3",
+        "level": "6° año",
+        "category": "Otro",
+        "subject": "Proyecto de Egreso",
+        "mode": "Técnica",
+        "description": "El plan tiene como objetivo el rediseño y la optimización de instalaciones eléctricas para maximizar la seguridad y la eficiencia energética. El contenido abarca el diagnóstico exhaustivo mediante mediciones clave (caída de tensión y resistencia de puesta a tierra), la aplicación rigurosa de la normativa vigente (AEA/IRAM/IEC), y el dimensionamiento de conductores y protecciones. Se proponen mejoras técnicas (LED, balanceo de cargas) y se evalúa la viabilidad. Finaliza con la ejecución práctica/simulación y la elaboración de la Memoria Técnica profesional.",
+        "tags": [
+            "Rediseño Eléctrico. Dimensionamiento conductores. Eficiencia Energética."
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/68d7028327fd82ca6fd657a0"
+    },
+    {
+        "id": 447.0,
+        "title": "PROYECTO INTEGRADOR 4",
+        "level": "6° año",
+        "category": "Otro",
+        "subject": "Proyecto de Egreso",
+        "mode": "Técnica",
+        "description": "El plan se centra en la evaluación global e integral del sistema eléctrico trabajado. Su objetivo es validar el funcionamiento, la seguridad y la eficiencia energética del sistema, asegurando el estricto cumplimiento de la normativa vigente (AEA 90364, IRAM, IEC). Se realiza un análisis de su impacto social, ambiental y económico, promoviendo una práctica profesional responsable. El plan exige una reflexión crítica sobre los aprendizajes y las capacidades profesionales desarrolladas (saber, saber hacer y saber comunicar). Finaliza con la Memoria Técnica, la proyección de mejoras y la presentación profesional de los resultados.",
+        "tags": [
+            "Normas Técnicas. Memoria Técnica. Seguridad Eléctrica."
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/68e08720ebc46115ddbf898b"
+    },
+    {
+        "id": 466.0,
+        "title": "Evaluación y cierre del proyecto",
+        "level": "5° año, 6° año",
+        "category": "Espacio de integración, Otro",
+        "subject": "Espacios de Integración de Especialidad, Proyecto de Egreso",
+        "mode": "Técnica",
+        "description": "El plan se enfoca en la evaluación integral y el cierre del Proyecto de Egreso.Se guía a los estudiantes a reflexionar sobre la solución informática desarrollada, analizar su impacto en los usuarios y documentar el proceso completo, desde el desarrollo hasta la implementación. El material incluye la revisión de los aprendizajes colectivos, la autoevaluación individual, la propuesta de mejoras y la presentación final para proyectar la expansión del producto.",
+        "tags": [
+            "Evaluación de producto informático. Revisión de trabajo. Experiencia de usuario"
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/689a74d5d155a78b4c2d9751"
+    },
+    {
+        "id": 469.0,
+        "title": "Del cálculo y dibujo de máquinas - A",
+        "level": "5° año",
+        "category": "Espacio de integración",
+        "subject": "Espacios de Integración de Especialidad",
+        "mode": "Técnica",
+        "description": "El plan explora los fundamentos de la Mecánica al analizar fuerzas y movimiento. Se instruye en la representación simplificada de sistemas mediante Diagramas de Cuerpo Libre (DCL) y la aplicación de las Leyes de Newton. El plan profundiza en el rozamiento (estático y cinético), su impacto en la pérdida de potencia en apoyos como gorrones y pivotes, y el concepto de cono de rozamiento. Además, se estudian las interacciones elásticas (rigidez, Ley de Hooke k), gravitatorias y viscosas. Finalmente, se cubren el impulso y la cantidad de movimiento en colisiones (elásticas e inelásticas), y el cálculo del torque en tornillos de potencia.",
+        "tags": [
+            "Rozamiento. Impulso. Rigidez"
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/68a7475e42943721b3b0f169"
+    },
+    {
+        "id": 470.0,
+        "title": "Lenguaje de representación - B",
+        "level": "5° año",
+        "category": "Espacio de integración",
+        "subject": "Espacios de Integración de Especialidad",
+        "mode": "Técnica",
+        "description": "El plan enseña el lenguaje técnico universal para el diseño mecánico, cubriendo la representación normalizada de componentes y conjuntos (BOM). Se detalla la creación de croquis de proceso de mecanizado secuencial. El enfoque principal está en la aplicación de tolerancias dimensionales, sistemas de ajuste (ISO 286) y la especificación de rugosidad superficial (ISO 1302) para asegurar la precisión y funcionalidad de las piezas fabricadas.",
+        "tags": [
+            "Tolerancias. Ajustes. Mecanizado"
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/68a758edf37e83593d973e73"
+    },
+    {
+        "id": 472.0,
+        "title": "Tecnología de conformado y mecanizado industrial - B",
+        "level": "6° año",
+        "category": "Espacio de integración",
+        "subject": "Espacios de Integración de Especialidad",
+        "mode": "Técnica",
+        "description": "El plan aborda el conformado y mecanizado industrial, analizando procesos de laminación, trefilado y extrusión. Incluye el estudio de sistemas especiales de corte (láser, plasma, chorro de agua) y tornos especializados (verticales, automáticos). Busca que el estudiante seleccione métodos basados en precisión, material y volumen de producción. Las actividades proponen análisis de casos reales, cuadros comparativos y una producción técnica final.",
+        "tags": [
+            "Conformado. Mecanizado. Producción."
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/68bbb01a23de16666fdce1a4"
+    },
+    {
+        "id": 475.0,
+        "title": "Evaluación y cierre",
+        "level": "6° año",
+        "category": "Otro",
+        "subject": "Proyecto de Egreso",
+        "mode": "Técnica",
+        "description": "El plan consolida lo aprendido a lo largo del curso mediante la evaluación crítica e integral del sistema de alimentación de piezas mecánicas, diseñado y fabricado. Se aborda el análisis del desempeño técnico, la reflexión sobre el impacto social y ambiental, y la verificación del cumplimiento normativo. El proyecto culmina con la propuesta de mejoras y la presentación/difusión técnica de los resultados y conclusiones.",
+        "tags": [
+            "Sistema de alimentación Piezas Mecánicas. Evaluación Crítica. Análisis Desempeño."
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/68cf06122ac7d7b6b646924a"
+    },
+    {
+        "id": 432.0,
+        "title": "Energía calórica aplicada a los automotores - A",
+        "level": "5° año",
+        "category": "Espacio de integración",
+        "subject": "Espacios de Integración de Especialidad",
+        "mode": "Técnica",
+        "description": "El plan analiza cómo los motores de combustión interna transforman la energía térmica generada en trabajo mecánico, aplicando los principios de la termodinámica y las leyes de los gases ideales. Se estudian los ciclos Otto y Diesel (ideales y reales), la estructura del motor, el mecanismo biela-manivela y las dimensiones clave (relación de compresión). Además, se define el par motor y la potencia, y se evalúa la eficiencia real considerando las pérdidas y el control de emisiones contaminantes (catalizadores).",
+        "tags": [
+            "Termodinámica. Ciclos motores. Rendimiento"
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/688791f86cd76ecb1b513fb7"
+    },
+    {
+        "id": 433.0,
+        "title": "Energía calórica aplicada a los automotores - B",
+        "level": "5° año",
+        "category": "Espacio de integración",
+        "subject": "Espacios de Integración de Especialidad",
+        "mode": "Técnica",
+        "description": "El plan analiza la estabilidad automotriz mediante la interacción fundamental entre ruedas, neumáticos y el centro de gravedad (CG). Se clasifican técnicamente los neumáticos (radial, diagonal) y las llantas (aleación, acero), examinando la nomenclatura y la criticidad de la presión de inflado en el desgaste y la seguridad. El módulo detalla la dinámica en curvas, abordando la transferencia de carga, el ángulo de deriva, y los fenómenos de subviraje/sobreviraje. Se enfatiza la ubicación del CG para la estabilidad y la prevención de vuelcos.",
+        "tags": [
+            "Presión. Deriva. Estabilidad"
+        ],
+        "url": "https://biblioteca-aprendizaje-autonomo.ticmas.io/resource/6887ae4510709d4772869155"
     }
 ]
